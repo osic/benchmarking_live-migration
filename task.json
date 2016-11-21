@@ -1,0 +1,22 @@
+{
+   "NovaLiveMigrations.live_migrate_servers_from_host": [
+        {
+            "args": {
+                "flavor": {
+                    "name": "{{ flavor_name }}"
+                },
+                "image": {
+                    "name": "{{ image_name }}"
+                },
+                "host_to_evacuate": "{{ host_to_evacuate }}",
+                "destination_host": "{{ destination_host }}",
+                "block_migration": "{{ block_migration }}"
+            },
+            "runner": {
+                "type": "serial",
+                "times": 1
+            },
+            "context": {}
+        }
+    ]
+}
