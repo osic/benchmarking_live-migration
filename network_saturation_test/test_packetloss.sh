@@ -4,7 +4,7 @@ IP=${ADDR[1]}
 echo $IP
 sleep 5
 echo "Performing live Migration"
-#nova live-migration $1 compute03 --block-migrate
+nova live-migration $1 compute03 --block-migrate
 sleep 10
 echo "Checking packet loss"
 scp -i demo.pem ubuntu@$IP:~/out .
@@ -21,7 +21,7 @@ do
     fi
     previous=$current
 done <out
-sleep 5
+sleep 10
 #nova live-migration $1 compute01
 if $loss; then
   echo "Packet Loss"
