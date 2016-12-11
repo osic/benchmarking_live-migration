@@ -6,7 +6,7 @@ echo "Performing live Migration"
 nova live-migration $1 $2
 sleep 10
 echo "Checking packet loss"
-scp ubuntu@$IP:~/out .
+scp ubuntu@$IP:~/out.txt .
 previous=1
 current=1
 loss=false
