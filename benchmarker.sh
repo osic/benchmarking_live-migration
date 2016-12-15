@@ -10,6 +10,10 @@ key_name="tmp"
 image_name="f6b10ce2-f7b9-4eed-a26b-eff7cb062fbb"
 influx_ip="172.22.8.24"
 stack_name="lm_test5"
+flavor_type[0]="heat_param_small"
+flavor_type[1]="heat_param_medium"
+flavor_type[2]="heat_param_large"
+
 
 nova flavor-create lm.small 7 4096 40 2
 nova flavor-create lm.medium 8 8192 80 4
@@ -40,18 +44,17 @@ workload_def slice-add --name lm_slice --add generic_ram
 workload_def slice-add --name lm_slice --add generic_disk
 workload_def slice-add --name lm_slice --add generic_network
 
-
-
 echo "Environment is set up and now running the workloads"
 
-for i in {1..3}; do
-    workload_def create --slice lm_slice --name $stack_name -n 1 --group group1 --envt heat_param_large
+for i in "${flavor_type[@]}"
+do
+    workload_def create --slice lm_slice --name $stack_name -n 1 --group group1 --envt $i
     echo "Waiting till all instances are up"
     sleep 10;
     while true; do
         n=$(openstack server list | grep -v "ACTIVE" -c)
         if [ "$n" -le 5 ]; then   break; fi
-        sleep 5;
+        sleep 15;
     done
 
     echo "All instances are up and running"
