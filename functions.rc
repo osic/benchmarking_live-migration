@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+
+
+# example to call this fuunction wait_instances compute01
+function wait_instances () {
+    echo "Waiting till all instances are up"
+    sleep 25;
+    servers_building=`openstack server list --host $1 | grep "BUILD" -c`
+    until [ $servers_building  -eq 0 ]; do
+        echo $servers_building
+        sleep 15
+        servers_building=`openstack server list --host $1 | grep "BUILD" -c`
+    done
+}
+
+# to call this function: describe_environment workload_vms file_name flavor_used
+function describe_environment() {
+
+  workload_vms=$1
+  cat >> $2 << EOF
+All instances are up and running;
+--> testing the current environment:
+     `echo $workload_vms | cut -d' ' -f1` VMs, `echo $workload_vms | cut -d' ' -f2` VMs, `echo $workload_vms | cut -d' ' -f3` VMs, `echo $workload_vms | cut -d' ' -f4` VMs
+     flavor of workloads used is $3
+EOF
+
+}
