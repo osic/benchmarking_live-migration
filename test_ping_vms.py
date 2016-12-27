@@ -48,7 +48,7 @@ def test_packetloss_all(servers, lvm_results_filename):
        test_packetloss(ip, lvm_results_filename)
 
 def test_packetloss(ip, lvm_results_filename):
-    os.system("./test_packetloss.sh " + ip + " " + lvm_results_filename )
+    os.system("./test_packetloss.sh " + ip + " " + lvm_results_filename + " " + str(interval))
 
 def send_to_all(servers):
     for server in servers.items():
@@ -81,13 +81,7 @@ def start_tests(servers, filename):
     send_to_all(servers)
     test_ping(servers, filename)
 
-
-if __name__ == '__main__':
-  host = sys.argv[1]
-  tmp_filename = sys.argv[2]
-  lvm_results_filename = sys.argv[3]
-  action = sys.argv[4]
-
+def get_servers(host):
   creds = get_keystone_creds()
   auth = identity.v3.Password(**creds)
   sess = session.Session(auth=auth)
@@ -97,14 +91,24 @@ if __name__ == '__main__':
     try:
       if server.to_dict()['OS-EXT-SRV-ATTR:host'] == host:
         # NOTE: network name should not be statically assigned
-        servers[server.to_dict()['addresses']['external-flat'][0]['addr']] = server.to_dict()['id']
+        servers[server.to_dict()['addresses']['external-flat'][0]['addr']] = server.name
     except Exception as e:
       print 'problem with getting info for server: ' + str(server.to_dict()['id'])
       print str(e)
       pass
-  print servers
+  return servers
+
+if __name__ == '__main__':
+  host = sys.argv[1]
+  tmp_filename = sys.argv[2]
+  lvm_results_filename = sys.argv[3]
+  action = sys.argv[4]
+
+  servers = get_servers(host)
 
   if action == 'test_packet_loss':
     test_packetloss_all(servers, lvm_results_filename)
   elif action == 'start_tests':
     start_tests(servers, tmp_filename)
+  elif action == 'get_servers':
+    print get_servers(host)

@@ -14,6 +14,17 @@ function wait_instances () {
     done
 }
 
+function wait_stack () {
+    echo "Waiting till stack is created"
+    sleep 10;
+    stacks_creating=`heat stack-list | grep CREATE_IN_PROGRESS -c`
+    until [ $stacks_creating  -eq 0 ]; do
+        echo $stacks_creating
+        sleep 10
+        stacks_creating=`heat stack-list | grep CREATE_IN_PROGRESS -c`
+    done
+}
+
 # to call this function: describe_environment workload_vms file_name flavor_used
 function describe_environment() {
 
@@ -25,4 +36,20 @@ All instances are up and running;
      flavor of workloads used is $3
 EOF
 
+}
+
+function get_specs_server() {
+ip=$1
+ssh -q -o StrictHostKeyChecking=no root@$ip << EOF
+  echo 'start'
+  printf "specs for server $ip"
+  printf '\nCPU info: ---------->\n'
+  lscpu | grep ^CPU\(s\):
+  printf '\nmemory info: ---------->\n'
+  vmstat -s | grep memory
+  printf '\ndisk info: ---------->\n'
+  lsblk -io KNAME,TYPE,SIZE,MODEL
+  printf '\nnetwork devices info: ---------->\n'
+  lspci | grep -i eth
+EOF
 }

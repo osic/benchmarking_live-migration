@@ -69,5 +69,8 @@ class NovaLiveMigrations(utils.NovaScenario):
                         new_host = destination_host
                 else:
                         new_host = self._find_host_to_migrate(server)
-                self._live_migrate(server, new_host,
+                try:
+                  self._live_migrate(server, new_host,
                                   block_migration, disk_over_commit)
+                except Exception as e:
+                  print str(e)
