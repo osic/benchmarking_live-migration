@@ -19,6 +19,8 @@ for env in "${environment_type[@]}"; do
     # start the lvm tests
     sleep 25
     echo "--> evacuating all VMs from $host_to_evacuate to $destination_host:" >> $lv_results_file
+    echo "Saving logs of $host_to_evacuate and $destination_host nodes"
+    time=$(echo $(ssh $host_to_evacuate 'tail -n 1 /var/log/nova/nova-compute.log') | awk -F ' ' '{print $1" "$2}' | awk -F '.' '{ print $1}' | awk -F ':' '{ print $1 ":"$2}' )
     echo "starting lvm at: `date`" >> $lv_results_file
     python test_ping_vms.py  $host_to_evacuate downtime_info.dat $lv_results_file start_tests &
     TEST_ID=$!
@@ -40,8 +42,16 @@ for env in "${environment_type[@]}"; do
     fi
     cat downtime_info.dat >> $lv_results_file
     python test_ping_vms.py  $host_to_evacuate downtime_info.dat $lv_results_file test_packet_loss
+    
+    scp $host_to_evacuate:/var/log/nova/nova-compute.log .
+    log1="$host_to_evacuate"_compute.log
+    log2="$destination_host"_compute.log
+    cat nova-compute.log | grep "$time" -A 100000 > $log1
+    scp $destination_host:/var/log/nova/nova-compute.log .
+    cat nova-compute.log | grep "$time" -A 100000 > $log2
+    rm -rf nova-compute.log
     kill $TEST_ID
     echo "Cleaning up Resources.."
-    echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
+##    echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
     break;
 done

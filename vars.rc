@@ -4,12 +4,13 @@ network="bc1b0934-3343-4fca-806e-3bad82205261"
 key_name="lm_key"
 image_name="Ubuntulm14"
 influx_ip=`cat /etc/openstack_deploy/openstack_user_config.yml | grep internal_lb_vip_address | awk '{print $2}' | tr -d '"'`
+export INFLUXDB_HOST=$influx_ip
 stack_name="lm_test$RANDOM"
 lv_results_file="/opt/lvm_results.txt"
 host_to_evacuate='compute01'
 destination_host='compute05'
 # define workload_vms as: ( number of cpu vms, number of ram vms number of diskIO vms, number of network vms )
-workloads_vms=(2-generic_cpu 0-generic_ram 0-generic_disk 0-generic_network)
+workloads_vms=(1-generic 0-generic_ram 0-generic_disk 0-generic_network)
 
 environment_type[2]="heat_param_small"
 environment_type[0]="heat_param_medium"
