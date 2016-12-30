@@ -10,7 +10,7 @@ lv_results_file="/opt/lvm_results.txt"
 host_to_evacuate='compute01'
 destination_host='compute05'
 # define workload_vms as: ( number of cpu vms, number of ram vms number of diskIO vms, number of network vms )
-workloads_vms=(1-generic 0-generic_ram 0-generic_disk 0-generic_network)
+workloads_vms=(1-spark 0-generic_cpu_final 0-generic_ram 0-generic_disk 0-generic_network)
 
 environment_type[2]="heat_param_small"
 environment_type[0]="heat_param_medium"

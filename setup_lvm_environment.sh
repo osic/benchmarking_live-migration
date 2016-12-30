@@ -67,11 +67,4 @@ sed -i "/  \"influx_ip\":/c\  \"influx_ip\": $influx_ip" envirnoment/heat_param_
 sed -i "/  \"influx_ip\":/c\  \"influx_ip\": $influx_ip" envirnoment/heat_param_large.yaml
 printf "[group_$host_to_evacuate]\n $host_to_evacuate\n" >> host
 
-workload_def slice-destroy --name lm_slice
-workload_def slice-define --name lm_slice
-for i in "${workloads_vms[@]}"; do
-  for j in `seq 1 ${i%-*}`; do
-    workload_def slice-add --name lm_slice --add ${i#*-}
-  done
-done
 
