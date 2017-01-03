@@ -26,7 +26,6 @@ for env in "${environment_type[@]}"; do
       echo "All instances are up and running";
       describe_environment "${workloads_vms[*]}" $lv_results_file ${environment_type[@]##*_}
       # start the lvm tests
-      break;
     fi
     DATE=`date +%Y-%m-%d`
     TIME=`date +%H:%M`
@@ -41,6 +40,7 @@ for env in "${environment_type[@]}"; do
          break;
       fi
       echo $itr
+      sleep 10
       echo "--> evacuating all VMs from $host_to_evacuate to $destination_host:" >> $lv_results_file
       echo "Saving logs of $host_to_evacuate and $destination_host nodes"
       echo "starting lvm at: `date`" >> $lv_results_file
