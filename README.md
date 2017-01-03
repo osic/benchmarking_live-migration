@@ -175,11 +175,13 @@ Benchmarker tool
 Thi section talks about a tool that integrates rally live migration with workload generator and perform tests.
 This tool will spin up VMs using heat and run the workloads on those VMs. After thet it will perform the Live Migration and start 2 kind of tests.
 
-1. Ping test
-   This test will continously send ping packets every 0.1 second and check for the lost packets during LM.
+1. Ping test: 
 
-2. TCP Stream break test
-   This test will make TCP connection to the VM and send packets every 0.1 second and check for the packet loss during LM.
+   This test will continously send ping packets every 0.5 second and check for the lost packets during LM.
+
+2. TCP Stream break test: 
+
+   This test will make TCP connection to the VM and send packets every 0.5 second and check for the packet loss during LM.
 
 Results of these tests will be stored under /opt directory.
 
@@ -223,7 +225,8 @@ Create a file credentials.json with you cloud information to start using rally:
         }
 
 
-Edit the file vars.rc and change it accordingly to your requirements
+Edit the file vars.rc and change it accordingly to your requirements:
+
         vi vars.rc
   
         #!/bin/bash
@@ -235,7 +238,7 @@ Edit the file vars.rc and change it accordingly to your requirements
         influx_ip=`cat /etc/openstack_deploy/openstack_user_config.yml | grep internal_lb_vip_address | awk '{print $2}' | tr -d '"'`
         export INFLUXDB_HOST=$influx_ip
         stack_name="lm_test$RANDOM"
-        # specify the copute host to evacuate and the destination host
+        # specify the compute host to evacuate and the destination host
         host_to_evacuate='compute04'
         destination_host='compute07'
         # define workload_vms as: ( number of cpu vms, number of ram vms number of diskIO vms, number of network vms )
@@ -249,7 +252,8 @@ Edit the file vars.rc and change it accordingly to your requirements
         lv_results_file="/opt/lvm_results_""$environment_type"".txt"
         downtime_info="downtime_info""$environment_type"".dat"
 
-Run the benchmarker script using the following command
+Run the benchmarker script using the following command:
+
         ./benchmarker.sh
 
 Lessons learned
