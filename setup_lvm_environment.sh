@@ -46,7 +46,7 @@ git clone https://github.com/osic/osic-reliability.git /opt/osic-reliability
 pip install influxdb
 export INFLUXDB_HOST=$influx_ip
 
-#git clone https://github.com/osic/ops-workload-framework.git /opt 
+if [ ! -d "/opt/ops-workload-framework" ]; then git clone https://github.com/osic/ops-workload-framework.git /opt/ops-workload-framework ; fi
 cd /opt/ops-workload-framework/heat_workload
 python setup.py install
 

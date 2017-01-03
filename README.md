@@ -169,6 +169,89 @@ Optionally, you can setup cronjobs to perform last task every number of hours to
 
 ### results and comments
 
+Benchmarker tool
+------------------------------------------
+
+Thi section talks about a tool that integrates rally live migration with workload generator and perform tests.
+This tool will spin up VMs using heat and run the workloads on those VMs. After thet it will perform the Live Migration and start 2 kind of tests.
+
+1. Ping test
+   This test will continously send ping packets every 0.1 second and check for the lost packets during LM.
+
+2. TCP Stream break test
+   This test will make TCP connection to the VM and send packets every 0.1 second and check for the packet loss during LM.
+
+Results of these tests will be stored under /opt directory.
+
+### Environment
+For the purpose of testing and comparaison, two production OpenStack Clouds are built with 22 nodes each using the OpenStack-ansible tool for deployment. First set of 22 nodes is using a shared storage backend based on CEPH for nova and cinder volumes. Second set is not using shared storage because volume storage live migration will be tested here. Cinder is using lvm as the Volume provider.
+
+Each server used here has the following specifications:
+
+    `Model:` HP DL380 Gen9
+    `Processor:` 2x 12-core Intel E5-2680 v3 @ 2.50GHz
+    `RAM:` 256GB RAM
+    `Disk:` 12x 600GB 15K SAS - RAID10
+    `NICS:` 2x Intel X710 Dual Port 10 GbE
+
+More than that, a monitoring stack based on the TICK stack with  influx is deployed on both clouds so that we can follow in real time, metrics effected by the live migration.
+
+
+### Usage
+Create a file credentials.json with you cloud information to start using rally:
+
+        {
+            "type":"ExistingCloud",
+            "auth_url":"http://172.22.12.44:5000/v3/",
+            "endpoint_type": "internal",
+            "admin": {
+                "username": "admin",
+                "password": "***",
+                "user_domain_name": "default",
+                "project_name":"admin",
+                "project_domain_name":"default"
+            },
+            "users": [
+                {
+                    "username": "admin",
+                    "password": "***",
+                    "project_name": "admin",
+                    "user_domain_name": "default",
+                    "project_domain_name": "default"
+                }
+            ]
+        }
+
+
+Edit the file vars.rc and change it accordingly to your requirements
+        vi vars.rc
+  
+        #!/bin/bash
+        
+        # change it to the network ID, VMs will be attached to
+        network="bc1b0934-3343-4fca-806e-3bad82205261"
+        key_name="lm_key"
+        image_name="Ubuntulm14"
+        influx_ip=`cat /etc/openstack_deploy/openstack_user_config.yml | grep internal_lb_vip_address | awk '{print $2}' | tr -d '"'`
+        export INFLUXDB_HOST=$influx_ip
+        stack_name="lm_test$RANDOM"
+        # specify the copute host to evacuate and the destination host
+        host_to_evacuate='compute04'
+        destination_host='compute07'
+        # define workload_vms as: ( number of cpu vms, number of ram vms number of diskIO vms, number of network vms )
+        workloads_vms=(1-spark 0-generic_cpu_final 0-generic_ram 0-generic_disk 0-generic_network)
+        # change it to true if VMs needs to be deployed before starting LM tests
+        DEPLOY_WORKLOADS=FALSE
+        # Number of times it will perform back and forth LM between compute hosts.
+        ITERATIONS=500
+        #change environment to heat_param_medium or heat_param_large to use medium and large flavor environment
+        environment_type[0]="heat_param_small"
+        lv_results_file="/opt/lvm_results_""$environment_type"".txt"
+        downtime_info="downtime_info""$environment_type"".dat"
+
+Run the benchmarker script using the following command
+        ./benchmarker.sh
+
 Lessons learned
 ----------------
 
