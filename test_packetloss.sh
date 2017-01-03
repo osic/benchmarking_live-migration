@@ -17,7 +17,7 @@
        previous=$current
     done <"out_$IP.txt"
     if $loss; then
-       echo "Packet Loss during LM for VM: $IP" + $(date) 
+       echo "Packet Loss during LM for VM: $IP" + $(date)  >> $fileName
     else
        echo "No Loss of TCP stream and data while LM for VM: $IP" +$(date) >> $fileName
     fi
