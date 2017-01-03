@@ -170,14 +170,14 @@ Optionally, you can setup cronjobs to perform last task every number of hours to
 ### results and comments
 
 Benchmarker tool
-------------------------------------------
+----------------
 
 Thi section talks about a tool that integrates rally live migration with workload generator and perform tests.
-This tool will spin up VMs using heat and run the workloads on those VMs. After thet it will perform the Live Migration and start 2 kind of tests.
+This tool will spin up VMs using heat and run the workloads on those VMs. After that, it will perform the Live Migration and start 2 kind of tests.
 
 1. Ping test: 
 
-   This test will continously send ping packets every 0.5 second and check for the lost packets during LM.
+   This test will continuously send ping packets every 0.5 second and check for the lost packets during LM.
 
 2. TCP Stream break test: 
 
@@ -229,6 +229,8 @@ Edit the file vars.rc and change it accordingly to your requirements:
 
         vi vars.rc
   
+Below is the snippet of vars.rc file:
+
         #!/bin/bash
         
         # change it to the network ID, VMs will be attached to
