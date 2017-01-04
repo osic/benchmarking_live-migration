@@ -25,6 +25,8 @@ for env in "${environment_type[@]}"; do
       wait_instances $host_to_evacuate
       echo "All instances are up and running";
       describe_environment "${workloads_vms[*]}" $lv_results_file ${environment_type[@]##*_}
+      echo "Waiting for 120 seconds before running the tests"
+      sleep 120
       # start the lvm tests
     fi
     DATE=`date +%Y-%m-%d`

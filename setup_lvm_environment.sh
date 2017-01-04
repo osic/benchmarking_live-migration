@@ -13,11 +13,13 @@ if [ `openstack flavor list | grep lm -c` -eq 0 ]; then
   nova flavor-create lm.large 9 16384 160 8 ;
 fi
 
-if [ `openstack keypair list | grep $key_name -c` -eq 1 ]; then
-  openstack keypair delete $key_name
+if [ `openstack keypair list | grep $key_name -c` -eq 0 ]; then
+ # openstack keypair delete $key_name
+  openstack keypair create $key_name > /root/$key_name.pem
+  chmod 400 /root/$key_name.pem
 fi
-openstack keypair create $key_name > /root/$key_name.pem
-chmod 400 /root/$key_name.pem
+#openstack keypair create $key_name > /root/$key_name.pem
+#chmod 400 /root/$key_name.pem
 
 # add a Ubuntu14.04 image
 if [ `glance image-list | grep $image_name -c ` -eq 0 ]; then
