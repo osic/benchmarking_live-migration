@@ -1,0 +1,3459 @@
+
+specs for server compute04
+CPU info: ---------->
+CPU(s):                48
+
+memory info: ---------->
+    264025744 K total memory
+     17754188 K used memory
+     16041988 K active memory
+       370352 K inactive memory
+    246271552 K free memory
+       467044 K buffer memory
+
+disk info: ---------->
+KNAME TYPE   SIZE MODEL
+sda   disk   3.3T LOGICAL VOLUME  
+sda1  part 487.5M 
+sda2  part   3.3T 
+dm-0  lvm    7.6G 
+dm-1  lvm   47.7G 
+dm-2  lvm   71.5G 
+dm-3  lvm    3.1T 
+
+network devices info: ---------->
+05:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+05:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+specs for server compute07
+CPU info: ---------->
+CPU(s):                48
+
+memory info: ---------->
+    264025744 K total memory
+      3628028 K used memory
+      2044520 K active memory
+       369500 K inactive memory
+    260397712 K free memory
+       468092 K buffer memory
+
+disk info: ---------->
+KNAME TYPE   SIZE MODEL
+sda   disk   3.3T LOGICAL VOLUME  
+sda1  part 487.5M 
+sda2  part   3.3T 
+dm-0  lvm    7.6G 
+dm-1  lvm   47.7G 
+dm-2  lvm   71.5G 
+dm-3  lvm    3.1T 
+
+network devices info: ---------->
+05:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+05:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:27:15 CST 2017
+finishing lvm at: Tue Jan  3 02:29:10 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 02:29:13 CST 2017
+finishing lvm at: Tue Jan  3 02:31:03 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:31:07 CST 2017
+finishing lvm at: Tue Jan  3 02:33:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 02:33:09 CST 2017
+finishing lvm at: Tue Jan  3 02:35:02 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:35:05 CST 2017
+finishing lvm at: Tue Jan  3 02:36:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 02:37:01 CST 2017
+finishing lvm at: Tue Jan  3 02:38:56 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:38:59 CST 2017
+finishing lvm at: Tue Jan  3 02:41:00 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 02:41:03 CST 2017
+finishing lvm at: Tue Jan  3 02:42:55 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:42:59 CST 2017
+finishing lvm at: Tue Jan  3 02:44:56 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 02:44:59 CST 2017
+finishing lvm at: Tue Jan  3 02:46:58 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:47:02 CST 2017
+finishing lvm at: Tue Jan  3 02:48:59 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 02:49:02 CST 2017
+finishing lvm at: Tue Jan  3 02:51:00 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:51:03 CST 2017
+finishing lvm at: Tue Jan  3 02:53:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 02:53:07 CST 2017
+finishing lvm at: Tue Jan  3 02:55:02 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:55:05 CST 2017
+finishing lvm at: Tue Jan  3 02:57:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 02:57:09 CST 2017
+finishing lvm at: Tue Jan  3 02:59:12 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 02:59:15 CST 2017
+finishing lvm at: Tue Jan  3 03:01:28 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:01:31 CST 2017
+finishing lvm at: Tue Jan  3 03:03:33 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:03:35 CST 2017
+finishing lvm at: Tue Jan  3 03:05:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:05:48 CST 2017
+finishing lvm at: Tue Jan  3 03:07:55 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:07:57 CST 2017
+finishing lvm at: Tue Jan  3 03:10:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:10:11 CST 2017
+finishing lvm at: Tue Jan  3 03:12:11 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:12:14 CST 2017
+finishing lvm at: Tue Jan  3 03:14:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:14:35 CST 2017
+finishing lvm at: Tue Jan  3 03:16:42 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:16:44 CST 2017
+finishing lvm at: Tue Jan  3 03:18:57 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:19:01 CST 2017
+finishing lvm at: Tue Jan  3 03:21:06 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:21:09 CST 2017
+finishing lvm at: Tue Jan  3 03:23:18 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:23:21 CST 2017
+finishing lvm at: Tue Jan  3 03:25:30 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:25:33 CST 2017
+finishing lvm at: Tue Jan  3 03:27:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:27:47 CST 2017
+finishing lvm at: Tue Jan  3 03:29:56 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:29:58 CST 2017
+finishing lvm at: Tue Jan  3 03:32:12 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:32:15 CST 2017
+finishing lvm at: Tue Jan  3 03:34:27 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:34:29 CST 2017
+finishing lvm at: Tue Jan  3 03:36:57 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:36:59 CST 2017
+finishing lvm at: Tue Jan  3 03:39:12 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:39:15 CST 2017
+finishing lvm at: Tue Jan  3 03:41:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:41:33 CST 2017
+finishing lvm at: Tue Jan  3 03:43:50 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:43:53 CST 2017
+finishing lvm at: Tue Jan  3 03:46:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:46:11 CST 2017
+finishing lvm at: Tue Jan  3 03:48:23 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:48:25 CST 2017
+finishing lvm at: Tue Jan  3 03:50:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:50:46 CST 2017
+finishing lvm at: Tue Jan  3 03:52:59 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:53:02 CST 2017
+finishing lvm at: Tue Jan  3 03:55:10 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:55:13 CST 2017
+finishing lvm at: Tue Jan  3 03:57:16 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 03:57:19 CST 2017
+finishing lvm at: Tue Jan  3 03:59:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 03:59:31 CST 2017
+finishing lvm at: Tue Jan  3 04:01:38 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:01:42 CST 2017
+finishing lvm at: Tue Jan  3 04:03:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:03:56 CST 2017
+finishing lvm at: Tue Jan  3 04:05:58 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:06:00 CST 2017
+finishing lvm at: Tue Jan  3 04:08:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:08:11 CST 2017
+finishing lvm at: Tue Jan  3 04:10:16 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:10:19 CST 2017
+finishing lvm at: Tue Jan  3 04:12:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:12:35 CST 2017
+finishing lvm at: Tue Jan  3 04:14:41 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:14:43 CST 2017
+finishing lvm at: Tue Jan  3 04:16:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:16:55 CST 2017
+finishing lvm at: Tue Jan  3 04:18:59 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:19:02 CST 2017
+finishing lvm at: Tue Jan  3 04:21:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:21:17 CST 2017
+finishing lvm at: Tue Jan  3 04:23:22 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:23:25 CST 2017
+finishing lvm at: Tue Jan  3 04:25:37 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:25:40 CST 2017
+finishing lvm at: Tue Jan  3 04:27:45 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:27:48 CST 2017
+finishing lvm at: Tue Jan  3 04:30:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:30:08 CST 2017
+finishing lvm at: Tue Jan  3 04:32:22 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:32:25 CST 2017
+finishing lvm at: Tue Jan  3 04:34:36 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:34:40 CST 2017
+finishing lvm at: Tue Jan  3 04:36:50 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:36:52 CST 2017
+finishing lvm at: Tue Jan  3 04:39:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:39:06 CST 2017
+finishing lvm at: Tue Jan  3 04:41:12 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:41:15 CST 2017
+finishing lvm at: Tue Jan  3 04:43:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:43:32 CST 2017
+finishing lvm at: Tue Jan  3 04:45:40 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:45:42 CST 2017
+finishing lvm at: Tue Jan  3 04:47:56 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:47:59 CST 2017
+finishing lvm at: Tue Jan  3 04:50:11 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:50:13 CST 2017
+finishing lvm at: Tue Jan  3 04:52:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:52:28 CST 2017
+finishing lvm at: Tue Jan  3 04:54:36 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:54:39 CST 2017
+finishing lvm at: Tue Jan  3 04:56:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 04:56:49 CST 2017
+finishing lvm at: Tue Jan  3 04:59:11 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 04:59:13 CST 2017
+finishing lvm at: Tue Jan  3 05:01:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:01:28 CST 2017
+finishing lvm at: Tue Jan  3 05:03:33 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:03:36 CST 2017
+finishing lvm at: Tue Jan  3 05:05:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:05:45 CST 2017
+finishing lvm at: Tue Jan  3 05:07:57 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:08:00 CST 2017
+finishing lvm at: Tue Jan  3 05:10:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:10:17 CST 2017
+finishing lvm at: Tue Jan  3 05:11:53 CST 2017
+{u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:11:55 CST 2017
+finishing lvm at: Tue Jan  3 05:13:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:13:38 CST 2017
+finishing lvm at: Tue Jan  3 05:15:39 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:15:43 CST 2017
+finishing lvm at: Tue Jan  3 05:17:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:17:51 CST 2017
+finishing lvm at: Tue Jan  3 05:19:57 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:20:00 CST 2017
+finishing lvm at: Tue Jan  3 05:22:12 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:22:15 CST 2017
+finishing lvm at: Tue Jan  3 05:24:17 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:24:20 CST 2017
+finishing lvm at: Tue Jan  3 05:26:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:26:33 CST 2017
+finishing lvm at: Tue Jan  3 05:28:40 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:28:43 CST 2017
+finishing lvm at: Tue Jan  3 05:30:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:30:52 CST 2017
+finishing lvm at: Tue Jan  3 05:32:58 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:33:01 CST 2017
+finishing lvm at: Tue Jan  3 05:35:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:35:10 CST 2017
+finishing lvm at: Tue Jan  3 05:37:16 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:37:18 CST 2017
+finishing lvm at: Tue Jan  3 05:39:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:39:27 CST 2017
+finishing lvm at: Tue Jan  3 05:41:29 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:41:33 CST 2017
+finishing lvm at: Tue Jan  3 05:43:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:43:47 CST 2017
+finishing lvm at: Tue Jan  3 05:45:53 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:45:56 CST 2017
+finishing lvm at: Tue Jan  3 05:48:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:48:07 CST 2017
+finishing lvm at: Tue Jan  3 05:50:15 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:50:18 CST 2017
+finishing lvm at: Tue Jan  3 05:52:28 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:52:31 CST 2017
+finishing lvm at: Tue Jan  3 05:54:39 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:54:42 CST 2017
+finishing lvm at: Tue Jan  3 05:56:52 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 05:56:56 CST 2017
+finishing lvm at: Tue Jan  3 05:59:02 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 05:59:05 CST 2017
+finishing lvm at: Tue Jan  3 06:01:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:01:43 CST 2017
+finishing lvm at: Tue Jan  3 06:03:51 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:03:54 CST 2017
+finishing lvm at: Tue Jan  3 06:06:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:06:11 CST 2017
+finishing lvm at: Tue Jan  3 06:08:16 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:08:19 CST 2017
+finishing lvm at: Tue Jan  3 06:10:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:10:29 CST 2017
+finishing lvm at: Tue Jan  3 06:12:31 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:12:34 CST 2017
+finishing lvm at: Tue Jan  3 06:14:39 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:14:42 CST 2017
+finishing lvm at: Tue Jan  3 06:16:42 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:16:45 CST 2017
+finishing lvm at: Tue Jan  3 06:18:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:18:51 CST 2017
+finishing lvm at: Tue Jan  3 06:20:57 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:21:01 CST 2017
+finishing lvm at: Tue Jan  3 06:23:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:23:09 CST 2017
+finishing lvm at: Tue Jan  3 06:25:14 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:25:17 CST 2017
+finishing lvm at: Tue Jan  3 06:27:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:27:25 CST 2017
+finishing lvm at: Tue Jan  3 06:29:29 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:29:32 CST 2017
+finishing lvm at: Tue Jan  3 06:31:38 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:31:42 CST 2017
+finishing lvm at: Tue Jan  3 06:33:48 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:33:51 CST 2017
+finishing lvm at: Tue Jan  3 06:36:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:36:04 CST 2017
+finishing lvm at: Tue Jan  3 06:38:08 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:38:11 CST 2017
+finishing lvm at: Tue Jan  3 06:40:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:40:24 CST 2017
+finishing lvm at: Tue Jan  3 06:42:28 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:42:31 CST 2017
+finishing lvm at: Tue Jan  3 06:44:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:44:38 CST 2017
+finishing lvm at: Tue Jan  3 06:46:44 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:46:47 CST 2017
+finishing lvm at: Tue Jan  3 06:48:55 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:48:57 CST 2017
+finishing lvm at: Tue Jan  3 06:51:08 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:51:11 CST 2017
+finishing lvm at: Tue Jan  3 06:53:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:53:21 CST 2017
+finishing lvm at: Tue Jan  3 06:55:27 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:55:31 CST 2017
+finishing lvm at: Tue Jan  3 06:57:39 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 06:57:42 CST 2017
+finishing lvm at: Tue Jan  3 06:59:48 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 06:59:51 CST 2017
+finishing lvm at: Tue Jan  3 07:02:00 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:02:02 CST 2017
+finishing lvm at: Tue Jan  3 07:04:07 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:04:09 CST 2017
+finishing lvm at: Tue Jan  3 07:06:18 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:06:20 CST 2017
+finishing lvm at: Tue Jan  3 07:08:32 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:08:35 CST 2017
+finishing lvm at: Tue Jan  3 07:10:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:10:49 CST 2017
+finishing lvm at: Tue Jan  3 07:12:56 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:12:59 CST 2017
+finishing lvm at: Tue Jan  3 07:15:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:15:11 CST 2017
+finishing lvm at: Tue Jan  3 07:17:17 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:17:20 CST 2017
+finishing lvm at: Tue Jan  3 07:19:33 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:19:36 CST 2017
+finishing lvm at: Tue Jan  3 07:23:51 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:23:53 CST 2017
+finishing lvm at: Tue Jan  3 07:26:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:26:20 CST 2017
+finishing lvm at: Tue Jan  3 07:28:32 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:28:35 CST 2017
+finishing lvm at: Tue Jan  3 07:30:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:30:47 CST 2017
+finishing lvm at: Tue Jan  3 07:32:52 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:32:55 CST 2017
+finishing lvm at: Tue Jan  3 07:35:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:35:09 CST 2017
+finishing lvm at: Tue Jan  3 07:37:18 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:37:22 CST 2017
+finishing lvm at: Tue Jan  3 07:39:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:39:38 CST 2017
+finishing lvm at: Tue Jan  3 07:41:47 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:41:50 CST 2017
+finishing lvm at: Tue Jan  3 07:43:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:44:01 CST 2017
+finishing lvm at: Tue Jan  3 07:46:14 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:46:16 CST 2017
+finishing lvm at: Tue Jan  3 07:48:31 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:48:35 CST 2017
+finishing lvm at: Tue Jan  3 07:50:46 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:50:49 CST 2017
+finishing lvm at: Tue Jan  3 07:53:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:53:08 CST 2017
+finishing lvm at: Tue Jan  3 07:55:17 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:55:20 CST 2017
+finishing lvm at: Tue Jan  3 07:57:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 07:57:38 CST 2017
+finishing lvm at: Tue Jan  3 07:59:49 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 07:59:52 CST 2017
+finishing lvm at: Tue Jan  3 08:02:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:02:12 CST 2017
+finishing lvm at: Tue Jan  3 08:04:18 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:04:21 CST 2017
+finishing lvm at: Tue Jan  3 08:06:36 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:06:38 CST 2017
+finishing lvm at: Tue Jan  3 08:11:03 CST 2017
+{u'172.22.108.250': u'spark-4-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:11:07 CST 2017
+finishing lvm at: Tue Jan  3 08:12:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:13:01 CST 2017
+finishing lvm at: Tue Jan  3 08:17:27 CST 2017
+{u'172.22.108.250': u'spark-4-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:17:30 CST 2017
+finishing lvm at: Tue Jan  3 08:19:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:19:28 CST 2017
+finishing lvm at: Tue Jan  3 08:21:57 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:22:00 CST 2017
+finishing lvm at: Tue Jan  3 08:24:17 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:24:21 CST 2017
+finishing lvm at: Tue Jan  3 08:27:06 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:27:09 CST 2017
+finishing lvm at: Tue Jan  3 08:31:39 CST 2017
+{u'172.22.108.250': u'spark-4-egqfwej'} failed to migrate from compute04
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:31:42 CST 2017
+finishing lvm at: Tue Jan  3 08:33:29 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:33:33 CST 2017
+finishing lvm at: Tue Jan  3 08:35:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:35:49 CST 2017
+finishing lvm at: Tue Jan  3 08:38:09 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:38:12 CST 2017
+finishing lvm at: Tue Jan  3 08:40:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:40:27 CST 2017
+finishing lvm at: Tue Jan  3 08:42:47 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:42:50 CST 2017
+finishing lvm at: Tue Jan  3 08:45:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:45:10 CST 2017
+finishing lvm at: Tue Jan  3 08:47:28 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:47:31 CST 2017
+finishing lvm at: Tue Jan  3 08:49:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:49:51 CST 2017
+finishing lvm at: Tue Jan  3 08:52:14 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:52:17 CST 2017
+finishing lvm at: Tue Jan  3 08:54:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:54:36 CST 2017
+finishing lvm at: Tue Jan  3 08:56:53 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 08:56:56 CST 2017
+finishing lvm at: Tue Jan  3 08:59:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 08:59:16 CST 2017
+finishing lvm at: Tue Jan  3 09:01:30 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:01:33 CST 2017
+finishing lvm at: Tue Jan  3 09:03:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:03:49 CST 2017
+finishing lvm at: Tue Jan  3 09:06:04 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:06:07 CST 2017
+finishing lvm at: Tue Jan  3 09:08:26 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:08:29 CST 2017
+finishing lvm at: Tue Jan  3 09:10:44 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:10:47 CST 2017
+finishing lvm at: Tue Jan  3 09:13:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:13:04 CST 2017
+finishing lvm at: Tue Jan  3 09:15:13 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:15:16 CST 2017
+finishing lvm at: Tue Jan  3 09:17:31 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:17:34 CST 2017
+finishing lvm at: Tue Jan  3 09:19:47 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:19:50 CST 2017
+finishing lvm at: Tue Jan  3 09:22:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:22:09 CST 2017
+finishing lvm at: Tue Jan  3 09:24:26 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:24:30 CST 2017
+finishing lvm at: Tue Jan  3 09:26:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:26:45 CST 2017
+finishing lvm at: Tue Jan  3 09:28:57 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:28:59 CST 2017
+finishing lvm at: Tue Jan  3 09:31:22 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:31:25 CST 2017
+finishing lvm at: Tue Jan  3 09:33:22 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:33:26 CST 2017
+finishing lvm at: Tue Jan  3 09:35:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:35:47 CST 2017
+finishing lvm at: Tue Jan  3 09:38:00 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:38:03 CST 2017
+finishing lvm at: Tue Jan  3 09:40:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:40:25 CST 2017
+finishing lvm at: Tue Jan  3 09:42:48 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:42:51 CST 2017
+finishing lvm at: Tue Jan  3 09:45:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:45:09 CST 2017
+finishing lvm at: Tue Jan  3 09:47:16 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:47:19 CST 2017
+finishing lvm at: Tue Jan  3 09:49:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:49:37 CST 2017
+finishing lvm at: Tue Jan  3 09:51:47 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:51:50 CST 2017
+finishing lvm at: Tue Jan  3 09:54:11 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:54:14 CST 2017
+finishing lvm at: Tue Jan  3 09:56:27 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 09:56:30 CST 2017
+finishing lvm at: Tue Jan  3 09:58:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 09:58:50 CST 2017
+finishing lvm at: Tue Jan  3 10:00:59 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:01:02 CST 2017
+finishing lvm at: Tue Jan  3 10:03:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:03:16 CST 2017
+finishing lvm at: Tue Jan  3 10:05:40 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:05:43 CST 2017
+finishing lvm at: Tue Jan  3 10:08:00 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:08:04 CST 2017
+finishing lvm at: Tue Jan  3 10:10:13 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:10:16 CST 2017
+finishing lvm at: Tue Jan  3 10:12:31 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:12:33 CST 2017
+finishing lvm at: Tue Jan  3 10:14:44 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:14:47 CST 2017
+finishing lvm at: Tue Jan  3 10:17:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:17:11 CST 2017
+finishing lvm at: Tue Jan  3 10:19:22 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:19:25 CST 2017
+finishing lvm at: Tue Jan  3 10:21:38 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:21:41 CST 2017
+finishing lvm at: Tue Jan  3 10:23:50 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:23:53 CST 2017
+finishing lvm at: Tue Jan  3 10:26:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:26:06 CST 2017
+finishing lvm at: Tue Jan  3 10:28:14 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:28:17 CST 2017
+finishing lvm at: Tue Jan  3 10:30:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:30:35 CST 2017
+finishing lvm at: Tue Jan  3 10:32:52 CST 2017
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:32:55 CST 2017
+finishing lvm at: Tue Jan  3 10:35:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:35:09 CST 2017
+finishing lvm at: Tue Jan  3 10:44:17 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:44:20 CST 2017
+finishing lvm at: Tue Jan  3 10:45:37 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:45:40 CST 2017
+finishing lvm at: Tue Jan  3 10:46:57 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:47:00 CST 2017
+finishing lvm at: Tue Jan  3 10:48:11 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:48:14 CST 2017
+finishing lvm at: Tue Jan  3 10:49:27 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:49:30 CST 2017
+finishing lvm at: Tue Jan  3 10:50:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:50:48 CST 2017
+finishing lvm at: Tue Jan  3 10:52:05 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:52:08 CST 2017
+finishing lvm at: Tue Jan  3 10:53:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:53:30 CST 2017
+finishing lvm at: Tue Jan  3 10:54:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:54:48 CST 2017
+finishing lvm at: Tue Jan  3 10:56:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:56:05 CST 2017
+finishing lvm at: Tue Jan  3 10:57:19 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:57:22 CST 2017
+finishing lvm at: Tue Jan  3 10:58:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 10:58:38 CST 2017
+finishing lvm at: Tue Jan  3 10:59:53 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 10:59:56 CST 2017
+finishing lvm at: Tue Jan  3 11:01:15 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:01:18 CST 2017
+finishing lvm at: Tue Jan  3 11:02:33 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:02:37 CST 2017
+finishing lvm at: Tue Jan  3 11:03:54 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:03:57 CST 2017
+finishing lvm at: Tue Jan  3 11:05:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:05:17 CST 2017
+finishing lvm at: Tue Jan  3 11:06:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:06:33 CST 2017
+finishing lvm at: Tue Jan  3 11:07:49 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:07:52 CST 2017
+finishing lvm at: Tue Jan  3 11:09:11 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:09:14 CST 2017
+finishing lvm at: Tue Jan  3 11:10:29 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:10:32 CST 2017
+finishing lvm at: Tue Jan  3 11:11:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:11:50 CST 2017
+finishing lvm at: Tue Jan  3 11:13:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:13:09 CST 2017
+finishing lvm at: Tue Jan  3 11:14:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:14:28 CST 2017
+finishing lvm at: Tue Jan  3 11:15:41 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:15:44 CST 2017
+finishing lvm at: Tue Jan  3 11:16:57 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:17:00 CST 2017
+finishing lvm at: Tue Jan  3 11:18:13 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:18:16 CST 2017
+finishing lvm at: Tue Jan  3 11:19:36 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:19:39 CST 2017
+finishing lvm at: Tue Jan  3 11:20:54 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:20:57 CST 2017
+finishing lvm at: Tue Jan  3 11:22:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:22:24 CST 2017
+finishing lvm at: Tue Jan  3 11:23:39 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:23:42 CST 2017
+finishing lvm at: Tue Jan  3 11:25:00 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:25:03 CST 2017
+finishing lvm at: Tue Jan  3 11:26:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:26:19 CST 2017
+finishing lvm at: Tue Jan  3 11:27:39 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:27:42 CST 2017
+finishing lvm at: Tue Jan  3 11:28:58 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:29:01 CST 2017
+finishing lvm at: Tue Jan  3 11:30:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:30:19 CST 2017
+finishing lvm at: Tue Jan  3 11:31:37 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:31:40 CST 2017
+finishing lvm at: Tue Jan  3 11:32:59 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:33:02 CST 2017
+finishing lvm at: Tue Jan  3 11:34:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:34:19 CST 2017
+finishing lvm at: Tue Jan  3 11:35:34 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:35:38 CST 2017
+finishing lvm at: Tue Jan  3 11:36:55 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:36:58 CST 2017
+finishing lvm at: Tue Jan  3 11:38:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:38:19 CST 2017
+finishing lvm at: Tue Jan  3 11:39:32 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:39:35 CST 2017
+finishing lvm at: Tue Jan  3 11:40:54 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:40:58 CST 2017
+finishing lvm at: Tue Jan  3 11:42:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:42:17 CST 2017
+finishing lvm at: Tue Jan  3 11:43:34 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:43:37 CST 2017
+finishing lvm at: Tue Jan  3 11:44:55 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:44:58 CST 2017
+finishing lvm at: Tue Jan  3 11:46:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:46:19 CST 2017
+finishing lvm at: Tue Jan  3 11:47:34 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:47:37 CST 2017
+finishing lvm at: Tue Jan  3 11:48:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:48:55 CST 2017
+finishing lvm at: Tue Jan  3 11:50:17 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:50:20 CST 2017
+finishing lvm at: Tue Jan  3 11:51:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:51:44 CST 2017
+finishing lvm at: Tue Jan  3 11:52:56 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:52:59 CST 2017
+finishing lvm at: Tue Jan  3 11:54:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:54:22 CST 2017
+finishing lvm at: Tue Jan  3 11:55:38 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:55:40 CST 2017
+finishing lvm at: Tue Jan  3 11:56:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:56:56 CST 2017
+finishing lvm at: Tue Jan  3 11:58:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 11:58:18 CST 2017
+finishing lvm at: Tue Jan  3 11:59:36 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 11:59:39 CST 2017
+finishing lvm at: Tue Jan  3 12:01:01 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:01:04 CST 2017
+finishing lvm at: Tue Jan  3 12:02:24 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:02:27 CST 2017
+finishing lvm at: Tue Jan  3 12:03:43 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:03:46 CST 2017
+finishing lvm at: Tue Jan  3 12:05:02 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:05:05 CST 2017
+finishing lvm at: Tue Jan  3 12:06:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:06:28 CST 2017
+finishing lvm at: Tue Jan  3 12:07:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:07:48 CST 2017
+finishing lvm at: Tue Jan  3 12:09:02 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:09:06 CST 2017
+finishing lvm at: Tue Jan  3 12:10:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:10:26 CST 2017
+finishing lvm at: Tue Jan  3 12:11:44 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:11:48 CST 2017
+finishing lvm at: Tue Jan  3 12:13:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:13:09 CST 2017
+finishing lvm at: Tue Jan  3 12:14:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:14:27 CST 2017
+finishing lvm at: Tue Jan  3 12:15:50 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:15:53 CST 2017
+finishing lvm at: Tue Jan  3 12:17:07 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:17:10 CST 2017
+finishing lvm at: Tue Jan  3 12:18:24 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:18:27 CST 2017
+finishing lvm at: Tue Jan  3 12:19:44 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:19:48 CST 2017
+finishing lvm at: Tue Jan  3 12:21:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:21:06 CST 2017
+finishing lvm at: Tue Jan  3 12:22:22 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:22:25 CST 2017
+finishing lvm at: Tue Jan  3 12:23:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:23:48 CST 2017
+finishing lvm at: Tue Jan  3 12:25:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:25:09 CST 2017
+finishing lvm at: Tue Jan  3 12:26:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:26:29 CST 2017
+finishing lvm at: Tue Jan  3 12:27:50 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:27:53 CST 2017
+finishing lvm at: Tue Jan  3 12:29:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:29:12 CST 2017
+finishing lvm at: Tue Jan  3 12:30:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:30:29 CST 2017
+finishing lvm at: Tue Jan  3 12:31:51 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:31:53 CST 2017
+finishing lvm at: Tue Jan  3 12:33:09 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:33:12 CST 2017
+finishing lvm at: Tue Jan  3 12:34:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:34:34 CST 2017
+finishing lvm at: Tue Jan  3 12:35:54 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:35:57 CST 2017
+finishing lvm at: Tue Jan  3 12:37:15 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:37:18 CST 2017
+finishing lvm at: Tue Jan  3 12:38:34 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:38:38 CST 2017
+finishing lvm at: Tue Jan  3 12:40:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:40:07 CST 2017
+finishing lvm at: Tue Jan  3 12:41:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:41:26 CST 2017
+finishing lvm at: Tue Jan  3 12:42:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:42:45 CST 2017
+finishing lvm at: Tue Jan  3 12:44:09 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:44:12 CST 2017
+finishing lvm at: Tue Jan  3 12:45:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:45:33 CST 2017
+finishing lvm at: Tue Jan  3 12:46:49 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:46:52 CST 2017
+finishing lvm at: Tue Jan  3 12:48:10 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:48:14 CST 2017
+finishing lvm at: Tue Jan  3 12:49:28 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:49:32 CST 2017
+finishing lvm at: Tue Jan  3 12:50:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:50:51 CST 2017
+finishing lvm at: Tue Jan  3 12:52:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:52:13 CST 2017
+finishing lvm at: Tue Jan  3 12:53:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:53:38 CST 2017
+finishing lvm at: Tue Jan  3 12:54:54 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:54:57 CST 2017
+finishing lvm at: Tue Jan  3 12:56:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:56:22 CST 2017
+finishing lvm at: Tue Jan  3 12:57:37 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 12:57:40 CST 2017
+finishing lvm at: Tue Jan  3 12:59:00 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 12:59:03 CST 2017
+finishing lvm at: Tue Jan  3 13:00:18 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:00:21 CST 2017
+finishing lvm at: Tue Jan  3 13:01:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:01:46 CST 2017
+finishing lvm at: Tue Jan  3 13:03:02 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:03:05 CST 2017
+finishing lvm at: Tue Jan  3 13:04:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:04:26 CST 2017
+finishing lvm at: Tue Jan  3 13:05:43 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:05:46 CST 2017
+finishing lvm at: Tue Jan  3 13:07:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:07:07 CST 2017
+finishing lvm at: Tue Jan  3 13:08:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:08:26 CST 2017
+finishing lvm at: Tue Jan  3 13:09:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:09:50 CST 2017
+finishing lvm at: Tue Jan  3 13:11:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:11:08 CST 2017
+finishing lvm at: Tue Jan  3 13:12:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:12:30 CST 2017
+finishing lvm at: Tue Jan  3 13:13:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:13:51 CST 2017
+finishing lvm at: Tue Jan  3 13:15:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:15:12 CST 2017
+finishing lvm at: Tue Jan  3 13:16:26 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:16:29 CST 2017
+finishing lvm at: Tue Jan  3 13:17:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:17:57 CST 2017
+finishing lvm at: Tue Jan  3 13:19:11 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:19:14 CST 2017
+finishing lvm at: Tue Jan  3 13:20:34 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:20:38 CST 2017
+finishing lvm at: Tue Jan  3 13:21:58 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:22:00 CST 2017
+finishing lvm at: Tue Jan  3 13:23:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:23:22 CST 2017
+finishing lvm at: Tue Jan  3 13:24:38 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:24:41 CST 2017
+finishing lvm at: Tue Jan  3 13:26:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:26:04 CST 2017
+finishing lvm at: Tue Jan  3 13:27:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:27:23 CST 2017
+finishing lvm at: Tue Jan  3 13:28:39 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:28:42 CST 2017
+finishing lvm at: Tue Jan  3 13:30:01 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:30:04 CST 2017
+finishing lvm at: Tue Jan  3 13:31:22 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:31:25 CST 2017
+finishing lvm at: Tue Jan  3 13:32:41 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:32:44 CST 2017
+finishing lvm at: Tue Jan  3 13:34:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:34:06 CST 2017
+finishing lvm at: Tue Jan  3 13:35:24 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:35:27 CST 2017
+finishing lvm at: Tue Jan  3 13:36:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:36:49 CST 2017
+finishing lvm at: Tue Jan  3 13:38:05 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:38:08 CST 2017
+finishing lvm at: Tue Jan  3 13:39:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:39:28 CST 2017
+finishing lvm at: Tue Jan  3 13:40:49 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:40:51 CST 2017
+finishing lvm at: Tue Jan  3 13:42:10 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:42:12 CST 2017
+finishing lvm at: Tue Jan  3 13:43:31 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:43:34 CST 2017
+finishing lvm at: Tue Jan  3 13:44:55 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:44:58 CST 2017
+finishing lvm at: Tue Jan  3 13:46:19 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:46:22 CST 2017
+finishing lvm at: Tue Jan  3 13:47:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:47:43 CST 2017
+finishing lvm at: Tue Jan  3 13:49:00 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:49:03 CST 2017
+finishing lvm at: Tue Jan  3 13:50:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:50:22 CST 2017
+finishing lvm at: Tue Jan  3 13:51:39 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:51:41 CST 2017
+finishing lvm at: Tue Jan  3 13:52:59 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:53:02 CST 2017
+finishing lvm at: Tue Jan  3 13:54:19 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:54:21 CST 2017
+finishing lvm at: Tue Jan  3 13:55:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:55:45 CST 2017
+finishing lvm at: Tue Jan  3 13:57:01 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:57:04 CST 2017
+finishing lvm at: Tue Jan  3 13:58:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 13:58:26 CST 2017
+finishing lvm at: Tue Jan  3 13:59:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 13:59:45 CST 2017
+finishing lvm at: Tue Jan  3 14:01:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:01:08 CST 2017
+finishing lvm at: Tue Jan  3 14:02:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:02:26 CST 2017
+finishing lvm at: Tue Jan  3 14:03:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:03:47 CST 2017
+finishing lvm at: Tue Jan  3 14:05:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:05:09 CST 2017
+finishing lvm at: Tue Jan  3 14:06:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:06:28 CST 2017
+finishing lvm at: Tue Jan  3 14:07:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:07:45 CST 2017
+finishing lvm at: Tue Jan  3 14:09:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:09:04 CST 2017
+finishing lvm at: Tue Jan  3 14:10:22 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:10:25 CST 2017
+finishing lvm at: Tue Jan  3 14:11:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:11:47 CST 2017
+finishing lvm at: Tue Jan  3 14:13:04 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:13:06 CST 2017
+finishing lvm at: Tue Jan  3 14:14:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:14:31 CST 2017
+finishing lvm at: Tue Jan  3 14:15:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:15:51 CST 2017
+finishing lvm at: Tue Jan  3 14:17:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:17:08 CST 2017
+finishing lvm at: Tue Jan  3 14:18:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:18:26 CST 2017
+finishing lvm at: Tue Jan  3 14:19:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:19:49 CST 2017
+finishing lvm at: Tue Jan  3 14:21:07 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:21:10 CST 2017
+finishing lvm at: Tue Jan  3 14:22:26 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:22:29 CST 2017
+finishing lvm at: Tue Jan  3 14:23:46 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:23:48 CST 2017
+finishing lvm at: Tue Jan  3 14:25:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:25:11 CST 2017
+finishing lvm at: Tue Jan  3 14:26:28 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:26:30 CST 2017
+finishing lvm at: Tue Jan  3 14:27:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:27:49 CST 2017
+finishing lvm at: Tue Jan  3 14:29:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:29:11 CST 2017
+finishing lvm at: Tue Jan  3 14:30:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:30:32 CST 2017
+finishing lvm at: Tue Jan  3 14:31:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:31:51 CST 2017
+finishing lvm at: Tue Jan  3 14:33:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:33:12 CST 2017
+finishing lvm at: Tue Jan  3 14:34:35 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:34:37 CST 2017
+finishing lvm at: Tue Jan  3 14:35:54 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:35:56 CST 2017
+finishing lvm at: Tue Jan  3 14:37:15 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:37:18 CST 2017
+finishing lvm at: Tue Jan  3 14:38:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:38:37 CST 2017
+finishing lvm at: Tue Jan  3 14:39:53 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:39:56 CST 2017
+finishing lvm at: Tue Jan  3 14:41:15 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:41:17 CST 2017
+finishing lvm at: Tue Jan  3 14:42:30 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:42:33 CST 2017
+finishing lvm at: Tue Jan  3 14:43:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:43:52 CST 2017
+finishing lvm at: Tue Jan  3 14:45:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:45:11 CST 2017
+finishing lvm at: Tue Jan  3 14:46:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:46:30 CST 2017
+finishing lvm at: Tue Jan  3 14:47:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:47:45 CST 2017
+finishing lvm at: Tue Jan  3 14:49:02 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:49:05 CST 2017
+finishing lvm at: Tue Jan  3 14:50:18 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:50:20 CST 2017
+finishing lvm at: Tue Jan  3 14:51:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:51:46 CST 2017
+finishing lvm at: Tue Jan  3 14:53:00 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:53:04 CST 2017
+finishing lvm at: Tue Jan  3 14:54:20 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:54:23 CST 2017
+finishing lvm at: Tue Jan  3 14:55:41 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:55:44 CST 2017
+finishing lvm at: Tue Jan  3 14:56:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:57:01 CST 2017
+finishing lvm at: Tue Jan  3 14:58:17 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 14:58:20 CST 2017
+finishing lvm at: Tue Jan  3 14:59:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 14:59:43 CST 2017
+finishing lvm at: Tue Jan  3 15:00:58 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:01:00 CST 2017
+finishing lvm at: Tue Jan  3 15:02:17 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:02:20 CST 2017
+finishing lvm at: Tue Jan  3 15:03:40 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:03:43 CST 2017
+finishing lvm at: Tue Jan  3 15:05:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:05:04 CST 2017
+finishing lvm at: Tue Jan  3 15:06:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:06:23 CST 2017
+finishing lvm at: Tue Jan  3 15:07:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:07:44 CST 2017
+finishing lvm at: Tue Jan  3 15:08:59 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:09:02 CST 2017
+finishing lvm at: Tue Jan  3 15:10:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:10:21 CST 2017
+finishing lvm at: Tue Jan  3 15:11:36 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:11:38 CST 2017
+finishing lvm at: Tue Jan  3 15:12:56 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:12:59 CST 2017
+finishing lvm at: Tue Jan  3 15:14:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:14:19 CST 2017
+finishing lvm at: Tue Jan  3 15:15:33 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:15:36 CST 2017
+finishing lvm at: Tue Jan  3 15:16:59 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:17:01 CST 2017
+finishing lvm at: Tue Jan  3 15:18:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:18:19 CST 2017
+finishing lvm at: Tue Jan  3 15:19:33 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:19:36 CST 2017
+finishing lvm at: Tue Jan  3 15:20:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:20:55 CST 2017
+finishing lvm at: Tue Jan  3 15:22:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:22:16 CST 2017
+finishing lvm at: Tue Jan  3 15:23:33 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:23:36 CST 2017
+finishing lvm at: Tue Jan  3 15:24:55 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:24:57 CST 2017
+finishing lvm at: Tue Jan  3 15:26:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:26:16 CST 2017
+finishing lvm at: Tue Jan  3 15:27:29 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:27:31 CST 2017
+finishing lvm at: Tue Jan  3 15:28:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:28:49 CST 2017
+finishing lvm at: Tue Jan  3 15:30:05 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:30:08 CST 2017
+finishing lvm at: Tue Jan  3 15:31:24 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:31:27 CST 2017
+finishing lvm at: Tue Jan  3 15:32:40 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:32:42 CST 2017
+finishing lvm at: Tue Jan  3 15:33:59 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:34:01 CST 2017
+finishing lvm at: Tue Jan  3 15:35:18 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:35:20 CST 2017
+finishing lvm at: Tue Jan  3 15:36:37 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:36:40 CST 2017
+finishing lvm at: Tue Jan  3 15:37:57 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:38:00 CST 2017
+finishing lvm at: Tue Jan  3 15:39:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:39:23 CST 2017
+finishing lvm at: Tue Jan  3 15:40:34 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:40:37 CST 2017
+finishing lvm at: Tue Jan  3 15:41:51 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:41:54 CST 2017
+finishing lvm at: Tue Jan  3 15:43:09 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:43:11 CST 2017
+finishing lvm at: Tue Jan  3 15:44:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:44:33 CST 2017
+finishing lvm at: Tue Jan  3 15:45:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:45:48 CST 2017
+finishing lvm at: Tue Jan  3 15:47:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:47:07 CST 2017
+finishing lvm at: Tue Jan  3 15:48:22 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:48:25 CST 2017
+finishing lvm at: Tue Jan  3 15:49:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:49:46 CST 2017
+finishing lvm at: Tue Jan  3 15:50:59 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:51:01 CST 2017
+finishing lvm at: Tue Jan  3 15:52:20 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:52:23 CST 2017
+finishing lvm at: Tue Jan  3 15:53:37 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:53:40 CST 2017
+finishing lvm at: Tue Jan  3 15:54:57 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:54:59 CST 2017
+finishing lvm at: Tue Jan  3 15:56:12 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:56:15 CST 2017
+finishing lvm at: Tue Jan  3 15:57:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 15:57:34 CST 2017
+finishing lvm at: Tue Jan  3 15:58:49 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 15:58:52 CST 2017
+finishing lvm at: Tue Jan  3 16:00:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:00:12 CST 2017
+finishing lvm at: Tue Jan  3 16:01:24 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:01:27 CST 2017
+finishing lvm at: Tue Jan  3 16:02:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:02:49 CST 2017
+finishing lvm at: Tue Jan  3 16:04:04 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:04:06 CST 2017
+finishing lvm at: Tue Jan  3 16:05:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:05:24 CST 2017
+finishing lvm at: Tue Jan  3 16:06:43 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:06:46 CST 2017
+finishing lvm at: Tue Jan  3 16:08:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:08:05 CST 2017
+finishing lvm at: Tue Jan  3 16:09:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:09:23 CST 2017
+finishing lvm at: Tue Jan  3 16:10:38 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:10:40 CST 2017
+finishing lvm at: Tue Jan  3 16:11:55 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:11:58 CST 2017
+finishing lvm at: Tue Jan  3 16:13:17 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:13:20 CST 2017
+finishing lvm at: Tue Jan  3 16:14:35 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:14:37 CST 2017
+finishing lvm at: Tue Jan  3 16:15:52 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:15:55 CST 2017
+finishing lvm at: Tue Jan  3 16:17:12 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:17:15 CST 2017
+finishing lvm at: Tue Jan  3 16:18:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:18:34 CST 2017
+finishing lvm at: Tue Jan  3 16:19:49 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:19:53 CST 2017
+finishing lvm at: Tue Jan  3 16:21:12 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:21:14 CST 2017
+finishing lvm at: Tue Jan  3 16:22:29 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:22:32 CST 2017
+finishing lvm at: Tue Jan  3 16:23:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:23:50 CST 2017
+finishing lvm at: Tue Jan  3 16:25:09 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:25:12 CST 2017
+finishing lvm at: Tue Jan  3 16:26:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:26:30 CST 2017
+finishing lvm at: Tue Jan  3 16:27:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:27:48 CST 2017
+finishing lvm at: Tue Jan  3 16:29:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:29:08 CST 2017
+finishing lvm at: Tue Jan  3 16:30:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:30:28 CST 2017
+finishing lvm at: Tue Jan  3 16:31:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:31:52 CST 2017
+finishing lvm at: Tue Jan  3 16:33:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:33:08 CST 2017
+finishing lvm at: Tue Jan  3 16:34:26 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:34:28 CST 2017
+finishing lvm at: Tue Jan  3 16:35:47 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:35:50 CST 2017
+finishing lvm at: Tue Jan  3 16:37:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:37:10 CST 2017
+finishing lvm at: Tue Jan  3 16:38:26 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:38:29 CST 2017
+finishing lvm at: Tue Jan  3 16:39:50 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:39:53 CST 2017
+finishing lvm at: Tue Jan  3 16:41:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:41:10 CST 2017
+finishing lvm at: Tue Jan  3 16:42:26 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:42:28 CST 2017
+finishing lvm at: Tue Jan  3 16:43:50 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:43:52 CST 2017
+finishing lvm at: Tue Jan  3 16:45:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:45:08 CST 2017
+finishing lvm at: Tue Jan  3 16:46:27 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:46:30 CST 2017
+finishing lvm at: Tue Jan  3 16:47:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:47:50 CST 2017
+finishing lvm at: Tue Jan  3 16:49:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:49:08 CST 2017
+finishing lvm at: Tue Jan  3 16:50:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:50:26 CST 2017
+finishing lvm at: Tue Jan  3 16:51:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:51:48 CST 2017
+finishing lvm at: Tue Jan  3 16:53:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:53:09 CST 2017
+finishing lvm at: Tue Jan  3 16:54:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:54:28 CST 2017
+finishing lvm at: Tue Jan  3 16:55:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:55:48 CST 2017
+finishing lvm at: Tue Jan  3 16:57:05 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:57:08 CST 2017
+finishing lvm at: Tue Jan  3 16:58:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 16:58:28 CST 2017
+finishing lvm at: Tue Jan  3 16:59:43 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 16:59:46 CST 2017
+finishing lvm at: Tue Jan  3 17:01:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:01:11 CST 2017
+finishing lvm at: Tue Jan  3 17:02:29 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:02:32 CST 2017
+finishing lvm at: Tue Jan  3 17:03:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:03:50 CST 2017
+finishing lvm at: Tue Jan  3 17:05:09 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:05:12 CST 2017
+finishing lvm at: Tue Jan  3 17:06:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:06:32 CST 2017
+finishing lvm at: Tue Jan  3 17:07:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:07:51 CST 2017
+finishing lvm at: Tue Jan  3 17:09:12 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:09:14 CST 2017
+finishing lvm at: Tue Jan  3 17:10:30 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:10:33 CST 2017
+finishing lvm at: Tue Jan  3 17:11:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:11:55 CST 2017
+finishing lvm at: Tue Jan  3 17:13:15 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:13:17 CST 2017
+finishing lvm at: Tue Jan  3 17:14:33 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:14:35 CST 2017
+finishing lvm at: Tue Jan  3 17:15:51 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:15:54 CST 2017
+finishing lvm at: Tue Jan  3 17:17:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:17:22 CST 2017
+finishing lvm at: Tue Jan  3 17:18:37 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:18:40 CST 2017
+finishing lvm at: Tue Jan  3 17:19:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:20:00 CST 2017
+finishing lvm at: Tue Jan  3 17:21:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:21:22 CST 2017
+finishing lvm at: Tue Jan  3 17:22:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:22:43 CST 2017
+finishing lvm at: Tue Jan  3 17:24:02 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:24:05 CST 2017
+finishing lvm at: Tue Jan  3 17:25:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:25:23 CST 2017
+finishing lvm at: Tue Jan  3 17:26:41 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:26:44 CST 2017
+finishing lvm at: Tue Jan  3 17:28:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:28:10 CST 2017
+finishing lvm at: Tue Jan  3 17:29:24 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:29:27 CST 2017
+finishing lvm at: Tue Jan  3 17:30:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:30:50 CST 2017
+finishing lvm at: Tue Jan  3 17:32:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:32:10 CST 2017
+finishing lvm at: Tue Jan  3 17:33:28 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:33:30 CST 2017
+finishing lvm at: Tue Jan  3 17:34:44 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:34:47 CST 2017
+finishing lvm at: Tue Jan  3 17:36:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:36:05 CST 2017
+finishing lvm at: Tue Jan  3 17:37:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:37:28 CST 2017
+finishing lvm at: Tue Jan  3 17:38:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:38:46 CST 2017
+finishing lvm at: Tue Jan  3 17:40:00 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:40:02 CST 2017
+finishing lvm at: Tue Jan  3 17:41:20 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:41:23 CST 2017
+finishing lvm at: Tue Jan  3 17:42:41 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:42:43 CST 2017
+finishing lvm at: Tue Jan  3 17:44:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:44:04 CST 2017
+finishing lvm at: Tue Jan  3 17:45:18 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:45:20 CST 2017
+finishing lvm at: Tue Jan  3 17:46:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:46:43 CST 2017
+finishing lvm at: Tue Jan  3 17:48:00 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:48:03 CST 2017
+finishing lvm at: Tue Jan  3 17:49:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:49:24 CST 2017
+finishing lvm at: Tue Jan  3 17:50:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:50:45 CST 2017
+finishing lvm at: Tue Jan  3 17:52:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:52:08 CST 2017
+finishing lvm at: Tue Jan  3 17:53:28 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:53:31 CST 2017
+finishing lvm at: Tue Jan  3 17:54:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:54:51 CST 2017
+finishing lvm at: Tue Jan  3 17:56:07 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:56:10 CST 2017
+finishing lvm at: Tue Jan  3 17:57:34 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 17:57:37 CST 2017
+finishing lvm at: Tue Jan  3 17:58:57 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 17:59:01 CST 2017
+finishing lvm at: Tue Jan  3 18:00:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:00:21 CST 2017
+finishing lvm at: Tue Jan  3 18:01:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:01:45 CST 2017
+finishing lvm at: Tue Jan  3 18:03:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:03:10 CST 2017
+finishing lvm at: Tue Jan  3 18:04:30 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:04:33 CST 2017
+finishing lvm at: Tue Jan  3 18:05:57 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:06:00 CST 2017
+finishing lvm at: Tue Jan  3 18:07:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:07:19 CST 2017
+finishing lvm at: Tue Jan  3 18:08:37 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:08:40 CST 2017
+finishing lvm at: Tue Jan  3 18:09:57 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:10:00 CST 2017
+finishing lvm at: Tue Jan  3 18:11:20 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:11:23 CST 2017
+finishing lvm at: Tue Jan  3 18:12:41 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:12:44 CST 2017
+finishing lvm at: Tue Jan  3 18:14:02 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:14:05 CST 2017
+finishing lvm at: Tue Jan  3 18:15:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:15:28 CST 2017
+finishing lvm at: Tue Jan  3 18:16:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:16:49 CST 2017
+finishing lvm at: Tue Jan  3 18:18:07 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:18:10 CST 2017
+finishing lvm at: Tue Jan  3 18:19:28 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:19:31 CST 2017
+finishing lvm at: Tue Jan  3 18:20:47 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:20:50 CST 2017
+finishing lvm at: Tue Jan  3 18:22:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:22:11 CST 2017
+finishing lvm at: Tue Jan  3 18:23:31 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:23:34 CST 2017
+finishing lvm at: Tue Jan  3 18:24:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:25:01 CST 2017
+finishing lvm at: Tue Jan  3 18:26:17 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:26:20 CST 2017
+finishing lvm at: Tue Jan  3 18:27:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:27:45 CST 2017
+finishing lvm at: Tue Jan  3 18:29:03 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:29:06 CST 2017
+finishing lvm at: Tue Jan  3 18:30:24 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:30:27 CST 2017
+finishing lvm at: Tue Jan  3 18:31:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:31:47 CST 2017
+finishing lvm at: Tue Jan  3 18:33:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:33:04 CST 2017
+finishing lvm at: Tue Jan  3 18:34:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:34:23 CST 2017
+finishing lvm at: Tue Jan  3 18:35:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:35:51 CST 2017
+finishing lvm at: Tue Jan  3 18:37:05 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:37:08 CST 2017
+finishing lvm at: Tue Jan  3 18:38:28 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:38:31 CST 2017
+finishing lvm at: Tue Jan  3 18:39:53 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:39:55 CST 2017
+finishing lvm at: Tue Jan  3 18:41:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:41:16 CST 2017
+finishing lvm at: Tue Jan  3 18:42:33 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:42:35 CST 2017
+finishing lvm at: Tue Jan  3 18:43:57 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:44:01 CST 2017
+finishing lvm at: Tue Jan  3 18:45:17 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:45:20 CST 2017
+finishing lvm at: Tue Jan  3 18:46:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:46:43 CST 2017
+finishing lvm at: Tue Jan  3 18:48:07 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:48:10 CST 2017
+finishing lvm at: Tue Jan  3 18:49:28 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:49:31 CST 2017
+finishing lvm at: Tue Jan  3 18:50:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:50:50 CST 2017
+finishing lvm at: Tue Jan  3 18:52:11 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:52:14 CST 2017
+finishing lvm at: Tue Jan  3 18:53:32 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:53:35 CST 2017
+finishing lvm at: Tue Jan  3 18:54:59 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:55:03 CST 2017
+finishing lvm at: Tue Jan  3 18:56:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:56:26 CST 2017
+finishing lvm at: Tue Jan  3 18:57:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 18:57:49 CST 2017
+finishing lvm at: Tue Jan  3 18:59:12 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 18:59:15 CST 2017
+finishing lvm at: Tue Jan  3 19:00:33 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:00:36 CST 2017
+finishing lvm at: Tue Jan  3 19:02:03 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:02:05 CST 2017
+finishing lvm at: Tue Jan  3 19:03:24 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:03:27 CST 2017
+finishing lvm at: Tue Jan  3 19:04:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:04:48 CST 2017
+finishing lvm at: Tue Jan  3 19:06:11 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:06:14 CST 2017
+finishing lvm at: Tue Jan  3 19:07:34 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:07:37 CST 2017
+finishing lvm at: Tue Jan  3 19:08:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:09:00 CST 2017
+finishing lvm at: Tue Jan  3 19:10:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:10:26 CST 2017
+finishing lvm at: Tue Jan  3 19:11:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:11:50 CST 2017
+finishing lvm at: Tue Jan  3 19:13:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:13:12 CST 2017
+finishing lvm at: Tue Jan  3 19:14:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:14:39 CST 2017
+finishing lvm at: Tue Jan  3 19:15:58 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:16:01 CST 2017
+finishing lvm at: Tue Jan  3 19:17:22 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:17:25 CST 2017
+finishing lvm at: Tue Jan  3 19:18:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:18:45 CST 2017
+finishing lvm at: Tue Jan  3 19:20:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:20:09 CST 2017
+finishing lvm at: Tue Jan  3 19:21:34 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:21:38 CST 2017
+finishing lvm at: Tue Jan  3 19:22:59 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:23:01 CST 2017
+finishing lvm at: Tue Jan  3 19:24:18 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:24:21 CST 2017
+finishing lvm at: Tue Jan  3 19:25:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:25:47 CST 2017
+finishing lvm at: Tue Jan  3 19:27:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:27:09 CST 2017
+finishing lvm at: Tue Jan  3 19:28:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:28:33 CST 2017
+finishing lvm at: Tue Jan  3 19:29:54 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:29:57 CST 2017
+finishing lvm at: Tue Jan  3 19:31:20 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:31:23 CST 2017
+finishing lvm at: Tue Jan  3 19:32:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:32:51 CST 2017
+finishing lvm at: Tue Jan  3 19:34:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:34:17 CST 2017
+finishing lvm at: Tue Jan  3 19:34:27 CST 2017
+{u'172.22.108.249': u'spark-3-egqfwej', u'172.22.108.254': u'spark-client-egqfwej', u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.250': u'spark-4-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:34:30 CST 2017
+finishing lvm at: Tue Jan  3 19:34:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:34:49 CST 2017
+finishing lvm at: Tue Jan  3 19:36:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:36:10 CST 2017
+finishing lvm at: Tue Jan  3 19:37:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:37:34 CST 2017
+finishing lvm at: Tue Jan  3 19:38:57 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:39:00 CST 2017
+finishing lvm at: Tue Jan  3 19:40:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:40:25 CST 2017
+finishing lvm at: Tue Jan  3 19:41:46 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:41:50 CST 2017
+finishing lvm at: Tue Jan  3 19:43:15 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:43:19 CST 2017
+finishing lvm at: Tue Jan  3 19:44:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:44:46 CST 2017
+finishing lvm at: Tue Jan  3 19:46:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:46:16 CST 2017
+finishing lvm at: Tue Jan  3 19:47:38 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:47:40 CST 2017
+finishing lvm at: Tue Jan  3 19:49:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:49:11 CST 2017
+finishing lvm at: Tue Jan  3 19:50:31 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:50:35 CST 2017
+finishing lvm at: Tue Jan  3 19:51:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:52:01 CST 2017
+finishing lvm at: Tue Jan  3 19:53:21 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:53:25 CST 2017
+finishing lvm at: Tue Jan  3 19:54:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:54:50 CST 2017
+finishing lvm at: Tue Jan  3 19:56:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:56:24 CST 2017
+finishing lvm at: Tue Jan  3 19:57:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 19:57:50 CST 2017
+finishing lvm at: Tue Jan  3 19:59:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 19:59:18 CST 2017
+finishing lvm at: Tue Jan  3 20:00:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:00:46 CST 2017
+finishing lvm at: Tue Jan  3 20:02:07 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:02:11 CST 2017
+finishing lvm at: Tue Jan  3 20:03:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:03:37 CST 2017
+finishing lvm at: Tue Jan  3 20:05:01 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:05:05 CST 2017
+finishing lvm at: Tue Jan  3 20:06:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:06:32 CST 2017
+finishing lvm at: Tue Jan  3 20:07:52 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:07:55 CST 2017
+finishing lvm at: Tue Jan  3 20:09:24 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:09:28 CST 2017
+finishing lvm at: Tue Jan  3 20:10:47 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:10:51 CST 2017
+finishing lvm at: Tue Jan  3 20:12:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:12:18 CST 2017
+finishing lvm at: Tue Jan  3 20:13:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:13:45 CST 2017
+finishing lvm at: Tue Jan  3 20:15:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:15:12 CST 2017
+finishing lvm at: Tue Jan  3 20:16:39 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:16:43 CST 2017
+finishing lvm at: Tue Jan  3 20:18:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:18:07 CST 2017
+finishing lvm at: Tue Jan  3 20:19:35 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:19:39 CST 2017
+finishing lvm at: Tue Jan  3 20:21:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:21:07 CST 2017
+finishing lvm at: Tue Jan  3 20:22:30 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:22:34 CST 2017
+finishing lvm at: Tue Jan  3 20:23:55 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:23:58 CST 2017
+finishing lvm at: Tue Jan  3 20:25:22 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:25:24 CST 2017
+finishing lvm at: Tue Jan  3 20:26:51 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:26:54 CST 2017
+finishing lvm at: Tue Jan  3 20:28:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:28:18 CST 2017
+finishing lvm at: Tue Jan  3 20:29:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:29:49 CST 2017
+finishing lvm at: Tue Jan  3 20:31:11 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:31:14 CST 2017
+finishing lvm at: Tue Jan  3 20:32:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:32:49 CST 2017
+finishing lvm at: Tue Jan  3 20:34:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:34:14 CST 2017
+finishing lvm at: Tue Jan  3 20:35:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:35:47 CST 2017
+finishing lvm at: Tue Jan  3 20:37:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:37:14 CST 2017
+finishing lvm at: Tue Jan  3 20:38:37 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:38:41 CST 2017
+finishing lvm at: Tue Jan  3 20:40:05 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:40:08 CST 2017
+finishing lvm at: Tue Jan  3 20:41:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:41:36 CST 2017
+finishing lvm at: Tue Jan  3 20:43:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:43:10 CST 2017
+finishing lvm at: Tue Jan  3 20:44:34 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:44:38 CST 2017
+finishing lvm at: Tue Jan  3 20:46:06 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:46:10 CST 2017
+finishing lvm at: Tue Jan  3 20:47:34 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:47:38 CST 2017
+finishing lvm at: Tue Jan  3 20:49:01 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:49:05 CST 2017
+finishing lvm at: Tue Jan  3 20:50:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:50:30 CST 2017
+finishing lvm at: Tue Jan  3 20:51:52 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:51:55 CST 2017
+finishing lvm at: Tue Jan  3 20:53:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:53:25 CST 2017
+finishing lvm at: Tue Jan  3 20:54:51 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:54:53 CST 2017
+finishing lvm at: Tue Jan  3 20:56:15 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:56:19 CST 2017
+finishing lvm at: Tue Jan  3 20:57:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 20:57:48 CST 2017
+finishing lvm at: Tue Jan  3 20:59:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 20:59:18 CST 2017
+finishing lvm at: Tue Jan  3 21:00:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:00:46 CST 2017
+finishing lvm at: Tue Jan  3 21:02:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:02:19 CST 2017
+finishing lvm at: Tue Jan  3 21:03:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:03:44 CST 2017
+finishing lvm at: Tue Jan  3 21:05:12 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:05:17 CST 2017
+finishing lvm at: Tue Jan  3 21:06:40 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:06:45 CST 2017
+finishing lvm at: Tue Jan  3 21:08:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:08:20 CST 2017
+finishing lvm at: Tue Jan  3 21:09:46 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:09:50 CST 2017
+finishing lvm at: Tue Jan  3 21:11:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:11:22 CST 2017
+finishing lvm at: Tue Jan  3 21:12:50 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:12:54 CST 2017
+finishing lvm at: Tue Jan  3 21:14:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:14:20 CST 2017
+finishing lvm at: Tue Jan  3 21:15:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:15:48 CST 2017
+finishing lvm at: Tue Jan  3 21:17:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:17:16 CST 2017
+finishing lvm at: Tue Jan  3 21:18:38 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:18:42 CST 2017
+finishing lvm at: Tue Jan  3 21:20:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:20:10 CST 2017
+finishing lvm at: Tue Jan  3 21:21:39 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:21:42 CST 2017
+finishing lvm at: Tue Jan  3 21:23:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:23:11 CST 2017
+finishing lvm at: Tue Jan  3 21:24:37 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:24:40 CST 2017
+finishing lvm at: Tue Jan  3 21:26:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:26:08 CST 2017
+finishing lvm at: Tue Jan  3 21:27:34 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:27:37 CST 2017
+finishing lvm at: Tue Jan  3 21:29:02 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:29:06 CST 2017
+finishing lvm at: Tue Jan  3 21:30:36 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:30:39 CST 2017
+finishing lvm at: Tue Jan  3 21:32:02 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:32:06 CST 2017
+finishing lvm at: Tue Jan  3 21:33:30 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:33:33 CST 2017
+finishing lvm at: Tue Jan  3 21:35:07 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:35:11 CST 2017
+finishing lvm at: Tue Jan  3 21:36:31 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:36:35 CST 2017
+finishing lvm at: Tue Jan  3 21:38:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:38:06 CST 2017
+finishing lvm at: Tue Jan  3 21:39:28 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:39:32 CST 2017
+finishing lvm at: Tue Jan  3 21:41:02 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:41:06 CST 2017
+finishing lvm at: Tue Jan  3 21:42:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:42:29 CST 2017
+finishing lvm at: Tue Jan  3 21:43:59 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:44:03 CST 2017
+finishing lvm at: Tue Jan  3 21:45:27 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:45:31 CST 2017
+finishing lvm at: Tue Jan  3 21:47:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:47:04 CST 2017
+finishing lvm at: Tue Jan  3 21:48:24 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:48:28 CST 2017
+finishing lvm at: Tue Jan  3 21:49:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:49:56 CST 2017
+finishing lvm at: Tue Jan  3 21:51:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:51:27 CST 2017
+finishing lvm at: Tue Jan  3 21:52:55 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:52:58 CST 2017
+finishing lvm at: Tue Jan  3 21:54:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:54:26 CST 2017
+finishing lvm at: Tue Jan  3 21:55:57 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:56:01 CST 2017
+finishing lvm at: Tue Jan  3 21:57:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 21:57:26 CST 2017
+finishing lvm at: Tue Jan  3 21:58:55 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 21:58:58 CST 2017
+finishing lvm at: Tue Jan  3 22:00:24 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:00:29 CST 2017
+finishing lvm at: Tue Jan  3 22:01:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:01:57 CST 2017
+finishing lvm at: Tue Jan  3 22:03:21 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:03:25 CST 2017
+finishing lvm at: Tue Jan  3 22:04:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:04:56 CST 2017
+finishing lvm at: Tue Jan  3 22:06:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:06:29 CST 2017
+finishing lvm at: Tue Jan  3 22:07:55 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:07:58 CST 2017
+finishing lvm at: Tue Jan  3 22:09:24 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:09:27 CST 2017
+finishing lvm at: Tue Jan  3 22:10:51 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:10:55 CST 2017
+finishing lvm at: Tue Jan  3 22:12:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:12:23 CST 2017
+finishing lvm at: Tue Jan  3 22:13:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:13:51 CST 2017
+finishing lvm at: Tue Jan  3 22:15:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:15:19 CST 2017
+finishing lvm at: Tue Jan  3 22:16:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:16:50 CST 2017
+finishing lvm at: Tue Jan  3 22:18:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:18:13 CST 2017
+finishing lvm at: Tue Jan  3 22:19:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:19:47 CST 2017
+finishing lvm at: Tue Jan  3 22:21:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:21:11 CST 2017
+finishing lvm at: Tue Jan  3 22:22:39 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:22:43 CST 2017
+finishing lvm at: Tue Jan  3 22:24:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:24:11 CST 2017
+finishing lvm at: Tue Jan  3 22:25:31 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:25:35 CST 2017
+finishing lvm at: Tue Jan  3 22:27:00 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:27:04 CST 2017
+finishing lvm at: Tue Jan  3 22:28:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:28:31 CST 2017
+finishing lvm at: Tue Jan  3 22:29:59 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:30:02 CST 2017
+finishing lvm at: Tue Jan  3 22:31:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:31:30 CST 2017
+finishing lvm at: Tue Jan  3 22:32:57 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:33:01 CST 2017
+finishing lvm at: Tue Jan  3 22:34:25 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:34:29 CST 2017
+finishing lvm at: Tue Jan  3 22:35:55 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:35:59 CST 2017
+finishing lvm at: Tue Jan  3 22:37:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:37:24 CST 2017
+finishing lvm at: Tue Jan  3 22:38:44 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:38:47 CST 2017
+finishing lvm at: Tue Jan  3 22:40:12 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:40:15 CST 2017
+finishing lvm at: Tue Jan  3 22:41:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:41:44 CST 2017
+finishing lvm at: Tue Jan  3 22:43:11 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:43:15 CST 2017
+finishing lvm at: Tue Jan  3 22:44:35 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:44:38 CST 2017
+finishing lvm at: Tue Jan  3 22:46:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:46:06 CST 2017
+finishing lvm at: Tue Jan  3 22:47:26 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:47:30 CST 2017
+finishing lvm at: Tue Jan  3 22:49:00 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:49:04 CST 2017
+finishing lvm at: Tue Jan  3 22:50:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:50:28 CST 2017
+finishing lvm at: Tue Jan  3 22:51:55 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:51:58 CST 2017
+finishing lvm at: Tue Jan  3 22:53:19 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:53:22 CST 2017
+finishing lvm at: Tue Jan  3 22:54:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:54:52 CST 2017
+finishing lvm at: Tue Jan  3 22:56:17 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:56:21 CST 2017
+finishing lvm at: Tue Jan  3 22:57:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 22:57:50 CST 2017
+finishing lvm at: Tue Jan  3 22:59:11 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 22:59:14 CST 2017
+finishing lvm at: Tue Jan  3 23:00:39 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:00:42 CST 2017
+finishing lvm at: Tue Jan  3 23:02:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:02:12 CST 2017
+finishing lvm at: Tue Jan  3 23:03:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:03:39 CST 2017
+finishing lvm at: Tue Jan  3 23:05:04 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:05:07 CST 2017
+finishing lvm at: Tue Jan  3 23:06:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:06:35 CST 2017
+finishing lvm at: Tue Jan  3 23:08:02 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:08:05 CST 2017
+finishing lvm at: Tue Jan  3 23:09:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:09:38 CST 2017
+finishing lvm at: Tue Jan  3 23:10:59 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:11:04 CST 2017
+finishing lvm at: Tue Jan  3 23:12:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:12:32 CST 2017
+finishing lvm at: Tue Jan  3 23:13:57 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:14:00 CST 2017
+finishing lvm at: Tue Jan  3 23:15:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:15:33 CST 2017
+finishing lvm at: Tue Jan  3 23:16:55 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:16:59 CST 2017
+finishing lvm at: Tue Jan  3 23:18:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:18:25 CST 2017
+finishing lvm at: Tue Jan  3 23:19:49 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:19:53 CST 2017
+finishing lvm at: Tue Jan  3 23:21:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:21:16 CST 2017
+finishing lvm at: Tue Jan  3 23:22:37 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:22:40 CST 2017
+finishing lvm at: Tue Jan  3 23:24:09 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:24:12 CST 2017
+finishing lvm at: Tue Jan  3 23:25:34 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:25:37 CST 2017
+finishing lvm at: Tue Jan  3 23:27:00 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:27:03 CST 2017
+finishing lvm at: Tue Jan  3 23:28:26 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:28:29 CST 2017
+finishing lvm at: Tue Jan  3 23:29:54 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:29:57 CST 2017
+finishing lvm at: Tue Jan  3 23:31:19 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:31:23 CST 2017
+finishing lvm at: Tue Jan  3 23:32:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:32:48 CST 2017
+finishing lvm at: Tue Jan  3 23:34:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:34:12 CST 2017
+finishing lvm at: Tue Jan  3 23:35:36 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:35:40 CST 2017
+finishing lvm at: Tue Jan  3 23:37:04 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:37:07 CST 2017
+finishing lvm at: Tue Jan  3 23:38:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:38:33 CST 2017
+finishing lvm at: Tue Jan  3 23:39:53 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:39:57 CST 2017
+finishing lvm at: Tue Jan  3 23:41:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:41:22 CST 2017
+finishing lvm at: Tue Jan  3 23:42:44 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:42:48 CST 2017
+finishing lvm at: Tue Jan  3 23:44:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:44:18 CST 2017
+finishing lvm at: Tue Jan  3 23:45:40 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:45:44 CST 2017
+finishing lvm at: Tue Jan  3 23:47:10 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:47:14 CST 2017
+finishing lvm at: Tue Jan  3 23:48:36 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:48:39 CST 2017
+finishing lvm at: Tue Jan  3 23:50:06 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:50:09 CST 2017
+finishing lvm at: Tue Jan  3 23:51:29 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:51:32 CST 2017
+finishing lvm at: Tue Jan  3 23:52:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:52:56 CST 2017
+finishing lvm at: Tue Jan  3 23:54:21 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:54:24 CST 2017
+finishing lvm at: Tue Jan  3 23:55:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:55:50 CST 2017
+finishing lvm at: Tue Jan  3 23:57:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Tue Jan  3 23:57:18 CST 2017
+finishing lvm at: Tue Jan  3 23:58:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Tue Jan  3 23:58:45 CST 2017
+finishing lvm at: Wed Jan  4 00:00:03 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:00:06 CST 2017
+finishing lvm at: Wed Jan  4 00:01:34 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:01:37 CST 2017
+finishing lvm at: Wed Jan  4 00:02:56 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:02:58 CST 2017
+finishing lvm at: Wed Jan  4 00:04:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:04:22 CST 2017
+finishing lvm at: Wed Jan  4 00:05:43 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:05:46 CST 2017
+finishing lvm at: Wed Jan  4 00:07:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:07:15 CST 2017
+finishing lvm at: Wed Jan  4 00:08:36 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:08:39 CST 2017
+finishing lvm at: Wed Jan  4 00:10:04 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:10:07 CST 2017
+finishing lvm at: Wed Jan  4 00:11:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:11:28 CST 2017
+finishing lvm at: Wed Jan  4 00:12:51 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:12:54 CST 2017
+finishing lvm at: Wed Jan  4 00:14:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:14:19 CST 2017
+finishing lvm at: Wed Jan  4 00:15:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:15:43 CST 2017
+finishing lvm at: Wed Jan  4 00:17:01 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:17:04 CST 2017
+finishing lvm at: Wed Jan  4 00:18:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:18:26 CST 2017
+finishing lvm at: Wed Jan  4 00:19:46 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:19:49 CST 2017
+finishing lvm at: Wed Jan  4 00:21:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:21:17 CST 2017
+finishing lvm at: Wed Jan  4 00:22:35 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:22:38 CST 2017
+finishing lvm at: Wed Jan  4 00:23:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:24:01 CST 2017
+finishing lvm at: Wed Jan  4 00:25:22 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:25:24 CST 2017
+finishing lvm at: Wed Jan  4 00:26:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:26:52 CST 2017
+finishing lvm at: Wed Jan  4 00:28:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:28:13 CST 2017
+finishing lvm at: Wed Jan  4 00:29:38 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:29:41 CST 2017
+finishing lvm at: Wed Jan  4 00:31:03 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:31:06 CST 2017
+finishing lvm at: Wed Jan  4 00:32:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:32:33 CST 2017
+finishing lvm at: Wed Jan  4 00:33:52 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:33:54 CST 2017
+finishing lvm at: Wed Jan  4 00:35:15 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:35:17 CST 2017
+finishing lvm at: Wed Jan  4 00:36:36 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:36:39 CST 2017
+finishing lvm at: Wed Jan  4 00:37:59 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:38:02 CST 2017
+finishing lvm at: Wed Jan  4 00:39:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:39:28 CST 2017
+finishing lvm at: Wed Jan  4 00:41:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:41:45 CST 2017
+finishing lvm at: Wed Jan  4 00:43:03 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:43:06 CST 2017
+finishing lvm at: Wed Jan  4 00:44:30 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:44:33 CST 2017
+finishing lvm at: Wed Jan  4 00:45:51 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:45:54 CST 2017
+finishing lvm at: Wed Jan  4 00:47:15 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:47:17 CST 2017
+finishing lvm at: Wed Jan  4 00:49:04 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:49:06 CST 2017
+finishing lvm at: Wed Jan  4 00:50:29 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:50:32 CST 2017
+finishing lvm at: Wed Jan  4 00:51:53 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:51:55 CST 2017
+finishing lvm at: Wed Jan  4 00:53:24 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:53:27 CST 2017
+finishing lvm at: Wed Jan  4 00:54:53 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:54:56 CST 2017
+finishing lvm at: Wed Jan  4 00:56:19 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:56:21 CST 2017
+finishing lvm at: Wed Jan  4 00:57:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 00:57:51 CST 2017
+finishing lvm at: Wed Jan  4 00:59:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 00:59:19 CST 2017
+finishing lvm at: Wed Jan  4 01:00:46 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:00:48 CST 2017
+finishing lvm at: Wed Jan  4 01:02:11 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:02:14 CST 2017
+finishing lvm at: Wed Jan  4 01:03:38 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:03:41 CST 2017
+finishing lvm at: Wed Jan  4 01:05:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:05:08 CST 2017
+finishing lvm at: Wed Jan  4 01:06:37 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:06:40 CST 2017
+finishing lvm at: Wed Jan  4 01:08:02 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:08:05 CST 2017
+finishing lvm at: Wed Jan  4 01:09:27 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:09:30 CST 2017
+finishing lvm at: Wed Jan  4 01:10:56 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:10:59 CST 2017
+finishing lvm at: Wed Jan  4 01:12:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:12:23 CST 2017
+finishing lvm at: Wed Jan  4 01:13:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:13:48 CST 2017
+finishing lvm at: Wed Jan  4 01:15:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:15:17 CST 2017
+finishing lvm at: Wed Jan  4 01:16:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:16:42 CST 2017
+finishing lvm at: Wed Jan  4 01:18:05 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:18:08 CST 2017
+finishing lvm at: Wed Jan  4 01:19:31 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:19:34 CST 2017
+finishing lvm at: Wed Jan  4 01:20:58 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:21:01 CST 2017
+finishing lvm at: Wed Jan  4 01:22:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:22:26 CST 2017
+finishing lvm at: Wed Jan  4 01:23:49 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:23:51 CST 2017
+finishing lvm at: Wed Jan  4 01:25:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:25:16 CST 2017
+finishing lvm at: Wed Jan  4 01:26:39 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:26:41 CST 2017
+finishing lvm at: Wed Jan  4 01:28:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:28:11 CST 2017
+finishing lvm at: Wed Jan  4 01:29:34 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:29:36 CST 2017
+finishing lvm at: Wed Jan  4 01:31:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:31:05 CST 2017
+finishing lvm at: Wed Jan  4 01:32:28 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:32:30 CST 2017
+finishing lvm at: Wed Jan  4 01:33:55 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:33:57 CST 2017
+finishing lvm at: Wed Jan  4 01:35:22 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:35:25 CST 2017
+finishing lvm at: Wed Jan  4 01:36:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:36:51 CST 2017
+finishing lvm at: Wed Jan  4 01:38:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:38:18 CST 2017
+finishing lvm at: Wed Jan  4 01:39:40 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:39:43 CST 2017
+finishing lvm at: Wed Jan  4 01:41:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:41:10 CST 2017
+finishing lvm at: Wed Jan  4 01:42:35 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:42:38 CST 2017
+finishing lvm at: Wed Jan  4 01:44:01 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:44:04 CST 2017
+finishing lvm at: Wed Jan  4 01:45:32 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:45:35 CST 2017
+finishing lvm at: Wed Jan  4 01:46:55 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:46:58 CST 2017
+finishing lvm at: Wed Jan  4 01:48:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:48:30 CST 2017
+finishing lvm at: Wed Jan  4 01:49:51 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:49:53 CST 2017
+finishing lvm at: Wed Jan  4 01:51:22 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:51:25 CST 2017
+finishing lvm at: Wed Jan  4 01:52:50 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:52:53 CST 2017
+finishing lvm at: Wed Jan  4 01:54:22 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:54:25 CST 2017
+finishing lvm at: Wed Jan  4 01:55:53 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:55:56 CST 2017
+finishing lvm at: Wed Jan  4 01:57:27 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 01:57:30 CST 2017
+finishing lvm at: Wed Jan  4 01:58:53 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 01:58:56 CST 2017
+finishing lvm at: Wed Jan  4 02:00:23 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:00:26 CST 2017
+finishing lvm at: Wed Jan  4 02:01:51 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:01:53 CST 2017
+finishing lvm at: Wed Jan  4 02:03:20 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:03:23 CST 2017
+finishing lvm at: Wed Jan  4 02:04:52 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:04:55 CST 2017
+finishing lvm at: Wed Jan  4 02:06:20 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:06:22 CST 2017
+finishing lvm at: Wed Jan  4 02:07:47 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:07:50 CST 2017
+finishing lvm at: Wed Jan  4 02:09:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:09:16 CST 2017
+finishing lvm at: Wed Jan  4 02:10:39 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:10:42 CST 2017
+finishing lvm at: Wed Jan  4 02:12:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:12:08 CST 2017
+finishing lvm at: Wed Jan  4 02:13:33 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:13:35 CST 2017
+finishing lvm at: Wed Jan  4 02:15:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:15:07 CST 2017
+finishing lvm at: Wed Jan  4 02:16:33 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:16:36 CST 2017
+finishing lvm at: Wed Jan  4 02:18:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:18:08 CST 2017
+finishing lvm at: Wed Jan  4 02:19:33 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:19:36 CST 2017
+finishing lvm at: Wed Jan  4 02:21:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:21:04 CST 2017
+finishing lvm at: Wed Jan  4 02:22:29 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:22:32 CST 2017
+finishing lvm at: Wed Jan  4 02:24:01 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:24:03 CST 2017
+finishing lvm at: Wed Jan  4 02:25:27 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:25:29 CST 2017
+finishing lvm at: Wed Jan  4 02:26:53 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:26:56 CST 2017
+finishing lvm at: Wed Jan  4 02:28:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:28:26 CST 2017
+finishing lvm at: Wed Jan  4 02:29:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:29:51 CST 2017
+finishing lvm at: Wed Jan  4 02:31:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:31:19 CST 2017
+finishing lvm at: Wed Jan  4 02:32:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:32:45 CST 2017
+finishing lvm at: Wed Jan  4 02:34:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:34:13 CST 2017
+finishing lvm at: Wed Jan  4 02:35:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:35:46 CST 2017
+finishing lvm at: Wed Jan  4 02:37:11 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:37:14 CST 2017
+finishing lvm at: Wed Jan  4 02:38:37 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:38:40 CST 2017
+finishing lvm at: Wed Jan  4 02:40:03 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:40:06 CST 2017
+finishing lvm at: Wed Jan  4 02:41:31 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:41:34 CST 2017
+finishing lvm at: Wed Jan  4 02:43:01 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:43:04 CST 2017
+finishing lvm at: Wed Jan  4 02:44:28 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:44:31 CST 2017
+finishing lvm at: Wed Jan  4 02:45:58 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:46:01 CST 2017
+finishing lvm at: Wed Jan  4 02:47:26 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:47:29 CST 2017
+finishing lvm at: Wed Jan  4 02:48:58 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:49:00 CST 2017
+finishing lvm at: Wed Jan  4 02:50:26 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:50:28 CST 2017
+finishing lvm at: Wed Jan  4 02:51:51 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:51:54 CST 2017
+finishing lvm at: Wed Jan  4 02:53:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:53:24 CST 2017
+finishing lvm at: Wed Jan  4 02:54:50 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:54:53 CST 2017
+finishing lvm at: Wed Jan  4 02:56:18 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:56:21 CST 2017
+finishing lvm at: Wed Jan  4 02:57:47 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 02:57:50 CST 2017
+finishing lvm at: Wed Jan  4 02:59:21 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 02:59:24 CST 2017
+finishing lvm at: Wed Jan  4 03:00:47 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:00:50 CST 2017
+finishing lvm at: Wed Jan  4 03:02:13 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:02:16 CST 2017
+finishing lvm at: Wed Jan  4 03:03:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:03:45 CST 2017
+finishing lvm at: Wed Jan  4 03:05:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:05:19 CST 2017
+finishing lvm at: Wed Jan  4 03:06:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:06:48 CST 2017
+finishing lvm at: Wed Jan  4 03:08:18 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:08:21 CST 2017
+finishing lvm at: Wed Jan  4 03:09:44 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:09:48 CST 2017
+finishing lvm at: Wed Jan  4 03:11:17 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:11:20 CST 2017
+finishing lvm at: Wed Jan  4 03:12:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:12:51 CST 2017
+finishing lvm at: Wed Jan  4 03:14:16 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:14:19 CST 2017
+finishing lvm at: Wed Jan  4 03:15:46 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:15:49 CST 2017
+finishing lvm at: Wed Jan  4 03:17:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:17:17 CST 2017
+finishing lvm at: Wed Jan  4 03:18:48 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:18:51 CST 2017
+finishing lvm at: Wed Jan  4 03:20:17 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:20:20 CST 2017
+finishing lvm at: Wed Jan  4 03:21:45 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:21:48 CST 2017
+finishing lvm at: Wed Jan  4 03:23:14 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:23:16 CST 2017
+finishing lvm at: Wed Jan  4 03:24:42 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:24:45 CST 2017
+finishing lvm at: Wed Jan  4 03:26:08 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:26:11 CST 2017
+finishing lvm at: Wed Jan  4 03:27:39 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:27:42 CST 2017
+finishing lvm at: Wed Jan  4 03:29:05 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:29:08 CST 2017
+finishing lvm at: Wed Jan  4 03:30:32 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:30:35 CST 2017
+finishing lvm at: Wed Jan  4 03:32:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:32:05 CST 2017
+finishing lvm at: Wed Jan  4 03:33:31 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:33:35 CST 2017
+finishing lvm at: Wed Jan  4 03:35:02 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:35:05 CST 2017
+finishing lvm at: Wed Jan  4 03:36:31 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:36:33 CST 2017
+finishing lvm at: Wed Jan  4 03:38:03 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:38:06 CST 2017
+finishing lvm at: Wed Jan  4 03:39:27 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:39:30 CST 2017
+finishing lvm at: Wed Jan  4 03:40:56 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:40:58 CST 2017
+finishing lvm at: Wed Jan  4 03:42:24 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:42:26 CST 2017
+finishing lvm at: Wed Jan  4 03:43:50 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:43:53 CST 2017
+finishing lvm at: Wed Jan  4 03:45:23 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:45:26 CST 2017
+finishing lvm at: Wed Jan  4 03:46:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:46:52 CST 2017
+finishing lvm at: Wed Jan  4 03:48:18 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:48:20 CST 2017
+finishing lvm at: Wed Jan  4 03:49:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:49:49 CST 2017
+finishing lvm at: Wed Jan  4 03:51:13 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:51:16 CST 2017
+finishing lvm at: Wed Jan  4 03:52:42 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:52:45 CST 2017
+finishing lvm at: Wed Jan  4 03:54:13 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:54:16 CST 2017
+finishing lvm at: Wed Jan  4 03:55:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:55:48 CST 2017
+finishing lvm at: Wed Jan  4 03:57:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 03:57:14 CST 2017
+finishing lvm at: Wed Jan  4 03:58:44 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 03:58:46 CST 2017
+finishing lvm at: Wed Jan  4 04:00:12 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:00:15 CST 2017
+finishing lvm at: Wed Jan  4 04:01:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:01:47 CST 2017
+finishing lvm at: Wed Jan  4 04:03:13 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:03:16 CST 2017
+finishing lvm at: Wed Jan  4 04:04:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:04:49 CST 2017
+finishing lvm at: Wed Jan  4 04:06:15 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:06:18 CST 2017
+finishing lvm at: Wed Jan  4 04:07:48 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:07:51 CST 2017
+finishing lvm at: Wed Jan  4 04:09:17 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:09:19 CST 2017
+finishing lvm at: Wed Jan  4 04:10:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:10:52 CST 2017
+finishing lvm at: Wed Jan  4 04:12:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:12:19 CST 2017
+finishing lvm at: Wed Jan  4 04:13:49 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:13:51 CST 2017
+finishing lvm at: Wed Jan  4 04:15:19 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:15:22 CST 2017
+finishing lvm at: Wed Jan  4 04:16:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:16:49 CST 2017
+finishing lvm at: Wed Jan  4 04:18:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:18:17 CST 2017
+finishing lvm at: Wed Jan  4 04:19:45 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:19:48 CST 2017
+finishing lvm at: Wed Jan  4 04:21:16 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:21:19 CST 2017
+finishing lvm at: Wed Jan  4 04:22:47 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:22:50 CST 2017
+finishing lvm at: Wed Jan  4 04:24:14 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:24:16 CST 2017
+finishing lvm at: Wed Jan  4 04:25:41 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:25:44 CST 2017
+finishing lvm at: Wed Jan  4 04:27:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:27:11 CST 2017
+finishing lvm at: Wed Jan  4 04:28:41 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:28:44 CST 2017
+finishing lvm at: Wed Jan  4 04:30:08 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:30:11 CST 2017
+finishing lvm at: Wed Jan  4 04:31:41 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:31:44 CST 2017
+finishing lvm at: Wed Jan  4 04:33:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:33:13 CST 2017
+finishing lvm at: Wed Jan  4 04:34:41 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:34:44 CST 2017
+finishing lvm at: Wed Jan  4 04:36:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:36:13 CST 2017
+finishing lvm at: Wed Jan  4 04:37:43 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:37:46 CST 2017
+finishing lvm at: Wed Jan  4 04:39:10 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:39:14 CST 2017
+finishing lvm at: Wed Jan  4 04:40:46 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:40:49 CST 2017
+finishing lvm at: Wed Jan  4 04:42:15 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:42:17 CST 2017
+finishing lvm at: Wed Jan  4 04:43:51 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:43:54 CST 2017
+finishing lvm at: Wed Jan  4 04:45:21 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:45:24 CST 2017
+finishing lvm at: Wed Jan  4 04:46:56 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:46:59 CST 2017
+finishing lvm at: Wed Jan  4 04:48:25 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:48:28 CST 2017
+finishing lvm at: Wed Jan  4 04:49:56 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:49:58 CST 2017
+finishing lvm at: Wed Jan  4 04:51:24 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:51:28 CST 2017
+finishing lvm at: Wed Jan  4 04:52:58 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:53:01 CST 2017
+finishing lvm at: Wed Jan  4 04:54:22 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:54:25 CST 2017
+finishing lvm at: Wed Jan  4 04:55:51 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:55:54 CST 2017
+finishing lvm at: Wed Jan  4 04:57:20 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+--> evacuating all VMs from compute04 to compute07:
+starting lvm at: Wed Jan  4 04:57:23 CST 2017
+finishing lvm at: Wed Jan  4 04:58:52 CST 2017
+--> evacuating all VMs from compute07 to compute04:
+starting lvm at: Wed Jan  4 04:58:54 CST 2017
+finishing lvm at: Wed Jan  4 05:00:21 CST 2017
+{u'172.22.108.252': u'spark-5-egqfwej', u'172.22.108.251': u'spark-1-egqfwej'} failed to migrate from compute07
+downtime for instance with ip 172.22.108.252 : 46.5 seconds 
+downtime for instance with ip 172.22.108.254 : 113.0 seconds 
+downtime for instance with ip 172.22.108.249 : 86.0 seconds 
+downtime for instance with ip 172.22.108.250 : 81.5 seconds 
+downtime for instance with ip 172.22.108.251 : 26.0 seconds 
+No Loss of TCP stream and data while LM for VM: 172.22.108.254 +Wed Jan 4 05:00:25 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.108.249 +Wed Jan 4 05:00:25 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.108.250 +Wed Jan 4 05:00:25 CST 2017

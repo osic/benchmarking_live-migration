@@ -3,10 +3,10 @@ Live migration in OpenStack
 
 Table of Contents
 -----------------
-* [Introduction]()
-* [Different ways to setup live migration in your Openstack Cloud]()
-* [Benchmarking Live migration in your Cloud]()
-* [Lessons learned]()
+* [#Introduction]()
+* [#Different ways to setup live migration in your Openstack Cloud]()
+* [#Benchmarking Live migration in your Cloud]()
+* [#Lessrned]()
 
 Introduction
 ------------
