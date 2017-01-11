@@ -5,8 +5,11 @@ source vars.rc
 cd /root
 source openrc admin admin
 
+# Destroy workload stack if there is any
 workload_def slice-destroy --name lm_slice
 workload_def slice-define --name lm_slice
+
+# add Workloads to the slice
 for i in "${workloads_vms[@]}"; do
   for j in `seq 1 ${i%-*}`; do
     workload_def slice-add --name lm_slice --add ${i#*-}
@@ -25,57 +28,51 @@ for env in "${environment_type[@]}"; do
       wait_instances $host_to_evacuate
       echo "All instances are up and running";
       describe_environment "${workloads_vms[*]}" $lv_results_file ${environment_type[@]##*_}
-      echo "Waiting for 120 seconds before running the tests"
-      sleep 120
+      echo "Waiting for 60 seconds before running the tests"
+      sleep 10
       # start the lvm tests
     fi
     DATE=`date +%Y-%m-%d`
     TIME=`date +%H:%M`
     time="$DATE $TIME"
-    python test_ping_vms.py  $host_to_evacuate $downtime_info $lv_results_file start_tests &
+    python tests/test_ping_vms.py  $host_to_evacuate $downtime_info $lv_results_file start_tests &
     TEST_ID=$!
-    echo $ITERATIONS
-    itr=0
-    while true
-    do
-      if [ $itr == $ITERATIONS ]; then
-         break;
-      fi
-      echo $itr
-      sleep 10
-      echo "--> evacuating all VMs from $host_to_evacuate to $destination_host:" >> $lv_results_file
-      echo "Saving logs of $host_to_evacuate and $destination_host nodes"
-      echo "starting lvm at: `date`" >> $lv_results_file
+    for itr in `seq 0 $ITERATIONS`; do
+      echo "--> evacuating all VMs from $host_to_evacuate to $destination_host ITERATION n: $itr" | tee -a $lv_results_file
+      echo "starting lvm at: `date`" | tee -a $lv_results_file
       rallytask_arg="'{\"image_name\": \"Ubuntulm14\", \"flavor_name\":\"lm.small\", \"block_migration\": false, \"host_to_evacuate\": \"$host_to_evacuate\", \"destination_host\": \"$destination_host\"}'"
-      echo "rally --plugin-paths nova_live_migration.py task start task.json --task-args $rallytask_arg; python /opt/osic-reliability/monitoring/send_task_data_to_influx.py" | bash
-      echo "finishing lvm at: `date`" >> $lv_results_file
-      servers=`python test_ping_vms.py "$host_to_evacuate" $downtime_info dfd get_servers`
+      echo "rally --plugin-paths rally_lvm_plugin/nova_live_migration.py task start rally_lvm_plugin/task.json --task-args $rallytask_arg; python /opt/osic-reliability/monitoring/send_task_data_to_influx.py" | bash
+      echo "finishing lvm at: `date`" | tee -a $lv_results_file
+      servers=`python tests/test_ping_vms.py "$host_to_evacuate" $downtime_info dfd get_servers`
       if [ "$servers" != "{}" ]; then
         echo "$servers failed to migrate from $host_to_evacuate" >> $lv_results_file
+        break;
       fi
-      #sleep 30
+      
       # move VMs back
-      echo "--> evacuating all VMs from $destination_host to $host_to_evacuate:" >> $lv_results_file
-      echo "starting lvm at: `date`" >> $lv_results_file
+      sleep 10
+      echo "--> evacuating all VMs from $destination_host to $host_to_evacuate:" | tee -a $lv_results_file
+      echo "starting lvm at: `date`" | tee -a $lv_results_file
       rallytask_arg="'{\"image_name\": \"Ubuntulm14\", \"flavor_name\":\"lm.small\", \"block_migration\": false, \"host_to_evacuate\": \"$destination_host\", \"destination_host\": \"$host_to_evacuate\"}'"
-      echo "rally --plugin-paths nova_live_migration.py task start task.json --task-args $rallytask_arg; python /opt/osic-reliability/monitoring/send_task_data_to_influx.py" | bash
-      echo "finishing lvm at: `date`" >> $lv_results_file
-      servers=`python test_ping_vms.py "$destination_host" $downtime_info dfd get_servers`
+      echo "rally --plugin-paths rally_lvm_plugin/nova_live_migration.py task start rally_lvm_plugin/task.json --task-args $rallytask_arg; python /opt/osic-reliability/monitoring/send_task_data_to_influx.py" | bash
+      echo "finishing lvm at: `date`" | tee -a $lv_results_file
+      servers=`python tests/test_ping_vms.py "$destination_host" $downtime_info dfd get_servers`
       if [ "$servers" != "{}" ]; then
         echo "$servers failed to migrate from $destination_host" >> $lv_results_file
+        break;
       fi;
-      itr=$((itr+1))
+      sleep 10
     done
     cat $downtime_info >> $lv_results_file
     python test_ping_vms.py  $host_to_evacuate $downtime_info $lv_results_file test_packet_loss
     
-    scp $host_to_evacuate:/var/log/nova/nova-compute.log .
     log1="$host_to_evacuate"_compute.log
     log2="$destination_host"_compute.log
-    cat nova-compute.log | grep "$time" -A 100000 > $log1
-    scp $destination_host:/var/log/nova/nova-compute.log .
-    cat nova-compute.log | grep "$time" -A 100000 > $log2
-    rm -rf nova-compute.log
+    scp $host_to_evacuate:/var/log/nova/nova-compute.log /tmp/
+    cat /tmp/nova-compute.log | grep "$time" -A 100000 > /opt/$log1
+    scp $destination_host:/var/log/nova/nova-compute.log /tmp/
+    cat /tmp/nova-compute.log | grep "$time" -A 100000 > /opt/$log2
+    rm -rf /tmp/nova-compute.log
     kill $TEST_ID
     echo "Cleaning up Resources.."
 ##    echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
