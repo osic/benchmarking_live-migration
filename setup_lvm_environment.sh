@@ -18,8 +18,6 @@ if [ `openstack keypair list | grep $key_name -c` -eq 0 ]; then
   openstack keypair create $key_name > /root/$key_name.pem
   chmod 400 /root/$key_name.pem
 fi
-#openstack keypair create $key_name > /root/$key_name.pem
-#chmod 400 /root/$key_name.pem
 
 # add a Ubuntu14.04 image
 if [ `glance image-list | grep $image_name -c ` -eq 0 ]; then
@@ -38,7 +36,7 @@ rm -rf /opt/rally
 git clone https://github.com/openstack/rally.git /opt/rally
 cd /opt/rally
 sudo ./install_rally.sh
-cd /opt/benchmarking_live-migration
+cd /opt/benchmarking_live-migration/rally_lvm_plugin
 rally deployment create --file=credentials.json --name=lvm_testing
 rally deployment use lvm_testing
 
