@@ -1,6 +1,21 @@
 #!/usr/bin/env bash
 
-
+function measure_tcp_loss() {
+python <<EOL
+filename = "$1"
+loss = 0
+f = open(filename,'rwb')
+l = f.read()
+numbers = filter(lambda x: x.isdigit(), l.split('\n'))
+previous = int(numbers[0])
+for i in numbers[1:]:
+  diff = int(i) - previous
+  if (diff > 1):
+    loss += (diff - 1)
+  previous = int(i)
+print loss
+EOL
+}
 
 # example to call this fuunction wait_instances compute01
 function wait_instances () {
@@ -14,14 +29,25 @@ function wait_instances () {
     done
 }
 
-function wait_stack () {
-    echo "Waiting till stack is created"
+function wait_stack_deleted () {
+    echo "Waiting till stack is deleted"
     sleep 10;
-    stacks_creating=`heat stack-list | grep CREATE_IN_PROGRESS -c`
+    stacks_creating=`openstack stack list | grep DELETE_IN_PROGRESS -c`
     until [ $stacks_creating  -eq 0 ]; do
         echo $stacks_creating
         sleep 10
-        stacks_creating=`heat stack-list | grep CREATE_IN_PROGRESS -c`
+        stacks_creating=`openstack stack list | grep DELETE_IN_PROGRESS -c`
+    done
+}
+
+function wait_stack () {
+    echo "Waiting till stack is created"
+    sleep 10;
+    stacks_creating=`openstack stack list | grep CREATE_IN_PROGRESS -c`
+    until [ $stacks_creating  -eq 0 ]; do
+        echo $stacks_creating
+        sleep 10
+        stacks_creating=`openstack stack list | grep CREATE_IN_PROGRESS -c`
     done
 }
 
@@ -36,6 +62,30 @@ All instances are up and running;
      flavor of workloads used is $3
 EOF
 
+}
+
+function average_duration() {
+python <<EOL
+total_duration = "$1"
+n = int($2)
+h = int(total_duration.split(":")[0])
+m = int(total_duration.split(":")[1])
+s = int(total_duration.split(":")[2])
+dur = (h * 3600) + ( m * 60) + s
+average = (dur / n) / 60.0
+print average
+EOL
+}
+function add_duration() {
+python <<EOL
+duration1 = "$1"
+duration2 = "$2"
+h = int(duration1.split(":")[0]) + int(duration2.split(":")[0])
+m = int(duration1.split(":")[1]) + int(duration2.split(":")[1])
+s = int(duration1.split(":")[2]) + int(duration2.split(":")[2])
+tot_duration = "%d:%d:%d" %(h,m,s)
+print tot_duration
+EOL
 }
 
 function get_specs_server() {

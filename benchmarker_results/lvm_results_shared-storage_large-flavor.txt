@@ -1,0 +1,312 @@
+
+specs for server compute04
+CPU info: ---------->
+CPU(s):                48
+
+memory info: ---------->
+    264025744 K total memory
+     12637008 K used memory
+     10646692 K active memory
+       394384 K inactive memory
+    251388736 K free memory
+       470036 K buffer memory
+
+disk info: ---------->
+KNAME TYPE   SIZE MODEL
+sda   disk   3.3T LOGICAL VOLUME  
+sda1  part 487.5M 
+sda2  part   3.3T 
+dm-0  lvm    7.6G 
+dm-1  lvm   47.7G 
+dm-2  lvm   71.5G 
+dm-3  lvm    3.1T 
+
+network devices info: ---------->
+05:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+05:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+specs for server compute05
+CPU info: ---------->
+CPU(s):                48
+
+memory info: ---------->
+    264025744 K total memory
+      4179032 K used memory
+      2447304 K active memory
+       377488 K inactive memory
+    259846704 K free memory
+       471728 K buffer memory
+
+disk info: ---------->
+KNAME TYPE   SIZE MODEL
+sda   disk   3.3T LOGICAL VOLUME  
+sda1  part 487.5M 
+sda2  part   3.3T 
+dm-0  lvm    7.6G 
+dm-1  lvm   47.7G 
+dm-2  lvm   71.5G 
+dm-3  lvm    3.1T 
+
+network devices info: ---------->
+05:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+05:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+All instances are up and running;
+--> testing the current environment:
+     1-spark VMs, 0-generic_cpu_final VMs, 0-generic_ram VMs, 0-generic_disk VMs
+     flavor of workloads used is large
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 1
+starting lvm at: Sun Jan 15 18:02:07 CST 2017
+finishing lvm at: Sun Jan 15 18:05:08 CST 2017
+live migration duration: 00:03:01
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 18:05:26 CST 2017
+finishing lvm at: Sun Jan 15 18:08:12 CST 2017
+live migration duration: 00:02:46
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 2
+starting lvm at: Sun Jan 15 18:08:29 CST 2017
+finishing lvm at: Sun Jan 15 18:11:18 CST 2017
+live migration duration: 00:02:49
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 18:11:36 CST 2017
+finishing lvm at: Sun Jan 15 18:14:17 CST 2017
+live migration duration: 00:02:41
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 3
+starting lvm at: Sun Jan 15 18:14:35 CST 2017
+finishing lvm at: Sun Jan 15 18:17:56 CST 2017
+live migration duration: 00:03:21
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 18:18:13 CST 2017
+finishing lvm at: Sun Jan 15 18:21:15 CST 2017
+live migration duration: 00:03:02
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 4
+starting lvm at: Sun Jan 15 18:21:32 CST 2017
+finishing lvm at: Sun Jan 15 18:24:39 CST 2017
+live migration duration: 00:03:07
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 18:24:57 CST 2017
+finishing lvm at: Sun Jan 15 18:27:55 CST 2017
+live migration duration: 00:02:58
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 5
+starting lvm at: Sun Jan 15 18:28:13 CST 2017
+finishing lvm at: Sun Jan 15 18:31:26 CST 2017
+live migration duration: 00:03:13
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 18:31:44 CST 2017
+finishing lvm at: Sun Jan 15 18:34:51 CST 2017
+live migration duration: 00:03:07
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 6
+starting lvm at: Sun Jan 15 18:35:09 CST 2017
+finishing lvm at: Sun Jan 15 18:38:22 CST 2017
+live migration duration: 00:03:13
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 18:38:40 CST 2017
+finishing lvm at: Sun Jan 15 18:41:51 CST 2017
+live migration duration: 00:03:11
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 7
+starting lvm at: Sun Jan 15 18:42:09 CST 2017
+finishing lvm at: Sun Jan 15 18:45:38 CST 2017
+live migration duration: 00:03:29
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 18:45:55 CST 2017
+finishing lvm at: Sun Jan 15 18:49:17 CST 2017
+live migration duration: 00:03:22
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 8
+starting lvm at: Sun Jan 15 18:49:34 CST 2017
+finishing lvm at: Sun Jan 15 18:52:52 CST 2017
+live migration duration: 00:03:18
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 18:53:09 CST 2017
+finishing lvm at: Sun Jan 15 18:56:24 CST 2017
+live migration duration: 00:03:15
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 9
+starting lvm at: Sun Jan 15 18:56:42 CST 2017
+finishing lvm at: Sun Jan 15 19:00:01 CST 2017
+live migration duration: 00:03:19
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 19:00:19 CST 2017
+finishing lvm at: Sun Jan 15 19:03:38 CST 2017
+live migration duration: 00:03:19
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 10
+starting lvm at: Sun Jan 15 19:03:56 CST 2017
+finishing lvm at: Sun Jan 15 19:07:23 CST 2017
+live migration duration: 00:03:27
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 19:07:41 CST 2017
+finishing lvm at: Sun Jan 15 19:11:00 CST 2017
+live migration duration: 00:03:19
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 11
+starting lvm at: Sun Jan 15 19:11:17 CST 2017
+finishing lvm at: Sun Jan 15 19:14:46 CST 2017
+live migration duration: 00:03:29
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 19:15:04 CST 2017
+finishing lvm at: Sun Jan 15 19:18:33 CST 2017
+live migration duration: 00:03:29
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 12
+starting lvm at: Sun Jan 15 19:18:51 CST 2017
+finishing lvm at: Sun Jan 15 19:22:24 CST 2017
+live migration duration: 00:03:33
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 19:22:42 CST 2017
+finishing lvm at: Sun Jan 15 19:26:17 CST 2017
+live migration duration: 00:03:35
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 13
+starting lvm at: Sun Jan 15 19:26:34 CST 2017
+finishing lvm at: Sun Jan 15 19:30:06 CST 2017
+live migration duration: 00:03:32
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 19:30:23 CST 2017
+finishing lvm at: Sun Jan 15 19:34:04 CST 2017
+live migration duration: 00:03:41
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 14
+starting lvm at: Sun Jan 15 19:34:22 CST 2017
+finishing lvm at: Sun Jan 15 19:38:11 CST 2017
+live migration duration: 00:03:49
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 19:38:28 CST 2017
+finishing lvm at: Sun Jan 15 19:42:14 CST 2017
+live migration duration: 00:03:46
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 15
+starting lvm at: Sun Jan 15 19:42:31 CST 2017
+finishing lvm at: Sun Jan 15 19:46:34 CST 2017
+live migration duration: 00:04:03
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 19:46:52 CST 2017
+finishing lvm at: Sun Jan 15 19:50:56 CST 2017
+live migration duration: 00:04:04
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 16
+starting lvm at: Sun Jan 15 19:51:13 CST 2017
+finishing lvm at: Sun Jan 15 19:55:06 CST 2017
+live migration duration: 00:03:53
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 19:55:24 CST 2017
+finishing lvm at: Sun Jan 15 19:59:15 CST 2017
+live migration duration: 00:03:51
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 17
+starting lvm at: Sun Jan 15 19:59:33 CST 2017
+finishing lvm at: Sun Jan 15 20:03:23 CST 2017
+live migration duration: 00:03:50
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 20:03:40 CST 2017
+finishing lvm at: Sun Jan 15 20:07:42 CST 2017
+live migration duration: 00:04:02
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 18
+starting lvm at: Sun Jan 15 20:08:00 CST 2017
+finishing lvm at: Sun Jan 15 20:11:55 CST 2017
+live migration duration: 00:03:55
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 20:12:12 CST 2017
+finishing lvm at: Sun Jan 15 20:16:24 CST 2017
+live migration duration: 00:04:12
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 19
+starting lvm at: Sun Jan 15 20:16:41 CST 2017
+finishing lvm at: Sun Jan 15 20:20:47 CST 2017
+live migration duration: 00:04:06
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 20:21:05 CST 2017
+finishing lvm at: Sun Jan 15 20:25:19 CST 2017
+live migration duration: 00:04:14
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 20
+starting lvm at: Sun Jan 15 20:25:36 CST 2017
+finishing lvm at: Sun Jan 15 20:29:58 CST 2017
+live migration duration: 00:04:22
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 20:30:16 CST 2017
+finishing lvm at: Sun Jan 15 20:34:42 CST 2017
+live migration duration: 00:04:26
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 21
+starting lvm at: Sun Jan 15 20:35:00 CST 2017
+finishing lvm at: Sun Jan 15 20:39:18 CST 2017
+live migration duration: 00:04:18
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 20:39:35 CST 2017
+finishing lvm at: Sun Jan 15 20:44:01 CST 2017
+live migration duration: 00:04:26
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 22
+starting lvm at: Sun Jan 15 20:44:19 CST 2017
+finishing lvm at: Sun Jan 15 20:48:49 CST 2017
+live migration duration: 00:04:30
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 20:49:07 CST 2017
+finishing lvm at: Sun Jan 15 20:53:37 CST 2017
+live migration duration: 00:04:30
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 23
+starting lvm at: Sun Jan 15 20:53:54 CST 2017
+finishing lvm at: Sun Jan 15 20:58:42 CST 2017
+live migration duration: 00:04:48
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 20:59:00 CST 2017
+finishing lvm at: Sun Jan 15 21:03:32 CST 2017
+live migration duration: 00:04:32
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 24
+starting lvm at: Sun Jan 15 21:03:50 CST 2017
+finishing lvm at: Sun Jan 15 21:08:42 CST 2017
+live migration duration: 00:04:52
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 21:08:59 CST 2017
+finishing lvm at: Sun Jan 15 21:13:46 CST 2017
+live migration duration: 00:04:47
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 25
+starting lvm at: Sun Jan 15 21:14:03 CST 2017
+finishing lvm at: Sun Jan 15 21:18:55 CST 2017
+live migration duration: 00:04:52
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 21:19:13 CST 2017
+finishing lvm at: Sun Jan 15 21:24:07 CST 2017
+live migration duration: 00:04:54
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 26
+starting lvm at: Sun Jan 15 21:24:25 CST 2017
+finishing lvm at: Sun Jan 15 21:29:14 CST 2017
+live migration duration: 00:04:49
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 21:29:32 CST 2017
+finishing lvm at: Sun Jan 15 21:34:30 CST 2017
+live migration duration: 00:04:58
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 27
+starting lvm at: Sun Jan 15 21:34:47 CST 2017
+finishing lvm at: Sun Jan 15 21:39:49 CST 2017
+live migration duration: 00:05:02
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 21:40:07 CST 2017
+finishing lvm at: Sun Jan 15 21:45:05 CST 2017
+live migration duration: 00:04:58
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 28
+starting lvm at: Sun Jan 15 21:45:23 CST 2017
+finishing lvm at: Sun Jan 15 21:50:25 CST 2017
+live migration duration: 00:05:02
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 21:50:42 CST 2017
+finishing lvm at: Sun Jan 15 21:56:00 CST 2017
+live migration duration: 00:05:18
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 29
+starting lvm at: Sun Jan 15 21:56:18 CST 2017
+finishing lvm at: Sun Jan 15 22:01:30 CST 2017
+live migration duration: 00:05:12
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 22:01:47 CST 2017
+finishing lvm at: Sun Jan 15 22:07:07 CST 2017
+live migration duration: 00:05:20
+--> evacuating all VMs from compute04 to compute05 ITERATION n: 30
+starting lvm at: Sun Jan 15 22:07:25 CST 2017
+finishing lvm at: Sun Jan 15 22:13:11 CST 2017
+live migration duration: 00:05:46
+--> evacuating all VMs from compute05 to compute04:
+starting lvm at: Sun Jan 15 22:13:29 CST 2017
+finishing lvm at: Sun Jan 15 22:18:46 CST 2017
+live migration duration: 00:05:17
+--- average duration of live migration: 3.98333333333 minutes ---
+downtime for instance with ip 172.22.108.210 : 7.0 seconds 
+downtime for instance with ip 172.22.108.205 : 6.5 seconds 
+downtime for instance with ip 172.22.108.207 : 6.0 seconds 
+downtime for instance with ip 172.22.108.206 : 7.0 seconds 
+downtime for instance with ip 172.22.108.209 : 4.5 seconds 
+downtime for instance with ip 172.22.108.208 : 4.5 seconds 
+No Loss of TCP stream and data while LM for VM: 172.22.108.210 +Sun Jan 15 22:19:06 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.108.205 +Sun Jan 15 22:19:07 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.108.207 +Sun Jan 15 22:19:07 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.108.206 +Sun Jan 15 22:19:08 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.108.209 +Sun Jan 15 22:19:09 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.108.208 +Sun Jan 15 22:19:10 CST 2017

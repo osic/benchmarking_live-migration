@@ -48,7 +48,7 @@ def test_packetloss_all(servers, lvm_results_filename):
        test_packetloss(ip, lvm_results_filename)
 
 def test_packetloss(ip, lvm_results_filename):
-    os.system("./test_packetloss.sh " + ip + " " + lvm_results_filename + " " + str(interval))
+    os.system("./tests/test_packetloss.sh " + ip + " " + lvm_results_filename + " " + str(interval))
 
 def send_to_all(servers):
     for server in servers.items():
@@ -67,15 +67,15 @@ def send_packets(ip):
          try:
             s = socket.socket( socket.AF_INET, socket.SOCK_STREAM )
             s.connect( ( ip, 2392 ) )
-            counter=0
+            counter = 0
             break
          except:
             continue 
       while True:
-         print "Sending "+str(counter) +" to ip " +ip
-         s.send(str(counter) + "\n")
+         print "Sending " + str(counter) + " to ip: " + ip
+         s.send( str(counter) + "\n" )
          time.sleep( interval )
-         counter=counter + 1
+         counter = counter + 1
 
 def start_tests(servers, filename):
     send_to_all(servers)
