@@ -49,7 +49,6 @@ for env in "${environment_type[@]}"; do
       echo "finishing lvm at: $finish_date" | tee -a $lv_results_file
       lvm_duration=`date -d @$(( $(date -d "$finish_date" +%s) - $(date -d "$start_date" +%s) )) -u +'%H:%M:%S'`
       echo "live migration duration: $lvm_duration" | tee -a $lv_results_file
-      tot_duration=`add_duration $tot_duration $lvm_duration`
       servers=`python tests/test_ping_vms.py "$host_to_evacuate" $downtime_info dfd get_servers`
       if [ "$servers" != "{}" ]; then
         echo "$servers failed to migrate from $host_to_evacuate" >> $lv_results_file

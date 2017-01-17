@@ -1,31 +1,24 @@
-#!/usr/bin/env bash
-
-function measure_tcp_loss() {
-python <<EOL
-filename = "$1"
-loss = 0
-f = open(filename,'rwb')
-l = f.read()
-numbers = filter(lambda x: x.isdigit(), l.split('\n'))
-previous = int(numbers[0])
-for i in numbers[1:]:
-  diff = int(i) - previous
-  if (diff > 1):
-    loss += (diff - 1)
-  previous = int(i)
-print loss
-EOL
-}
-
-IP=$1
-fileName=$2
-scp -i /root/lm_key.pem -o StrictHostKeyChecking=no ubuntu@$IP:/home/ubuntu/out.txt "/tmp/out_$IP.txt"
-loss=`measure_tcp_loss /tmp/out_$IP.txt` 
-
-if [ "$loss" -eq "0" ]; then
-  echo "No Loss of TCP stream and data while LM for VM: $IP" +$(date) | tee -a $fileName
-else
-  echo `python -c "print (int($loss) * $3)"` " seconds worth of information lost during LM for VM:  $IP" | tee -a $fileName
-fi
-
-ssh -i /root/lm_key.pem -o StrictHostKeyChecking=no ubuntu@$IP '> /home/ubuntu/out.txt'
+    IP=$1
+    fileName=$2
+    echo $IP
+    scp -i /root/lm_key.pem -o StrictHostKeyChecking=no ubuntu@$IP:/home/ubuntu/out.txt "out_$IP.txt"
+    previous=1
+    current=1
+    loss=false
+    while read line           
+    do
+       current=$line 
+       diff=$((current-previous))
+       criteria=1
+       if [ "$diff" -gt "$criteria" ]; then
+          loss=true
+          echo `python -c "print ($diff -1) * $3"` " seconds worth of information lost during LM for VM:  $IP" $(date)>> $fileName
+       fi
+       previous=$current
+    done <"out_$IP.txt"
+    if $loss; then
+       echo "Packet Loss during LM for VM: $IP" + $(date)  >> $fileName
+    else
+       echo "No Loss of TCP stream and data while LM for VM: $IP" +$(date) >> $fileName
+    fi
+    ssh -i /root/lm_key.pem ubuntu@$IP '> /home/ubuntu/out.txt'
