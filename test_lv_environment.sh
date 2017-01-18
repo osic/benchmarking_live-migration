@@ -26,7 +26,6 @@ for env in "${environment_type[@]}"; do
     if [ $DEPLOY_WORKLOADS == TRUE ]; then
       workload_def create --slice lm_slice --name $stack_name -n 1 --group "group_$host_to_evacuate" --envt $env
       wait_stack
-#      wait_instances $host_to_evacuate
       echo "All instances are up and running";
       describe_environment "${workloads_vms[*]}" $lv_results_file ${env##*_}
       echo "Waiting for 60 seconds before running the tests"
@@ -40,6 +39,7 @@ for env in "${environment_type[@]}"; do
     TEST_ID=$!
     tot_duration='00:00:00'
     for itr in `seq 1 $ITERATIONS`; do
+      echo $itr
       echo "--> evacuating all VMs from $host_to_evacuate to $destination_host ITERATION n: $itr" | tee -a $lv_results_file
       start_date=`date`
       echo "starting lvm at: $start_date" | tee -a $lv_results_file
@@ -90,7 +90,7 @@ for env in "${environment_type[@]}"; do
     cat /tmp/nova-compute.log | grep "$time" -A 100000 > /opt/$log2
     rm -rf /tmp/nova-compute.log
     kill $TEST_ID
-    echo "Cleaning up Resources.."
+#    echo "Cleaning up Resources.."
     echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
     wait_stack_deleted
 
