@@ -57,7 +57,7 @@ results
      
 1. flavor of workloads used is small
 
-Average duration of live migration: 1.93333333333 minutes
+`Average duration of live migration: 1.93333333333 minutes`
 
     downtime for instance with ip 172.22.108.249 : 5.5 seconds
     downtime for instance with ip 172.22.108.248 : 2.0 seconds
@@ -75,7 +75,7 @@ Average duration of live migration: 1.93333333333 minutes
 
 2. flavor of workloads used is medium
 
-Average duration of live migration: 2.11666666667 minutes
+`Average duration of live migration: 2.11666666667 minutes`
 
     downtime for instance with ip 172.22.108.245 : 4.0 seconds
     downtime for instance with ip 172.22.108.244 : 4.0 seconds
@@ -93,7 +93,7 @@ Average duration of live migration: 2.11666666667 minutes
 
 3. flavor of workloads used is large
 
-Average duration of live migration: 3.98333333333 minutes
+`Average duration of live migration: 3.98333333333 minutes`
 
     downtime for instance with ip 172.22.108.210 : 7.0 seconds
     downtime for instance with ip 172.22.108.205 : 6.5 seconds
@@ -113,7 +113,7 @@ Average duration of live migration: 3.98333333333 minutes
 
 1. flavor of workloads used is small
 
-Average duration of live migration: 1.35 minutes
+`Average duration of live migration: 1.35 minutes`
 
     downtime for instance with ip 172.22.108.102 : 4.5 seconds
     downtime for instance with ip 172.22.108.103 : 5.0 seconds
@@ -131,7 +131,7 @@ Average duration of live migration: 1.35 minutes
 
 2. flavor of workloads used is medium
 
-Average duration of live migration: 1.26666666667 minutes
+`Average duration of live migration: 1.26666666667 minutes`
 
     downtime for instance with ip 172.22.108.108 : 4.0 seconds
     downtime for instance with ip 172.22.108.109 : 8.0 seconds
@@ -149,7 +149,7 @@ Average duration of live migration: 1.26666666667 minutes
 
 3. flavor of workloads used is large
 
-Average duration of live migration: 1.98333333333 minutes
+`Average duration of live migration: 1.98333333333 minutes`
 
     downtime for instance with ip 172.22.108.118 : 5.5 seconds
     downtime for instance with ip 172.22.108.113 : 1.5 seconds
@@ -172,7 +172,7 @@ Average duration of live migration: 1.98333333333 minutes
 
 1. flavor of workloads used is small
 
-Average duration of live migration: 1.45 minutes
+`Average duration of live migration: 1.45 minutes`
 
     downtime for instance with ip 172.22.148.59 : 1.0 seconds
     downtime for instance with ip 172.22.148.58 : 4.5 seconds
@@ -190,7 +190,7 @@ Average duration of live migration: 1.45 minutes
 
 2. flavor of workloads used is medium
 
-Average duration of live migration: 1.51666666667 minutes
+`Average duration of live migration: 1.51666666667 minutes`
 
     downtime for instance with ip 172.22.148.61 : 8.0 seconds
     downtime for instance with ip 172.22.148.62 : 6.5 seconds
@@ -210,7 +210,7 @@ Average duration of live migration: 1.51666666667 minutes
 
 `NOTE:` 1 VM failed to live migration in the 17th iteration
 
-Average duration of live migration: 2.06666666667 minutes
+`Average duration of live migration: 2.06666666667 minutes`
 
     downtime for instance with ip 172.22.148.60 : 4.0 seconds 
     downtime for instance with ip 172.22.148.62 : 4.0 seconds 
@@ -229,7 +229,7 @@ Average duration of live migration: 2.06666666667 minutes
 
 1. flavor of workloads used is small
 
-Average duration of live migration: 1.43333333333 minutes ---
+`Average duration of live migration: 1.43333333333 minutes`
 
     downtime for instance with ip 172.22.148.59 : 3.0 seconds
     downtime for instance with ip 172.22.148.61 : 6.5 seconds
@@ -247,7 +247,7 @@ Average duration of live migration: 1.43333333333 minutes ---
 
 2. flavor of workloads used is medium
 
-Average duration of live migration: 1.5 minutes
+`Average duration of live migration: 1.5 minutes`
 
     downtime for instance with ip 172.22.148.60 : 7.0 seconds
     downtime for instance with ip 172.22.148.61 : 3.5 seconds
@@ -267,7 +267,7 @@ Average duration of live migration: 1.5 minutes
 
 `NOTE:` 2 VMs failed to live migration in the forth iteration
 
-Average duration of live migration: 1.48333333333 minutes
+`Average duration of live migration: 1.48333333333 minutes`
 
     downtime for instance with ip 172.22.148.60 : 0.5 seconds
     downtime for instance with ip 172.22.148.61 : 1.0 seconds
@@ -291,3 +291,5 @@ Lessons learned
 2. Cinder Volume and nova should be located in the same availability zone if you plan to live migrate volume backed VMs
 
 3. Tunneling disabling reduce Live migration duration 
+
+4. No TCP stream loss was recorded for all tests
