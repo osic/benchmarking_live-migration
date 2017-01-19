@@ -21,7 +21,7 @@ More than that, a monitoring stack based on the TICK stack with  influx is deplo
 Testing methodology
 ---------------------
 
-#### test Scenarios
+## test Scenarios
 
 To benchmark live migration, a tool has been put in place. This tool will
 
@@ -37,7 +37,7 @@ This scenario will be performed against each cloud first with tunneling off and 
 For each case, the scenario will run against three different flavors for its workloads: small (2 VCPUs, 4GB RAM, 40GB DISK), medium (4 VCPUs, 8GB RAM, 80GB DISK) and large(8 VCPUs, 16GB RAM, 160GB DISK)
 
 
-#### testings and measurements
+## testings and measurements
 
 while live migrating each VM, a number of tests is being launched to measure the performance of the live migration.
 
@@ -51,9 +51,9 @@ A list of the tests is listed below:
 results
 -------
 
-#### Shared storage backend
+## Shared storage backend
 
-# tunneling on
+#### tunneling on
      
 1. flavor of workloads used is small
 
@@ -109,7 +109,7 @@ Average duration of live migration: 3.98333333333 minutes
     No Loss of TCP stream and data while LM for VM: 172.22.108.209 +Sun Jan 15 22:19:09 CST 2017
     No Loss of TCP stream and data while LM for VM: 172.22.108.208 +Sun Jan 15 22:19:10 CST 2017
 
-# tunneling off
+#### tunneling off
 
 1. flavor of workloads used is small
 
@@ -166,9 +166,9 @@ Average duration of live migration: 1.98333333333 minutes
     No Loss of TCP stream and data while LM for VM: 172.22.108.116 +Tue Jan 17 22:30:25 CST 2017
 
 
-#### local storage backend
+## local storage backend
 
-# tunneling on
+#### tunneling on
 
 1. flavor of workloads used is small
 
@@ -210,7 +210,7 @@ Average duration of live migration: 1.51666666667 minutes
 
 `NOTE:` 1 VM failed to live migration in the 17th iteration
 
-Average duration of live migration: 2.06666666667 minutes ---
+Average duration of live migration: 2.06666666667 minutes
 
     downtime for instance with ip 172.22.148.60 : 4.0 seconds 
     downtime for instance with ip 172.22.148.62 : 4.0 seconds 
@@ -225,7 +225,7 @@ Average duration of live migration: 2.06666666667 minutes ---
     No Loss of TCP stream and data while LM for VM: 172.22.148.66 +Thu Jan 19 13:38:19 CST 2017
     No Loss of TCP stream and data while LM for VM: 172.22.148.56 +Thu Jan 19 13:38:19 CST 2017
 
-# tunneling off
+#### tunneling off
 
 1. flavor of workloads used is small
 
@@ -247,7 +247,7 @@ Average duration of live migration: 1.43333333333 minutes ---
 
 2. flavor of workloads used is medium
 
-Average duration of live migration: 1.5 minutes ---
+Average duration of live migration: 1.5 minutes
 
     downtime for instance with ip 172.22.148.60 : 7.0 seconds
     downtime for instance with ip 172.22.148.61 : 3.5 seconds
