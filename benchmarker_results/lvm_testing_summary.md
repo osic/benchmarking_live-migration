@@ -26,7 +26,7 @@ Testing methodology
 To benchmark live migration, a tool has been put in place. This tool will
 
 1. Bootstrap the Openstack Cloud for live migration testing: create images, keys, flavors.. install rally and workload generator.
-2. create the workloads on one of the compute nodes. The workloads is basically a slice of 6 VMs: 5 VMs contain a spark cluster running on real time a Spark streaming job while the 6th VM is a client that send data to the other nodes to be processed for the spark cluster.
+2. create the workloads on one of the compute nodes. The workloads is basically a slice of 6 VMs: 5 VMs contain a spark cluster running on real time a Spark streaming job while the 6th VM is a client that send data to the other nodes to be processed for the spark cluster. `The client is sending stream data at a rate of 1MB/s to each spark node.`
 3. launch all the testings and measurements prior to start benchmarking live migration
 4. evacuating the compute node with the workloads to another empty compute node back and forth 30 times in a row
 
@@ -293,3 +293,5 @@ Lessons learned
 3. Tunneling disabling reduce Live migration duration 
 
 4. No TCP stream loss was recorded for all tests
+
+5. testing was performed with spark streaming nodes processing data with a batch dration of 2 seconds. Putting that value to 1 second failed most of the live migration tests.
