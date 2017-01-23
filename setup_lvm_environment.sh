@@ -50,6 +50,9 @@ if [ ! -d "/opt/ops-workload-framework" ]; then git clone https://github.com/osi
 cd /opt/ops-workload-framework/heat_workload
 python setup.py install
 
+#install json parser for shell
+apt-get install jq
+
 sed -i '/  "flavor":/c\  "flavor": lm.small' envirnoment/heat_param_small.yaml
 sed -i '/  "flavor":/c\  "flavor": lm.medium' envirnoment/heat_param_medium.yaml
 sed -i '/  "flavor":/c\  "flavor": lm.large' envirnoment/heat_param_large.yaml
