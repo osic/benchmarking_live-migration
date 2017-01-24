@@ -46,6 +46,14 @@ for env in "${environment_type[@]}"; do
       rallytask_arg="'{\"image_name\": \"Ubuntulm14\", \"flavor_name\":\"lm.small\", \"block_migration\": false, \"host_to_evacuate\": \"$host_to_evacuate\", \"destination_host\": \"$destination_host\"}'"
       echo "rally --plugin-paths rally_lvm_plugin/nova_live_migration.py task start rally_lvm_plugin/task.json --task-args $rallytask_arg; python /opt/osic-reliability/monitoring/send_task_data_to_influx.py" | bash
       finish_date=`date`
+
+      #Storing Live Migration time for each VM
+      count=1
+      a=`rally task results | jq -r '.[0]["result"][0]["atomic_actions"] ' | grep "nova.live_migrate" | awk  -F ":" '{ print $2}' | tr -d ', '`
+      for line in $a;do
+         echo "live migration duration for VM$count: $line" | tee -a $lv_results_file
+      done
+  
       echo "finishing lvm at: $finish_date" | tee -a $lv_results_file
       lvm_duration=`date -d @$(( $(date -d "$finish_date" +%s) - $(date -d "$start_date" +%s) )) -u +'%H:%M:%S'`
       echo "live migration duration: $lvm_duration" | tee -a $lv_results_file
