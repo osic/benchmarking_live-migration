@@ -52,6 +52,7 @@ for env in "${environment_type[@]}"; do
       a=`rally task results | jq -r '.[0]["result"][0]["atomic_actions"] ' | grep "nova.live_migrate" | awk  -F ":" '{ print $2}' | tr -d ', '`
       for line in $a;do
          echo "live migration duration for VM$count: $line" | tee -a $lv_results_file
+         count=$((count+1))
       done
   
       echo "finishing lvm at: $finish_date" | tee -a $lv_results_file
@@ -79,6 +80,7 @@ for env in "${environment_type[@]}"; do
       a=`rally task results | jq -r '.[0]["result"][0]["atomic_actions"] ' | grep "nova.live_migrate" | awk  -F ":" '{ print $2}' | tr -d ', '`
       for line in $a;do
          echo "live migration duration for VM$count: $line" | tee -a $lv_results_file 
+         count=$((count+1))
       done
       
       echo "finishing lvm at: $finish_date" | tee -a $lv_results_file
