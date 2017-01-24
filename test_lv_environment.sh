@@ -48,12 +48,7 @@ for env in "${environment_type[@]}"; do
       finish_date=`date`
 
       #Storing Live Migration time for each VM
-      count=1
-      a=`rally task results | jq -r '.[0]["result"][0]["atomic_actions"] ' | grep "nova.live_migrate" | awk  -F ":" '{ print $2}' | tr -d ', '`
-      for line in $a;do
-         echo "live migration duration for VM$count: $line" | tee -a $lv_results_file
-         count=$((count+1))
-      done
+      add_vm_timing $lv_results_file
   
       echo "finishing lvm at: $finish_date" | tee -a $lv_results_file
       lvm_duration=`date -d @$(( $(date -d "$finish_date" +%s) - $(date -d "$start_date" +%s) )) -u +'%H:%M:%S'`
@@ -76,13 +71,8 @@ for env in "${environment_type[@]}"; do
       finish_date=`date`
       
       #Storing Live Migration time for each VM
-      count=1
-      a=`rally task results | jq -r '.[0]["result"][0]["atomic_actions"] ' | grep "nova.live_migrate" | awk  -F ":" '{ print $2}' | tr -d ', '`
-      for line in $a;do
-         echo "live migration duration for VM$count: $line" | tee -a $lv_results_file 
-         count=$((count+1))
-      done
-      
+      add_vm_timing $lv_results_file
+     
       echo "finishing lvm at: $finish_date" | tee -a $lv_results_file
       lvm_duration=`date -d @$(( $(date -d "$finish_date" +%s) - $(date -d "$start_date" +%s) )) -u +'%H:%M:%S'`
       echo "live migration duration: $lvm_duration" | tee -a $lv_results_file

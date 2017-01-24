@@ -29,6 +29,14 @@ function wait_instances () {
     done
 }
 
+function add_vm_timing(){
+      count=1
+      a=`rally task results | jq -r '.[0]["result"][0]["atomic_actions"] ' | grep "nova.live_migrate" | awk  -F ":" '{ print $2}' | tr -d ', '`
+      for line in $a;do
+         echo "live migration duration for VM$count: $line" | tee -a $1
+         count=$((count+1))
+      done    
+}
 function wait_stack_deleted () {
     echo "Waiting till stack is deleted"
     sleep 10;
