@@ -18,11 +18,11 @@ done
 
 cd /opt/benchmarking_live-migration
 echo '' > $lv_results_file
-echo "Tunneling: "$tunneling
 get_specs_server $host_to_evacuate | sed -e '1,/start/d' >> $lv_results_file
 get_specs_server $destination_host | sed -e '1,/start/d' >>  $lv_results_file
 
 for env in "${environment_type[@]}"; do
+    echo "Tunneling: "$tunneling > $lv_results_file
     cat /opt/ops-workload-framework/heat_workload/envirnoment/$env.yaml
     if [ $DEPLOY_WORKLOADS == TRUE ]; then
       workload_def create --slice lm_slice --name $stack_name -n 1 --group "group_$host_to_evacuate" --envt $env
@@ -100,7 +100,7 @@ for env in "${environment_type[@]}"; do
     rm -rf /tmp/nova-compute.log
     kill $TEST_ID
 #    echo "Cleaning up Resources.."
-    #echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
-    #wait_stack_deleted
+    echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
+    wait_stack_deleted
 done
-python parse_json.py
+#python parse_json.py
