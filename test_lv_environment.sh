@@ -18,6 +18,7 @@ done
 
 cd /opt/benchmarking_live-migration
 echo '' > $lv_results_file
+echo "Tunneling: "$tunneling
 get_specs_server $host_to_evacuate | sed -e '1,/start/d' >> $lv_results_file
 get_specs_server $destination_host | sed -e '1,/start/d' >>  $lv_results_file
 
@@ -101,5 +102,5 @@ for env in "${environment_type[@]}"; do
 #    echo "Cleaning up Resources.."
     #echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
     #wait_stack_deleted
-    break;
 done
+python parse_json.py

@@ -22,3 +22,5 @@ environment_type[1]="heat_param_medium"
 environment_type[2]="heat_param_large"
 lv_results_file="/opt/lvm_results.txt"
 downtime_info="/tmp/downtime_info.dat"
+#This variable is used just to document the environment
+tunneling="off"

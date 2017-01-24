@@ -25,7 +25,7 @@ loss=`measure_tcp_loss /tmp/out_$IP.txt`
 if [ "$loss" -eq "0" ]; then
   echo "No Loss of TCP stream and data while LM for VM: $IP" +$(date) | tee -a $fileName
 else
-  echo `python -c "print (int($loss) * $3)"` " seconds worth of information lost during LM for VM:  $IP" | tee -a $fileName
+  echo `python -c "print (int($loss) * $3)"` " seconds worth of information lost of TCP stream during LM for VM:  $IP" | tee -a $fileName
 fi
 
 ssh -i /root/lm_key.pem -o StrictHostKeyChecking=no ubuntu@$IP '> /home/ubuntu/out.txt'
