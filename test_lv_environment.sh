@@ -18,11 +18,11 @@ done
 
 cd /opt/benchmarking_live-migration
 echo '' > $lv_results_file
-get_specs_server $host_to_evacuate | sed -e '1,/start/d' >> $lv_results_file
-get_specs_server $destination_host | sed -e '1,/start/d' >>  $lv_results_file
+get_specs_server $host_to_evacuate | sed -e '1,/start/d' | tee -a $lv_results_file
+get_specs_server $destination_host | sed -e '1,/start/d' | tee -a  $lv_results_file
 
 for env in "${environment_type[@]}"; do
-    echo "Tunneling: "$tunneling > $lv_results_file
+    echo "Tunneling: "$tunneling | tee -a $lv_results_file
     cat /opt/ops-workload-framework/heat_workload/envirnoment/$env.yaml
     if [ $DEPLOY_WORKLOADS == TRUE ]; then
       workload_def create --slice lm_slice --name $stack_name -n 1 --group "group_$host_to_evacuate" --envt $env
@@ -45,7 +45,7 @@ for env in "${environment_type[@]}"; do
       start_date=`date`
       echo "starting lvm at: $start_date" | tee -a $lv_results_file
       rallytask_arg="'{\"image_name\": \"Ubuntulm14\", \"flavor_name\":\"lm.small\", \"block_migration\": false, \"host_to_evacuate\": \"$host_to_evacuate\", \"destination_host\": \"$destination_host\"}'"
-      echo "rally --plugin-paths rally_lvm_plugin/nova_live_migration.py task start rally_lvm_plugin/task.json --task-args $rallytask_arg; python /opt/osic-reliability/monitoring/send_task_data_to_influx.py" | bash
+      echo "rally --plugin-paths rally_lvm_plugin/nova_live_migration.py task start rally_lvm_plugin/task.json --task-args $rallytask_arg" | bash
       finish_date=`date`
 
       #Storing Live Migration time for each VM
@@ -68,7 +68,7 @@ for env in "${environment_type[@]}"; do
       start_date=`date`
       echo "starting lvm at: $start_date" | tee -a $lv_results_file
       rallytask_arg="'{\"image_name\": \"Ubuntulm14\", \"flavor_name\":\"lm.small\", \"block_migration\": false, \"host_to_evacuate\": \"$destination_host\", \"destination_host\": \"$host_to_evacuate\"}'"
-      echo "rally --plugin-paths rally_lvm_plugin/nova_live_migration.py task start rally_lvm_plugin/task.json --task-args $rallytask_arg; python /opt/osic-reliability/monitoring/send_task_data_to_influx.py" | bash
+      echo "rally --plugin-paths rally_lvm_plugin/nova_live_migration.py task start rally_lvm_plugin/task.json --task-args $rallytask_arg" | bash
       finish_date=`date`
       
       #Storing Live Migration time for each VM
@@ -103,4 +103,4 @@ for env in "${environment_type[@]}"; do
     echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
     wait_stack_deleted
 done
-#python parse_json.py
+python /opt/benchmarking_live-migration/parse_json.py

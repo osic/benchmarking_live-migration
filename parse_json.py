@@ -5,9 +5,34 @@ data = {}
 tmp_iteration = {}
 tmp_downtime = {}
 tmp_packetloss = {}
+environment = {}
 iteration_started = False
 iteration_number = 1
+reset = False
 for line in file:
+
+   #Look for tunneling
+   match = re.search(r"Tunneling:\s(.*)", line)
+   if match:
+      if reset:
+ #        import pdb;pdb.set_trace();
+         data["ITERATION"] = tmp_iteration
+         data["DOWNTIME"] = tmp_downtime
+         data["PACKETLOSS"] = tmp_packetloss
+#         print(json.dumps(data, indent=2))
+         #print data
+         iteration_number = 1
+         reset = False
+         environment[data["flavor"]] = data
+         data = {}
+         tmp_iteration = {}
+         tmp_downtime = {}
+         tmp_packetloss = {}
+      result = match.group(1)
+      data["tunneling"] = result
+      reset = True
+      continue
+
    # Look for flavor type
    match = re.search(r"flavor of workloads used is\s(.*)", line)
    if match:
@@ -63,7 +88,9 @@ for line in file:
 data["ITERATION"] = tmp_iteration
 data["DOWNTIME"] = tmp_downtime
 data["PACKETLOSS"] = tmp_packetloss
-print(json.dumps(data, indent=2))
+#import pdb ; pdb.set_trace();
+environment[data["flavor"]] = data
+print(json.dumps(environment, indent=2))
 #print data
 #print tmp_vm
 #print tmp_iteration
