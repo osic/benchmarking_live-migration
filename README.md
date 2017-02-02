@@ -3,10 +3,11 @@ Live migration in OpenStack
 
 Table of Contents
 -----------------
-* [#Introduction]()
-* [#Different ways to setup live migration in your Openstack Cloud]()
-* [#Benchmarking Live migration in your Cloud]()
-* [#Lessrned]()
+* [# Introduction]()
+* [# Different ways to setup live migration in your Openstack Cloud]()
+* [# Benchmarking Live migration in your Cloud]()
+* [# Live Migration Benchmarker tool]()
+* [# Lessons learned]()
 
 Introduction
 ------------
@@ -167,10 +168,9 @@ Run the task to evacuate a compute host and start benchmarking live migration:
 
 Optionally, you can setup cronjobs to perform last task every number of hours to start analyzing graphs from your monitoring solution:
 
-### results and comments
 
-Benchmarker tool
-----------------
+Live Migration Benchmarker tool
+-------------------------------
 
 Thi section talks about a tool that integrates rally live migration with workload generator and perform tests.
 This tool will spin up VMs using heat and run the workloads on those VMs. After that, it will perform the Live Migration and start 2 kind of tests.
@@ -202,6 +202,10 @@ More than that, a monitoring stack based on the TICK stack with  influx is deplo
 ### Usage
 Create a file credentials.json with you cloud information to start using rally:
 
+        cd /opt/benchmarking_live-migration/rally_lvm_plugin
+
+        vi credentials.json
+
         {
             "type":"ExistingCloud",
             "auth_url":"http://172.22.12.44:5000/v3/",
@@ -227,36 +231,82 @@ Create a file credentials.json with you cloud information to start using rally:
 
 Edit the file vars.rc and change it accordingly to your requirements:
 
+        cd /opt/benchmarking_live-migration/
+
         vi vars.rc
   
 Below is the snippet of vars.rc file:
 
         #!/bin/bash
-        
-        # change it to the network ID, VMs will be attached to
+
+        #location of the openrc file of the openstack cloud
+        openrc_path="/root/openrc"
+
+        #Flavor configurations
+        #Specify the configuration for the flavor in the following format
+        #(id_of_flavor-id memory_for_flavor-memory disk_size-disk number_of_vcpus-vcpus)
+        small=(7-id 4096-memory 40-disk 2-vcpus)
+        medium=(8-id 8192-memory 80-disk 4-vcpus)
+        large=(9-id 16384-memory 160-disk 8-vcpus)
+
+
+        #change it to the network ID, VMs will be attached to
         network="bc1b0934-3343-4fca-806e-3bad82205261"
+
         key_name="lm_key"
+
+        #image configuration
+        image_path="http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
+        image_container_format="qcow2"
+        image_disk_format="bare"
         image_name="Ubuntulm14"
+
         influx_ip=`cat /etc/openstack_deploy/openstack_user_config.yml | grep internal_lb_vip_address | awk '{print $2}' | tr -d '"'`
         export INFLUXDB_HOST=$influx_ip
+
         stack_name="lm_test$RANDOM"
-        # specify the compute host to evacuate and the destination host
+
+        # specify the copute host to evacuate and the destination host
         host_to_evacuate='compute04'
-        destination_host='compute07'
+        destination_host='compute05'
+
         # define workload_vms as: ( number of cpu vms, number of ram vms number of diskIO vms, number of network vms )
         workloads_vms=(1-spark 0-generic_cpu_final 0-generic_ram 0-generic_disk 0-generic_network)
+
         # change it to true if VMs needs to be deployed before starting LM tests
-        DEPLOY_WORKLOADS=FALSE
+        DEPLOY_WORKLOADS=TRUE
+
         # Number of times it will perform back and forth LM between compute hosts.
-        ITERATIONS=500
+        ITERATIONS=1
+
         #change environment to heat_param_medium or heat_param_large to use medium and large flavor environment
         environment_type[0]="heat_param_small"
-        lv_results_file="/opt/lvm_results_""$environment_type"".txt"
-        downtime_info="downtime_info""$environment_type"".dat"
+        environment_type[1]="heat_param_medium"
+        environment_type[2]="heat_param_large"
+
+        lv_results_file="/opt/lvm_results.txt"
+
+        downtime_info="/tmp/downtime_info.dat"
+
+        #This variable is used just to document the environment
+        tunneling="off"
+
 
 Run the benchmarker script using the following command:
 
         ./benchmarker.sh
+
+### Assumptions
+
+1. Deployment host should be able to ssh to compute host without key/password.
+
+2. A flat physical network(connected to the public internet) should be passed so that the VMs can communicate to each other.
+
+3. Must run this tool as a root user.
+
+### results and comments
+
+Results of the tool will be stored under /opt/benchmarking_resources directory.
 
 Lessons learned
 ----------------
