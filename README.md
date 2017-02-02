@@ -7,7 +7,7 @@ Table of Contents
 * [Different ways to setup live migration in your Openstack Cloud](https://github.com/osic/benchmarking_live-migration/blob/master/README.md#different-ways-to-setup-live-migration-in-your-openstack-cloud)
 * [Benchmarking Live migration in your Cloud](https://github.com/osic/benchmarking_live-migration/blob/master/README.md#benchmarking-live-migration-in-your-cloud)
 * [Live Migration Benchmarker tool](https://github.com/osic/benchmarking_live-migration/blob/master/README.md#live-migration-benchmarker-tool)
-* [Lessons learned](https://github.com/osic/benchmarking_live-migration/blob/master/README.md#live-migration-benchmarker-tool)
+* [Lessons learned](#lessons-learned)
 
 Introduction
 ------------
