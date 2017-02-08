@@ -1,6 +1,8 @@
 import json
 import re
-file =  open("/opt/lvm_results.txt","r")
+import sys
+#print sys.argv[1]
+file =  open(sys.argv[1],"r")
 data = {}
 tmp_iteration = {}
 tmp_downtime = {}
@@ -10,6 +12,10 @@ iteration_started = False
 iteration_number = 1
 reset = False
 for line in file:
+
+  # match =  re.search(r"flavor",line)
+ #  if match:
+#         import pdb;pdb.set_trace();
 
    #Look for tunneling
    match = re.search(r"Tunneling:\s(.*)", line)
@@ -34,7 +40,7 @@ for line in file:
       continue
 
    # Look for flavor type
-   match = re.search(r"flavor of workloads used is\s(.*)", line)
+   match = re.search(r"flavor of workloads used is:\s(.*)", line)
    if match:
       result = match.group(1)
       data["flavor"] = result
@@ -79,7 +85,7 @@ for line in file:
       match = re.search(r"live migration duration:\s(.*)", line)
       if match:
          result = match.group(1)
-         tmp_vm["duration"] = result
+         #tmp_vm["duration"] = result
 #         import pdb;pdb.set_trace();
          tmp_iteration[iteration_number] = tmp_vm
          iteration_number = iteration_number + 1

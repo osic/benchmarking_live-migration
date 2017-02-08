@@ -28,11 +28,14 @@ for env in "${environment_type[@]}"; do
       workload_def create --slice lm_slice --name $stack_name -n 1 --group "group_$host_to_evacuate" --envt $env
       wait_stack
       echo "All instances are up and running";
-      describe_environment "${workloads_vms[*]}" $lv_results_file ${env##*_}
-      echo "Waiting for 60 seconds before running the tests"
-      sleep 60
-      # start the lvm tests
+      echo "Waiting for 30 minutes before running the tests"
+      sleep 70m
     fi
+    sleep 60m
+    servers=`python tests/test_ping_vms.py "$host_to_evacuate" $downtime_info dfd get_servers`
+    echo "testing against following environment: $servers" | tee -a $lv_results_file
+    echo "flavor of workloads used is: ${env##*_}" | tee -a $lv_results_file
+    # start the lvm tests
     DATE=`date +%Y-%m-%d`
     TIME=`date +%H:%M`
     time="$DATE $TIME"
@@ -57,8 +60,8 @@ for env in "${environment_type[@]}"; do
       tot_duration=`add_duration $tot_duration $lvm_duration`
       servers=`python tests/test_ping_vms.py "$host_to_evacuate" $downtime_info dfd get_servers`
       if [ "$servers" != "{}" ]; then
-        echo "$servers failed to migrate from $host_to_evacuate" >> $lv_results_file
-        break;
+        echo "--> $servers failed to migrate from $host_to_evacuate" >> $lv_results_file
+        #break;
       fi
       
       sleep 15
@@ -80,8 +83,8 @@ for env in "${environment_type[@]}"; do
       tot_duration=`add_duration $tot_duration $lvm_duration`
       servers=`python tests/test_ping_vms.py "$destination_host" $downtime_info dfd get_servers`
       if [ "$servers" != "{}" ]; then
-        echo "$servers failed to migrate from $destination_host" >> $lv_results_file
-        break;
+        echo "--> $servers failed to migrate from $destination_host" >> $lv_results_file
+        #break;
       fi;
 
       sleep 15
@@ -100,7 +103,7 @@ for env in "${environment_type[@]}"; do
     rm -rf /tmp/nova-compute.log
     kill $TEST_ID
 #    echo "Cleaning up Resources.."
-    echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
-    wait_stack_deleted
+    #echo "y" | openstack stack delete $stack_name.lm_slice.$host_to_evacuate
+    #wait_stack_deleted
 done
-python /opt/benchmarking_live-migration/parse_json.py
+#python /opt/benchmarking_live-migration/parse_json.py

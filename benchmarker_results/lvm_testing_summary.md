@@ -28,9 +28,9 @@ Testing methodology
 To benchmark live migration, a tool has been put in place. This tool will
 
 1. Bootstrap the Openstack Cloud for live migration testing: create images, keys, flavors.. install rally and workload generator.
-2. create the workloads on one of the compute nodes. The workloads are basically a slice of 6 VMs: 5 VMs each one contains a spark cluster running a real time Spark streaming job while the 6th VM is a client that feeds data to the other nodes containing the spark workers. `The client is sending stream data at a rate of 1MB/s to each spark node.`
+2. create the workloads on one of the compute nodes. The workloads are basically a slice of 6 VMs: ` each VM  contains a spark cluster running a real time Spark streaming job receiving stream data at a rate of 100kB/s. each VM has its disk half full which simulate logs and data stored from apps in real world`
 3. launch all the testings and measurements prior to start benchmarking live migration
-4. evacuating the compute node with the workloads to another empty compute node back and forth 30 times in a row
+4. evacuating the compute node with the workloads to another empty compute node back and forth 20 times in a row
 
 `NOTE:` the VMS are being evacuated in series one at a time and not in parallel
 
@@ -47,7 +47,7 @@ A list of the tests is listed below:
 
 1. measure the downtime of the VM (duration of packet loss when live migrating).
 2. measure the tcp stream continiousity (send packets through tcp and detect any loss).
-3. measure the timing to evacuate the compute node.
+3. measure per VM timing of live migration.
 4. collect all VMs metrics while live migration (CPU, network bandwidth, disk IO, RAM).
 
 results
@@ -59,114 +59,125 @@ results
      
 1. flavor of workloads used is small
 
-`Average duration of live migration: 1.93333333333 minutes`
+`Average duration to evacuate host: 3.2 minutes`
 
-    downtime for instance with ip 172.22.108.249 : 5.5 seconds
-    downtime for instance with ip 172.22.108.248 : 2.0 seconds
-    downtime for instance with ip 172.22.108.247 : 6.0 seconds
-    downtime for instance with ip 172.22.108.252 : 6.0 seconds
-    downtime for instance with ip 172.22.108.250 : 7.5 seconds
-    downtime for instance with ip 172.22.108.251 : 7.5 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.108.249 +Mon Jan 16 23:02:20 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.248 +Mon Jan 16 23:02:20 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.247 +Mon Jan 16 23:02:21 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.252 +Mon Jan 16 23:02:21 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.250 +Mon Jan 16 23:02:22 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.251 +Mon Jan 16 23:02:22 CST 2017
+    downtime for instance with ip 172.22.108.166 : 3.5 seconds
+    downtime for instance with ip 172.22.108.167 : 7.5 seconds
+    downtime for instance with ip 172.22.108.168 : 4.0 seconds
+    downtime for instance with ip 172.22.108.169 : 3.0 seconds
+    downtime for instance with ip 172.22.108.171 : 6.0 seconds
+    downtime for instance with ip 172.22.108.170 : 4.0 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.108.166 +Mon Feb 6 04:09:55 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.167 +Mon Feb 6 04:09:56 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.168 +Mon Feb 6 04:09:57 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.169 +Mon Feb 6 04:09:58 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.171 +Mon Feb 6 04:09:59 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.170 +Mon Feb 6 04:10:00 CST 2017
 
 2. flavor of workloads used is medium
 
-`Average duration of live migration: 2.11666666667 minutes`
+`Average duration of live migration: 5.46666666667 minutes`
 
-    downtime for instance with ip 172.22.108.245 : 4.0 seconds
-    downtime for instance with ip 172.22.108.244 : 4.0 seconds
-    downtime for instance with ip 172.22.108.246 : 5.0 seconds
-    downtime for instance with ip 172.22.108.241 : 6.5 seconds
-    downtime for instance with ip 172.22.108.243 : 3.5 seconds
-    downtime for instance with ip 172.22.108.242 : 4.0 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.108.245 +Mon Jan 16 20:44:32 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.244 +Mon Jan 16 20:44:32 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.246 +Mon Jan 16 20:44:33 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.241 +Mon Jan 16 20:44:34 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.243 +Mon Jan 16 20:44:34 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.242 +Mon Jan 16 20:44:35 CST 2017
+    downtime for instance with ip 172.22.108.160 : 2.5 seconds
+    downtime for instance with ip 172.22.108.161 : 2.5 seconds
+    downtime for instance with ip 172.22.108.162 : 4.0 seconds
+    downtime for instance with ip 172.22.108.163 : 1.0 seconds
+    downtime for instance with ip 172.22.108.164 : 3.5 seconds
+    downtime for instance with ip 172.22.108.165 : 4.5 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.108.160 +Sun Feb 5 19:11:49 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.161 +Sun Feb 5 19:11:50 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.162 +Sun Feb 5 19:11:51 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.163 +Sun Feb 5 19:11:52 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.164 +Sun Feb 5 19:11:53 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.165 +Sun Feb 5 19:11:54 CST 2017
 
 3. flavor of workloads used is large
 
-`Average duration of live migration: 3.98333333333 minutes`
+`Average duration of live migration: 9.51666666667 minutes`
 
-    downtime for instance with ip 172.22.108.210 : 7.0 seconds
-    downtime for instance with ip 172.22.108.205 : 6.5 seconds
-    downtime for instance with ip 172.22.108.207 : 6.0 seconds
-    downtime for instance with ip 172.22.108.206 : 7.0 seconds
-    downtime for instance with ip 172.22.108.209 : 4.5 seconds
-    downtime for instance with ip 172.22.108.208 : 4.5 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.108.210 +Sun Jan 15 22:19:06 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.205 +Sun Jan 15 22:19:07 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.207 +Sun Jan 15 22:19:07 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.206 +Sun Jan 15 22:19:08 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.209 +Sun Jan 15 22:19:09 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.208 +Sun Jan 15 22:19:10 CST 2017
+    downtime for instance with ip 172.22.108.155 : 3.5 seconds
+    downtime for instance with ip 172.22.108.154 : 2.5 seconds
+    downtime for instance with ip 172.22.108.157 : 4.5 seconds
+    downtime for instance with ip 172.22.108.156 : 4.5 seconds
+    downtime for instance with ip 172.22.108.159 : 3.0 seconds
+    downtime for instance with ip 172.22.108.158 : 2.5 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.108.155 +Sun Feb 5 05:47:52 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.154 +Sun Feb 5 05:47:54 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.157 +Sun Feb 5 05:47:56 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.156 +Sun Feb 5 05:47:58 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.159 +Sun Feb 5 05:47:59 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.158 +Sun Feb 5 05:48:06 CST 2017
 
 #### tunneling off
 
 1. flavor of workloads used is small
 
-`Average duration of live migration: 1.35 minutes`
+`Average duration of live migration: 1.73333333333`
 
-    downtime for instance with ip 172.22.108.102 : 4.5 seconds
-    downtime for instance with ip 172.22.108.103 : 5.0 seconds
-    downtime for instance with ip 172.22.108.101 : 8.0 seconds
-    downtime for instance with ip 172.22.108.106 : 4.5 seconds
-    downtime for instance with ip 172.22.108.104 : 7.5 seconds
-    downtime for instance with ip 172.22.108.105 : 6.0 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.108.102 +Tue Jan 17 17:24:02 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.103 +Tue Jan 17 17:24:03 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.101 +Tue Jan 17 17:24:03 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.106 +Tue Jan 17 17:24:04 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.104 +Tue Jan 17 17:24:04 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.105 +Tue Jan 17 17:24:05 CST 2017
+    downtime for instance with ip 172.22.108.133 : 4.5 seconds
+    downtime for instance with ip 172.22.108.132 : 6.5 seconds
+    downtime for instance with ip 172.22.108.131 : 6.0 seconds
+    downtime for instance with ip 172.22.108.130 : 5.5 seconds
+    downtime for instance with ip 172.22.108.135 : 6.5 seconds
+    downtime for instance with ip 172.22.108.134 : 3.5 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.108.133 +Thu Feb 2 20:40:02 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.132 +Thu Feb 2 20:40:03 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.131 +Thu Feb 2 20:40:04 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.130 +Thu Feb 2 20:40:05 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.135 +Thu Feb 2 20:40:06 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.134 +Thu Feb 2 20:40:07 CST 2017
 
 2. flavor of workloads used is medium
 
-`Average duration of live migration: 1.26666666667 minutes`
+`Average duration of live migration: 2.7 minutes minutes`
 
-    downtime for instance with ip 172.22.108.108 : 4.0 seconds
-    downtime for instance with ip 172.22.108.109 : 8.0 seconds
-    downtime for instance with ip 172.22.108.111 : 7.5 seconds
-    downtime for instance with ip 172.22.108.110 : 6.0 seconds
-    downtime for instance with ip 172.22.108.112 : 7.0 seconds
-    downtime for instance with ip 172.22.108.107 : 5.0 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.108.108 +Tue Jan 17 20:09:27 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.109 +Tue Jan 17 20:09:27 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.111 +Tue Jan 17 20:09:28 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.110 +Tue Jan 17 20:09:29 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.112 +Tue Jan 17 20:09:29 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.107 +Tue Jan 17 20:09:30 CST 2017
+    downtime for instance with ip 172.22.108.151 : 5.5 seconds
+    downtime for instance with ip 172.22.108.150 : 2.5 seconds
+    downtime for instance with ip 172.22.108.153 : 6.0 seconds
+    downtime for instance with ip 172.22.108.152 : 6.0 seconds
+    downtime for instance with ip 172.22.108.148 : 7.0 seconds
+    downtime for instance with ip 172.22.108.149 : 6.0 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.108.151 +Sat Feb 4 12:52:17 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.150 +Sat Feb 4 12:52:18 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.153 +Sat Feb 4 12:52:19 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.152 +Sat Feb 4 12:52:20 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.148 +Sat Feb 4 12:52:21 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.149 +Sat Feb 4 12:52:22 CST 2017
 
 3. flavor of workloads used is large
 
 `Average duration of live migration: 1.98333333333 minutes`
 
-    downtime for instance with ip 172.22.108.118 : 5.5 seconds
-    downtime for instance with ip 172.22.108.113 : 1.5 seconds
-    downtime for instance with ip 172.22.108.115 : 6.0 seconds
-    downtime for instance with ip 172.22.108.114 : 5.5 seconds
-    downtime for instance with ip 172.22.108.117 : 7.5 seconds
-    downtime for instance with ip 172.22.108.116 : 3.0 seconds
+`live migration success rate = 233/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.108.118 +Tue Jan 17 22:30:21 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.113 +Tue Jan 17 22:30:22 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.115 +Tue Jan 17 22:30:23 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.114 +Tue Jan 17 22:30:23 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.117 +Tue Jan 17 22:30:24 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.108.116 +Tue Jan 17 22:30:25 CST 2017
+    downtime for instance with ip 172.22.108.146 : 3.5 seconds
+    downtime for instance with ip 172.22.108.147 : 5.5 seconds
+    downtime for instance with ip 172.22.108.144 : 3.0 seconds
+    downtime for instance with ip 172.22.108.145 : 2.5 seconds
+    downtime for instance with ip 172.22.108.142 : 5.5 seconds
+    downtime for instance with ip 172.22.108.143 : 3.0 seconds
 
+    No Loss of TCP stream and data while LM for VM: 172.22.108.146 +Fri Feb 3 17:37:57 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.147 +Fri Feb 3 17:37:58 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.144 +Fri Feb 3 17:37:59 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.145 +Fri Feb 3 17:38:00 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.142 +Fri Feb 3 17:38:00 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.108.143 +Fri Feb 3 17:38:01 CST 2017
 
 ## local storage backend
 
@@ -174,45 +185,51 @@ results
 
 1. flavor of workloads used is small
 
-`Average duration of live migration: 1.45 minutes`
+`Average duration of live migration: 6.48333333333 minutes`
 
-    downtime for instance with ip 172.22.148.59 : 1.0 seconds
-    downtime for instance with ip 172.22.148.58 : 4.5 seconds
-    downtime for instance with ip 172.22.148.62 : 3.0 seconds
-    downtime for instance with ip 172.22.148.61 : 3.0 seconds
-    downtime for instance with ip 172.22.148.57 : 5.5 seconds
-    downtime for instance with ip 172.22.148.56 : 5.5 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.148.59 +Thu Jan 19 01:20:00 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.58 +Thu Jan 19 01:20:01 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.62 +Thu Jan 19 01:20:03 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.61 +Thu Jan 19 01:20:04 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Thu Jan 19 01:20:05 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.56 +Thu Jan 19 01:20:06 CST 2017
+    downtime for instance with ip 172.22.148.60 : 8.0 seconds
+    downtime for instance with ip 172.22.148.64 : 4.0 seconds
+    downtime for instance with ip 172.22.148.66 : 4.5 seconds
+    downtime for instance with ip 172.22.148.67 : 10.5 seconds
+    downtime for instance with ip 172.22.148.57 : 7.5 seconds
+    downtime for instance with ip 172.22.148.56 : 10.0 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.148.60 +Mon Feb 6 06:15:57 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.64 +Mon Feb 6 06:15:58 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.66 +Mon Feb 6 06:15:58 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.67 +Mon Feb 6 06:15:59 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Mon Feb 6 06:16:00 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.56 +Mon Feb 6 06:16:01 CST 2017
 
 2. flavor of workloads used is medium
 
-`Average duration of live migration: 1.51666666667 minutes`
+`Average duration of live migration: 12.4833333333 minutes`
 
-    downtime for instance with ip 172.22.148.61 : 8.0 seconds
-    downtime for instance with ip 172.22.148.62 : 6.5 seconds
-    downtime for instance with ip 172.22.148.58 : 5.0 seconds
-    downtime for instance with ip 172.22.148.55 : 7.0 seconds
-    downtime for instance with ip 172.22.148.57 : 7.5 seconds
-    downtime for instance with ip 172.22.148.56 : 5.0 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.148.61 +Thu Jan 19 12:13:53 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.62 +Thu Jan 19 12:13:54 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.58 +Thu Jan 19 12:13:55 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.55 +Thu Jan 19 12:13:55 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Thu Jan 19 12:13:56 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.56 +Thu Jan 19 12:13:57 CST 2017
+    downtime for instance with ip 172.22.148.63 : 4.5 seconds
+    downtime for instance with ip 172.22.148.67 : 34.5 seconds
+    downtime for instance with ip 172.22.148.68 : 5.5 seconds
+    downtime for instance with ip 172.22.148.53 : 3.5 seconds
+    downtime for instance with ip 172.22.148.54 : 30.5 seconds
+    downtime for instance with ip 172.22.148.57 : 8.5 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.148.63 +Sun Feb 5 23:48:48 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.67 +Sun Feb 5 23:48:49 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.68 +Sun Feb 5 23:48:50 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.53 +Sun Feb 5 23:48:51 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.54 +Sun Feb 5 23:48:52 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Sun Feb 5 23:48:52 CST 2017
 
 3. flavor of workloads used is large
 
 `NOTE:` 1 VM failed to live migration in the 17th iteration
 
 `Average duration of live migration: 2.06666666667 minutes`
+
+`live migration success rate = 234/240`
 
     downtime for instance with ip 172.22.148.60 : 4.0 seconds 
     downtime for instance with ip 172.22.148.62 : 4.0 seconds 
@@ -231,64 +248,73 @@ results
 
 1. flavor of workloads used is small
 
-`Average duration of live migration: 1.43333333333 minutes`
+`Average duration of live migration: 6.7 minutes`
 
-    downtime for instance with ip 172.22.148.59 : 3.0 seconds
-    downtime for instance with ip 172.22.148.61 : 6.5 seconds
-    downtime for instance with ip 172.22.148.64 : 4.0 seconds
-    downtime for instance with ip 172.22.148.58 : 4.5 seconds
-    downtime for instance with ip 172.22.148.53 : 5.5 seconds
-    downtime for instance with ip 172.22.148.56 : 6.0 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.148.59 +Wed Jan 18 19:32:59 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.61 +Wed Jan 18 19:33:00 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.64 +Wed Jan 18 19:33:01 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.58 +Wed Jan 18 19:33:01 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.53 +Wed Jan 18 19:33:02 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.56 +Wed Jan 18 19:33:02 CST 2017
+    downtime for instance with ip 172.22.148.59 : 16.5 seconds
+    downtime for instance with ip 172.22.148.62 : 5.5 seconds
+    downtime for instance with ip 172.22.148.64 : 7.0 seconds
+    downtime for instance with ip 172.22.148.65 : 25.5 seconds
+    downtime for instance with ip 172.22.148.66 : 40.5 seconds
+    downtime for instance with ip 172.22.148.68 : 18.5 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.148.59 +Fri Feb 3 01:35:40 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.62 +Fri Feb 3 01:35:42 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.64 +Fri Feb 3 01:35:43 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.65 +Fri Feb 3 01:35:45 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.66 +Fri Feb 3 01:35:47 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.68 +Fri Feb 3 01:35:48 CST 2017
 
 2. flavor of workloads used is medium
 
-`Average duration of live migration: 1.5 minutes`
+`Average duration of live migration: 12.3 minutes`
 
-    downtime for instance with ip 172.22.148.60 : 7.0 seconds
-    downtime for instance with ip 172.22.148.61 : 3.5 seconds
-    downtime for instance with ip 172.22.148.55 : 6.5 seconds
-    downtime for instance with ip 172.22.148.54 : 9.0 seconds
-    downtime for instance with ip 172.22.148.57 : 3.0 seconds
-    downtime for instance with ip 172.22.148.56 : 5.0 seconds
+`live migration success rate = 240/240`
 
-    No Loss of TCP stream and data while LM for VM: 172.22.148.60 +Wed Jan 18 17:11:34 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.61 +Wed Jan 18 17:11:34 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.55 +Wed Jan 18 17:11:35 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.54 +Wed Jan 18 17:11:36 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Wed Jan 18 17:11:36 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.56 +Wed Jan 18 17:11:37 CST 2017
+    downtime for instance with ip 172.22.148.60 : 3.0 seconds
+    downtime for instance with ip 172.22.148.58 : 56.0 seconds
+    downtime for instance with ip 172.22.148.62 : 14.5 seconds
+    downtime for instance with ip 172.22.148.53 : 4.0 seconds
+    downtime for instance with ip 172.22.148.55 : 1.0 seconds
+    downtime for instance with ip 172.22.148.54 : 26.5 seconds
+
+    No Loss of TCP stream and data while LM for VM: 172.22.148.60 +Sat Feb 4 19:23:20 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.58 +Sat Feb 4 19:23:21 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.62 +Sat Feb 4 19:23:22 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.53 +Sat Feb 4 19:23:23 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.55 +Sat Feb 4 19:23:24 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.54 +Sat Feb 4 19:23:25 CST 2017
 
 3. flavor of workloads used is large
 
-`NOTE:` 2 VMs failed to live migration in the forth iteration
+`Average duration of live migration: 24.0166666667  minutes`
 
-`Average duration of live migration: 1.48333333333 minutes`
+`live migration success rate = 239/240`
 
-    downtime for instance with ip 172.22.148.60 : 0.5 seconds
-    downtime for instance with ip 172.22.148.61 : 1.0 seconds
-    downtime for instance with ip 172.22.148.62 : 1.0 seconds
-    downtime for instance with ip 172.22.148.53 : 0 seconds
-    downtime for instance with ip 172.22.148.54 : 1.5 seconds
-    downtime for instance with ip 172.22.148.57 : 0 seconds
+    downtime for instance with ip 172.22.148.59 : 6.0 seconds
+    downtime for instance with ip 172.22.148.62 : 3.5 seconds
+    downtime for instance with ip 172.22.148.66 : 7.5 seconds
+    downtime for instance with ip 172.22.148.55 : 6.0 seconds
+    downtime for instance with ip 172.22.148.57 : 4.5 seconds
+    downtime for instance with ip 172.22.148.56 : 6.0 seconds
 
-    No Loss of TCP stream and data while LM for VM: 172.22.148.54 +Wed Jan 18 14:52:20 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Wed Jan 18 14:52:21 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.53 +Wed Jan 18 14:52:22 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.62 +Wed Jan 18 14:52:22 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.60 +Wed Jan 18 14:52:23 CST 2017
-    No Loss of TCP stream and data while LM for VM: 172.22.148.61 +Wed Jan 18 14:52:24 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.59 +Sat Feb 4 06:14:00 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.62 +Sat Feb 4 06:14:02 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.66 +Sat Feb 4 06:14:04 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.55 +Sat Feb 4 06:14:06 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Sat Feb 4 06:14:07 CST 2017
+    No Loss of TCP stream and data while LM for VM: 172.22.148.56 +Sat Feb 4 06:14:09 CST 2017
 
-Lessons learned
-----------------
+Conclusion&Lessons learned
+--------------------------
 
-1. when using live migration with tunneling off, live migration will be done in the hypervisor level, that's why hypervisor should be able to resolve the different hypervisor names in the cloud. To fix that, in the phsical compute nodes, there should be a mapping between compute hosts names or ips with their respective local hypervisor name. Hypervisor name can be detected with the nova hypervisor-list command.
+1. with large flavors some failures were recorded to live migrate. Debugging those, lead to two findings
+
+- some VMs were failing because live migration timeout was reached. Setting this value (live_migration_progress_timeout) to zero(infinity) lead to 100% success rate for the shared storage case.
+- Some VMs fail to live migrate because nova failed to update the VM status after migrating. debugging is still ongoing
+
+1. when using live migration with tunneling off, live migration will be done in the hypervisor level, that's why hypervisor should be able to resolve the different hypervisor names in the cloud. To fix that, in the physical compute nodes, there should be a mapping between compute hosts names or ips with their respective local hypervisor name. Hypervisor name can be detected with the nova hypervisor-list command.
 
 2. Cinder Volume and nova should be located in the same availability zone if you plan to live migrate volume backed VMs
 
@@ -296,4 +322,3 @@ Lessons learned
 
 4. No TCP stream loss was recorded for all tests
 
-5. testing was performed with spark streaming nodes processing data with a batch dration of 2 seconds. Putting that value to 1 second failed most of the live migration tests.

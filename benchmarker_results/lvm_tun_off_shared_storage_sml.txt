@@ -1123,10 +1123,6 @@ live migration duration: 00:07:39
 starting lvm at: Fri Feb  3 14:22:47 CST 2017
 live migration duration for VM1: 76.96774196624756
 live migration duration for VM2: 124.24932813644409
-live migration duration for VM3: 154.59664487838745
-live migration duration for VM4: 154.9932780265808
-live migration duration for VM5: 154.41498684883118
-live migration duration for VM6: 155.56905794143677
 finishing lvm at: Fri Feb  3 14:36:37 CST 2017
 live migration duration: 00:13:50
 --> {u'172.22.108.146': u'spark-3-ycoasfs', u'172.22.108.147': u'spark-1-ycoasfs', u'172.22.108.142': u'spark-2-ycoasfs', u'172.22.108.143': u'spark-5-ycoasfs'} failed to migrate from compute06
@@ -1141,9 +1137,6 @@ starting lvm at: Fri Feb  3 14:39:18 CST 2017
 live migration duration for VM1: 65.63970685005188
 live migration duration for VM2: 83.7240879535675
 live migration duration for VM3: 99.16558194160461
-live migration duration for VM4: 156.32992792129517
-live migration duration for VM5: 154.8732831478119
-live migration duration for VM6: 156.78650999069214
 finishing lvm at: Fri Feb  3 14:51:25 CST 2017
 live migration duration: 00:12:07
 --> {u'172.22.108.147': u'spark-1-ycoasfs', u'172.22.108.142': u'spark-2-ycoasfs', u'172.22.108.143': u'spark-5-ycoasfs'} failed to migrate from compute06

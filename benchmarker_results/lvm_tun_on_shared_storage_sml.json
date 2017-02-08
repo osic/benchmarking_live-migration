@@ -341,7 +341,7 @@
       "172.22.108.170": "4.0 seconds"
     }
   }, 
-  "medium ": {
+  "medium": {
     "PACKETLOSS": {
       "172.22.108.160": "No Loss of TCP stream and data while LM for VM: 172.22.108.160 +Sun Feb 5 19:11:49 CST 2017\n", 
       "172.22.108.161": "No Loss of TCP stream and data while LM for VM: 172.22.108.161 +Sun Feb 5 19:11:50 CST 2017\n", 
@@ -350,7 +350,7 @@
       "172.22.108.164": "No Loss of TCP stream and data while LM for VM: 172.22.108.164 +Sun Feb 5 19:11:53 CST 2017\n", 
       "172.22.108.165": "No Loss of TCP stream and data while LM for VM: 172.22.108.165 +Sun Feb 5 19:11:54 CST 2017\n"
     }, 
-    "flavor": "medium ", 
+    "flavor": "medium", 
     "tunneling": "on", 
     "ITERATION": {
       "1": {
@@ -683,7 +683,7 @@
       "172.22.108.165": "4.5 seconds"
     }
   }, 
-  "large ": {
+  "large": {
     "PACKETLOSS": {
       "172.22.108.155": "No Loss of TCP stream and data while LM for VM: 172.22.108.155 +Sun Feb 5 05:47:52 CST 2017\n", 
       "172.22.108.154": "No Loss of TCP stream and data while LM for VM: 172.22.108.154 +Sun Feb 5 05:47:54 CST 2017\n", 
@@ -692,7 +692,7 @@
       "172.22.108.159": "No Loss of TCP stream and data while LM for VM: 172.22.108.159 +Sun Feb 5 05:47:59 CST 2017\n", 
       "172.22.108.158": "No Loss of TCP stream and data while LM for VM: 172.22.108.158 +Sun Feb 5 05:48:06 CST 2017\n"
     }, 
-    "flavor": "large ", 
+    "flavor": "large", 
     "tunneling": "on", 
     "ITERATION": {
       "1": {

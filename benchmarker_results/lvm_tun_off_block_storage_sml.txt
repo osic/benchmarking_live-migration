@@ -54,7 +54,7 @@ network devices info: ---------->
 88:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
 Tunneling: off
 testing against following environment: {u'172.22.148.59': u'spark-1-pjrdxhe', u'172.22.148.62': u'spark-3-pjrdxhe', u'172.22.148.64': u'spark-5-pjrdxhe', u'172.22.148.65': u'spark-2-pjrdxhe', u'172.22.148.66': u'spark-6-pjrdxhe', u'172.22.148.68': u'spark-4-pjrdxhe'} 
-flavor of workloads used is: small
+flavor of workloads used is: small 
 --> evacuating all VMs from compute07 to compute04 ITERATION n: 1
 starting lvm at: Thu Feb  2 18:36:07 CST 2017
 live migration duration for VM1: 57.627002000808716
@@ -671,7 +671,7 @@ No Loss of TCP stream and data while LM for VM: 172.22.148.68 +Fri Feb 3 01:35:4
 
 Tunneling: off
 testing against following environment: {u'172.22.148.60': u'spark-3-gdqcuvj', u'172.22.148.58': u'spark-4-gdqcuvj', u'172.22.148.62': u'spark-5-gdqcuvj', u'172.22.148.53': u'spark-6-gdqcuvj', u'172.22.148.55': u'spark-1-gdqcuvj', u'172.22.148.54': u'spark-2-gdqcuvj'} 
-flavor of workloads used is: medium
+flavor of workloads used is: medium 
 --> evacuating all VMs from compute07 to compute04 ITERATION n: 1
 starting lvm at: Sat Feb  4 10:59:24 CST 2017
 live migration duration for VM1: 114.27088594436646
@@ -1088,7 +1088,7 @@ No Loss of TCP stream and data while LM for VM: 172.22.148.54 +Sat Feb 4 19:23:2
 
 Tunneling: off
 testing against following environment: {u'172.22.148.59': u'spark-2-uydnbso', u'172.22.148.62': u'spark-5-uydnbso', u'172.22.148.66': u'spark-4-uydnbso', u'172.22.148.55': u'spark-6-uydnbso', u'172.22.148.57': u'spark-3-uydnbso', u'172.22.148.56': u'spark-1-uydnbso'} 
-flavor of workloads used is: large
+flavor of workloads used is: large 
 --> evacuating all VMs from compute07 to compute04 ITERATION n: 1
 starting lvm at: Fri Feb  3 14:01:00 CST 2017
 live migration duration for VM1: 214.44448685646057
@@ -1224,7 +1224,6 @@ starting lvm at: Fri Feb  3 19:27:56 CST 2017
 live migration duration for VM1: 232.9122121334076
 live migration duration for VM2: 360.60881519317627
 live migration duration for VM3: 400.8345139026642
-live migration duration for VM4: 1.0161218643188477
 live migration duration for VM6: 189.0818498134613
 finishing lvm at: Fri Feb  3 19:47:45 CST 2017
 live migration duration: 00:19:49

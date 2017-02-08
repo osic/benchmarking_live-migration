@@ -1002,10 +1002,6 @@ live migration duration: 00:23:20
 --> evacuating all VMs from compute04 to compute07:
 starting lvm at: Sun Feb  5 04:05:03 CST 2017
 live migration duration for VM1: 402.09774804115295
-live migration duration for VM2: 0.0022220611572265625
-live migration duration for VM3: 20.1234610080719
-live migration duration for VM4: 39.112343072891235
-live migration duration for VM5: 24.360942840576172
 live migration duration for VM6: 235.50883793830872
 finishing lvm at: Sun Feb  5 04:17:10 CST 2017
 live migration duration: 00:12:07
@@ -1022,7 +1018,6 @@ starting lvm at: Sun Feb  5 04:26:30 CST 2017
 live migration duration for VM1: 228.92733788490295
 live migration duration for VM2: 242.65849995613098
 live migration duration for VM3: 238.44105696678162
-live migration duration for VM4: 0.18974518775939941
 live migration duration for VM5: 233.89227104187012
 finishing lvm at: Sun Feb  5 04:42:19 CST 2017
 live migration duration: 00:15:49
@@ -1042,7 +1037,6 @@ live migration duration for VM1: 233.83032512664795
 live migration duration for VM2: 235.40696692466736
 live migration duration for VM3: 242.39677596092224
 live migration duration for VM4: 236.07687783241272
-live migration duration for VM5: 0.287092924118042
 live migration duration for VM6: 249.22870898246765
 finishing lvm at: Sun Feb  5 05:23:05 CST 2017
 live migration duration: 00:20:01
@@ -1062,7 +1056,6 @@ live migration duration for VM1: 233.52437686920166
 live migration duration for VM2: 233.291002035141
 live migration duration for VM3: 242.66046905517578
 live migration duration for VM4: 245.90401911735535
-live migration duration for VM5: 0.20527911186218262
 live migration duration for VM6: 246.09027290344238
 finishing lvm at: Sun Feb  5 06:04:14 CST 2017
 live migration duration: 00:20:06
@@ -1082,7 +1075,6 @@ live migration duration for VM1: 231.12494587898254
 live migration duration for VM2: 228.65911602973938
 live migration duration for VM3: 228.95722603797913
 live migration duration for VM4: 239.7793779373169
-live migration duration for VM5: 0.3742060661315918
 live migration duration for VM6: 237.76627111434937
 finishing lvm at: Sun Feb  5 06:44:52 CST 2017
 live migration duration: 00:19:31
@@ -1102,7 +1094,6 @@ live migration duration for VM1: 228.65169191360474
 live migration duration for VM2: 233.16595482826233
 live migration duration for VM3: 237.8348639011383
 live migration duration for VM4: 233.64484310150146
-live migration duration for VM5: 0.22128701210021973
 live migration duration for VM6: 244.85816192626953
 finishing lvm at: Sun Feb  5 07:26:04 CST 2017
 live migration duration: 00:19:43
@@ -1122,7 +1113,6 @@ live migration duration for VM1: 231.3367109298706
 live migration duration for VM2: 228.58535480499268
 live migration duration for VM3: 233.33213806152344
 live migration duration for VM4: 237.48613500595093
-live migration duration for VM5: 0.1958918571472168
 live migration duration for VM6: 236.27965092658997
 finishing lvm at: Sun Feb  5 08:07:05 CST 2017
 live migration duration: 00:19:32
@@ -1142,7 +1132,6 @@ live migration duration for VM1: 233.1816210746765
 live migration duration for VM2: 240.11656188964844
 live migration duration for VM3: 230.83214116096497
 live migration duration for VM4: 244.1825089454651
-live migration duration for VM5: 0.20684099197387695
 live migration duration for VM6: 233.19932794570923
 finishing lvm at: Sun Feb  5 08:47:47 CST 2017
 live migration duration: 00:19:46
@@ -1162,7 +1151,6 @@ live migration duration for VM1: 229.17016005516052
 live migration duration for VM2: 242.0651638507843
 live migration duration for VM3: 246.14648509025574
 live migration duration for VM4: 242.33714389801025
-live migration duration for VM5: 0.19872021675109863
 live migration duration for VM6: 237.21660685539246
 finishing lvm at: Sun Feb  5 09:28:43 CST 2017
 live migration duration: 00:20:02
@@ -1182,7 +1170,6 @@ live migration duration for VM1: 228.77126789093018
 live migration duration for VM2: 230.50041890144348
 live migration duration for VM3: 235.51048707962036
 live migration duration for VM4: 231.1568160057068
-live migration duration for VM5: 0.20940804481506348
 live migration duration for VM6: 240.06195402145386
 finishing lvm at: Sun Feb  5 10:08:59 CST 2017
 live migration duration: 00:19:31
@@ -1202,7 +1189,6 @@ live migration duration for VM1: 236.59738993644714
 live migration duration for VM2: 237.60081601142883
 live migration duration for VM3: 246.3455970287323
 live migration duration for VM4: 252.46222710609436
-live migration duration for VM5: 0.2241969108581543
 live migration duration for VM6: 240.00339818000793
 finishing lvm at: Sun Feb  5 10:50:10 CST 2017
 live migration duration: 00:20:18
@@ -1222,7 +1208,6 @@ live migration duration for VM1: 229.57561898231506
 live migration duration for VM2: 239.58467817306519
 live migration duration for VM3: 252.4368278980255
 live migration duration for VM4: 246.30168890953064
-live migration duration for VM5: 0.20137405395507812
 live migration duration for VM6: 241.89019393920898
 finishing lvm at: Sun Feb  5 11:32:14 CST 2017
 live migration duration: 00:20:14
@@ -1242,7 +1227,6 @@ live migration duration for VM1: 233.73306012153625
 live migration duration for VM2: 232.98308897018433
 live migration duration for VM3: 239.71891903877258
 live migration duration for VM4: 254.52677488327026
-live migration duration for VM5: 0.21995306015014648
 live migration duration for VM6: 241.78345799446106
 finishing lvm at: Sun Feb  5 12:13:50 CST 2017
 live migration duration: 00:20:07
@@ -1262,7 +1246,6 @@ live migration duration for VM1: 229.13662099838257
 live migration duration for VM2: 241.938658952713
 live migration duration for VM3: 235.41574788093567
 live migration duration for VM4: 244.57868695259094
-live migration duration for VM5: 0.2032010555267334
 live migration duration for VM6: 226.3036789894104
 finishing lvm at: Sun Feb  5 12:54:45 CST 2017
 live migration duration: 00:19:42
@@ -1282,7 +1265,6 @@ live migration duration for VM1: 240.27437686920166
 live migration duration for VM2: 235.5024209022522
 live migration duration for VM3: 243.87661695480347
 live migration duration for VM4: 257.08675503730774
-live migration duration for VM5: 0.28959012031555176
 live migration duration for VM6: 229.2314169406891
 finishing lvm at: Sun Feb  5 13:36:26 CST 2017
 live migration duration: 00:20:12
