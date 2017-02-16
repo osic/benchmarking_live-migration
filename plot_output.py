@@ -55,7 +55,7 @@ if __name__ == "__main__":
 	plt.xticks(range(len(flavors)), flavors)
 	plt.xlabel('flavors')
 	plt.ylabel('time')
-	plt.title('LVM average and std time (tunneling off)')
+	plt.title('LVM average and std time (tunneling on)')
 	plt.legend()
 	plt.grid(linestyle='--')
 	plt.show()

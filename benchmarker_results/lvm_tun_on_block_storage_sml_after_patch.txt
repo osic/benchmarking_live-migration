@@ -1,0 +1,1304 @@
+specs for server compute08
+CPU info: ---------->
+CPU(s):                48
+
+memory info: ---------->
+    264025696 K total memory
+     11617732 K used memory
+      7257112 K active memory
+      2792936 K inactive memory
+    252407968 K free memory
+       618872 K buffer memory
+
+disk info: ---------->
+KNAME TYPE   SIZE MODEL
+sda   disk   3.3T LOGICAL VOLUME  
+sda1  part 487.5M 
+sda2  part   3.3T 
+dm-0  lvm    7.6G 
+dm-1  lvm   47.7G 
+dm-2  lvm   71.5G 
+dm-3  lvm    3.1T 
+
+network devices info: ---------->
+05:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+05:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+specs for server compute05
+CPU info: ---------->
+CPU(s):                48
+
+memory info: ---------->
+    264025696 K total memory
+     10495824 K used memory
+      5773736 K active memory
+      2801216 K inactive memory
+    253529872 K free memory
+       622148 K buffer memory
+
+disk info: ---------->
+KNAME TYPE   SIZE MODEL
+sda   disk   3.3T LOGICAL VOLUME  
+sda1  part 487.5M 
+sda2  part   3.3T 
+dm-0  lvm    7.6G 
+dm-1  lvm   47.7G 
+dm-2  lvm   71.5G 
+dm-3  lvm    3.1T 
+
+network devices info: ---------->
+05:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+05:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.0 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+88:00.1 Ethernet controller: Intel Corporation Ethernet 10G 2P X710 Adapter (rev 01)
+Tunneling: on
+testing against following environment: {u'172.22.148.60': u'spark-1-atpmdan', u'172.22.148.64': u'spark-5-atpmdan', u'172.22.148.66': u'spark-6-atpmdan', u'172.22.148.67': u'spark-2-atpmdan', u'172.22.148.57': u'spark-4-atpmdan', u'172.22.148.56': u'spark-3-atpmdan'} 
+flavor of workloads used is: small 
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 1
+starting lvm at: Mon Feb  6 01:44:43 CST 2017
+live migration duration for VM1: 57.196035861968994
+live migration duration for VM2: 60.436172008514404
+live migration duration for VM3: 62.352712869644165
+live migration duration for VM4: 59.88522696495056
+live migration duration for VM5: 57.65373110771179
+live migration duration for VM6: 62.257137060165405
+finishing lvm at: Mon Feb  6 01:50:48 CST 2017
+live migration duration: 00:06:05
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 01:51:06 CST 2017
+live migration duration for VM1: 61.95763111114502
+live migration duration for VM2: 66.313481092453
+live migration duration for VM3: 66.11406707763672
+live migration duration for VM4: 65.81103706359863
+live migration duration for VM5: 66.13628888130188
+live migration duration for VM6: 69.0883469581604
+finishing lvm at: Mon Feb  6 01:57:47 CST 2017
+live migration duration: 00:06:41
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 2
+starting lvm at: Mon Feb  6 01:58:05 CST 2017
+live migration duration for VM1: 59.83216691017151
+live migration duration for VM2: 64.10057497024536
+live migration duration for VM3: 63.78587293624878
+live migration duration for VM4: 64.01860904693604
+live migration duration for VM5: 59.58218598365784
+live migration duration for VM6: 64.76415705680847
+finishing lvm at: Mon Feb  6 02:04:26 CST 2017
+live migration duration: 00:06:21
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 02:04:44 CST 2017
+live migration duration for VM1: 57.603190898895264
+live migration duration for VM2: 62.324268102645874
+live migration duration for VM3: 68.27000999450684
+live migration duration for VM4: 66.04122495651245
+live migration duration for VM5: 66.1038031578064
+live migration duration for VM6: 66.8838849067688
+finishing lvm at: Mon Feb  6 02:11:18 CST 2017
+live migration duration: 00:06:34
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 3
+starting lvm at: Mon Feb  6 02:11:36 CST 2017
+live migration duration for VM1: 59.61677002906799
+live migration duration for VM2: 64.04836201667786
+live migration duration for VM3: 62.11666989326477
+live migration duration for VM4: 64.15451693534851
+live migration duration for VM5: 61.80425405502319
+live migration duration for VM6: 64.04734301567078
+finishing lvm at: Mon Feb  6 02:17:57 CST 2017
+live migration duration: 00:06:21
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 02:18:15 CST 2017
+live migration duration for VM1: 57.49474501609802
+live migration duration for VM2: 64.21132802963257
+live migration duration for VM3: 63.71945309638977
+live migration duration for VM4: 68.49888396263123
+live migration duration for VM5: 61.72183299064636
+live migration duration for VM6: 66.7553780078888
+finishing lvm at: Mon Feb  6 02:24:43 CST 2017
+live migration duration: 00:06:28
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 4
+starting lvm at: Mon Feb  6 02:25:01 CST 2017
+live migration duration for VM1: 57.182698011398315
+live migration duration for VM2: 62.28470301628113
+live migration duration for VM3: 63.8994460105896
+live migration duration for VM4: 63.94478487968445
+live migration duration for VM5: 63.77555704116821
+live migration duration for VM6: 66.29967498779297
+finishing lvm at: Mon Feb  6 02:31:24 CST 2017
+live migration duration: 00:06:23
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 02:31:42 CST 2017
+live migration duration for VM1: 59.76442193984985
+live migration duration for VM2: 66.37715315818787
+live migration duration for VM3: 64.17776107788086
+live migration duration for VM4: 67.99357414245605
+live migration duration for VM5: 63.679068088531494
+live migration duration for VM6: 66.4923529624939
+finishing lvm at: Mon Feb  6 02:38:15 CST 2017
+live migration duration: 00:06:33
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 5
+starting lvm at: Mon Feb  6 02:38:33 CST 2017
+live migration duration for VM1: 55.3109610080719
+live migration duration for VM2: 65.95468592643738
+live migration duration for VM3: 63.706912994384766
+live migration duration for VM4: 63.721750020980835
+live migration duration for VM5: 62.07107710838318
+live migration duration for VM6: 68.57151103019714
+finishing lvm at: Mon Feb  6 02:44:57 CST 2017
+live migration duration: 00:06:24
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 02:45:15 CST 2017
+live migration duration for VM1: 57.45493698120117
+live migration duration for VM2: 66.34288287162781
+live migration duration for VM3: 66.2132658958435
+live migration duration for VM4: 65.96148705482483
+live migration duration for VM5: 62.353222131729126
+live migration duration for VM6: 66.40483498573303
+finishing lvm at: Mon Feb  6 02:51:44 CST 2017
+live migration duration: 00:06:29
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 6
+starting lvm at: Mon Feb  6 02:52:02 CST 2017
+live migration duration for VM1: 54.98211312294006
+live migration duration for VM2: 62.29405689239502
+live migration duration for VM3: 61.650285959243774
+live migration duration for VM4: 63.741546869277954
+live migration duration for VM5: 61.58399796485901
+live migration duration for VM6: 66.61676502227783
+finishing lvm at: Mon Feb  6 02:58:17 CST 2017
+live migration duration: 00:06:15
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 02:58:35 CST 2017
+live migration duration for VM1: 59.606077909469604
+live migration duration for VM2: 68.97507905960083
+live migration duration for VM3: 63.59880709648132
+live migration duration for VM4: 68.38555598258972
+live migration duration for VM5: 63.990516901016235
+live migration duration for VM6: 66.56254887580872
+finishing lvm at: Mon Feb  6 03:05:10 CST 2017
+live migration duration: 00:06:35
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 7
+starting lvm at: Mon Feb  6 03:05:28 CST 2017
+live migration duration for VM1: 55.53595280647278
+live migration duration for VM2: 62.093279123306274
+live migration duration for VM3: 63.81826305389404
+live migration duration for VM4: 63.75338006019592
+live migration duration for VM5: 61.503406047821045
+live migration duration for VM6: 64.30265808105469
+finishing lvm at: Mon Feb  6 03:11:43 CST 2017
+live migration duration: 00:06:15
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 03:12:01 CST 2017
+live migration duration for VM1: 57.432584047317505
+live migration duration for VM2: 64.71732306480408
+live migration duration for VM3: 64.10939311981201
+live migration duration for VM4: 66.03991103172302
+live migration duration for VM5: 61.67190885543823
+live migration duration for VM6: 64.38254404067993
+finishing lvm at: Mon Feb  6 03:18:24 CST 2017
+live migration duration: 00:06:23
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 8
+starting lvm at: Mon Feb  6 03:18:42 CST 2017
+live migration duration for VM1: 57.65882396697998
+live migration duration for VM2: 61.9291090965271
+live migration duration for VM3: 64.06160402297974
+live migration duration for VM4: 70.61210703849792
+live migration duration for VM5: 59.67416191101074
+live migration duration for VM6: 66.57678389549255
+finishing lvm at: Mon Feb  6 03:25:08 CST 2017
+live migration duration: 00:06:26
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 03:25:25 CST 2017
+live migration duration for VM1: 55.30047106742859
+live migration duration for VM2: 64.27989912033081
+live migration duration for VM3: 65.9698839187622
+live migration duration for VM4: 67.99261212348938
+live migration duration for VM5: 63.740485191345215
+live migration duration for VM6: 65.04894804954529
+finishing lvm at: Mon Feb  6 03:31:53 CST 2017
+live migration duration: 00:06:28
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 9
+starting lvm at: Mon Feb  6 03:32:10 CST 2017
+live migration duration for VM1: 57.58501100540161
+live migration duration for VM2: 62.32579779624939
+live migration duration for VM3: 66.29884791374207
+live migration duration for VM4: 63.730226039886475
+live migration duration for VM5: 59.592525005340576
+live migration duration for VM6: 66.65568494796753
+finishing lvm at: Mon Feb  6 03:38:32 CST 2017
+live migration duration: 00:06:22
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 03:38:50 CST 2017
+live migration duration for VM1: 57.26241898536682
+live migration duration for VM2: 64.07969403266907
+live migration duration for VM3: 68.1617169380188
+live migration duration for VM4: 66.0765950679779
+live migration duration for VM5: 64.1974630355835
+live migration duration for VM6: 66.35734701156616
+finishing lvm at: Mon Feb  6 03:45:21 CST 2017
+live migration duration: 00:06:31
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 10
+starting lvm at: Mon Feb  6 03:45:39 CST 2017
+live migration duration for VM1: 57.47840690612793
+live migration duration for VM2: 61.88924193382263
+live migration duration for VM3: 63.85711097717285
+live migration duration for VM4: 65.96983003616333
+live migration duration for VM5: 61.67112898826599
+live migration duration for VM6: 70.83789110183716
+finishing lvm at: Mon Feb  6 03:52:06 CST 2017
+live migration duration: 00:06:27
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 03:52:24 CST 2017
+live migration duration for VM1: 59.79833006858826
+live migration duration for VM2: 64.49398589134216
+live migration duration for VM3: 66.31133484840393
+live migration duration for VM4: 68.39992809295654
+live migration duration for VM5: 63.597126960754395
+live migration duration for VM6: 66.65964794158936
+finishing lvm at: Mon Feb  6 03:58:57 CST 2017
+live migration duration: 00:06:33
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 11
+starting lvm at: Mon Feb  6 03:59:15 CST 2017
+live migration duration for VM1: 57.59516477584839
+live migration duration for VM2: 64.1100811958313
+live migration duration for VM3: 65.97157907485962
+live migration duration for VM4: 63.765212059020996
+live migration duration for VM5: 59.79353904724121
+live migration duration for VM6: 63.946831941604614
+finishing lvm at: Mon Feb  6 04:05:34 CST 2017
+live migration duration: 00:06:19
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 04:05:52 CST 2017
+live migration duration for VM1: 59.25396203994751
+live migration duration for VM2: 70.56411981582642
+live migration duration for VM3: 68.31126093864441
+live migration duration for VM4: 68.53507494926453
+live migration duration for VM5: 65.9498929977417
+live migration duration for VM6: 69.18825602531433
+finishing lvm at: Mon Feb  6 04:12:38 CST 2017
+live migration duration: 00:06:46
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 12
+starting lvm at: Mon Feb  6 04:12:55 CST 2017
+live migration duration for VM1: 57.47968006134033
+live migration duration for VM2: 62.09825611114502
+live migration duration for VM3: 61.51555395126343
+live migration duration for VM4: 70.03635501861572
+live migration duration for VM5: 63.545814037323
+live migration duration for VM6: 68.8466808795929
+finishing lvm at: Mon Feb  6 04:19:24 CST 2017
+live migration duration: 00:06:29
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 04:19:42 CST 2017
+live migration duration for VM1: 59.244982957839966
+live migration duration for VM2: 66.44131898880005
+live migration duration for VM3: 63.830843925476074
+live migration duration for VM4: 68.39286398887634
+live migration duration for VM5: 64.28831601142883
+live migration duration for VM6: 68.59728789329529
+finishing lvm at: Mon Feb  6 04:26:18 CST 2017
+live migration duration: 00:06:36
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 13
+starting lvm at: Mon Feb  6 04:26:35 CST 2017
+live migration duration for VM1: 59.25664710998535
+live migration duration for VM2: 64.33560800552368
+live migration duration for VM3: 64.3824360370636
+live migration duration for VM4: 66.00590300559998
+live migration duration for VM5: 60.004425048828125
+live migration duration for VM6: 66.72892093658447
+finishing lvm at: Mon Feb  6 04:33:01 CST 2017
+live migration duration: 00:06:26
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 04:33:19 CST 2017
+live migration duration for VM1: 57.42361807823181
+live migration duration for VM2: 64.39327692985535
+live migration duration for VM3: 67.93185710906982
+live migration duration for VM4: 68.57951617240906
+live migration duration for VM5: 61.704347133636475
+live migration duration for VM6: 64.5819821357727
+finishing lvm at: Mon Feb  6 04:39:48 CST 2017
+live migration duration: 00:06:29
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 14
+starting lvm at: Mon Feb  6 04:40:06 CST 2017
+live migration duration for VM1: 57.05187487602234
+live migration duration for VM2: 64.52809309959412
+live migration duration for VM3: 62.2781400680542
+live migration duration for VM4: 63.61599111557007
+live migration duration for VM5: 61.94707202911377
+live migration duration for VM6: 64.83291888237
+finishing lvm at: Mon Feb  6 04:46:25 CST 2017
+live migration duration: 00:06:19
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 04:46:43 CST 2017
+live migration duration for VM1: 57.09038686752319
+live migration duration for VM2: 66.78133296966553
+live migration duration for VM3: 66.3613429069519
+live migration duration for VM4: 65.96280813217163
+live migration duration for VM5: 63.80962610244751
+live migration duration for VM6: 68.50877904891968
+finishing lvm at: Mon Feb  6 04:53:17 CST 2017
+live migration duration: 00:06:34
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 15
+starting lvm at: Mon Feb  6 04:53:34 CST 2017
+live migration duration for VM1: 57.36046314239502
+live migration duration for VM2: 66.5365641117096
+live migration duration for VM3: 63.642009019851685
+live migration duration for VM4: 66.36157417297363
+live migration duration for VM5: 61.84028601646423
+live migration duration for VM6: 66.27513599395752
+finishing lvm at: Mon Feb  6 05:00:02 CST 2017
+live migration duration: 00:06:28
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 05:00:19 CST 2017
+live migration duration for VM1: 59.45474910736084
+live migration duration for VM2: 59.93001103401184
+live migration duration for VM3: 66.11967897415161
+live migration duration for VM4: 70.76958394050598
+live migration duration for VM5: 66.05992984771729
+live migration duration for VM6: 70.97078800201416
+finishing lvm at: Mon Feb  6 05:06:57 CST 2017
+live migration duration: 00:06:38
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 16
+starting lvm at: Mon Feb  6 05:07:14 CST 2017
+live migration duration for VM1: 57.68942403793335
+live migration duration for VM2: 66.45926094055176
+live migration duration for VM3: 68.50399994850159
+live migration duration for VM4: 66.59669089317322
+live migration duration for VM5: 63.9678430557251
+live migration duration for VM6: 66.25732278823853
+finishing lvm at: Mon Feb  6 05:13:48 CST 2017
+live migration duration: 00:06:34
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 05:14:05 CST 2017
+live migration duration for VM1: 55.7444748878479
+live migration duration for VM2: 64.08810520172119
+live migration duration for VM3: 66.07552886009216
+live migration duration for VM4: 66.107106924057
+live migration duration for VM5: 63.79537606239319
+live migration duration for VM6: 68.44937515258789
+finishing lvm at: Mon Feb  6 05:20:35 CST 2017
+live migration duration: 00:06:30
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 17
+starting lvm at: Mon Feb  6 05:20:52 CST 2017
+live migration duration for VM1: 58.04287600517273
+live migration duration for VM2: 66.09092593193054
+live migration duration for VM3: 64.05799198150635
+live migration duration for VM4: 63.79167294502258
+live migration duration for VM5: 63.40635013580322
+live migration duration for VM6: 66.62935590744019
+finishing lvm at: Mon Feb  6 05:27:20 CST 2017
+live migration duration: 00:06:28
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 05:27:37 CST 2017
+live migration duration for VM1: 57.56301498413086
+live migration duration for VM2: 63.96061706542969
+live migration duration for VM3: 66.06610608100891
+live migration duration for VM4: 65.81432390213013
+live migration duration for VM5: 62.02339696884155
+live migration duration for VM6: 69.26418805122375
+finishing lvm at: Mon Feb  6 05:34:07 CST 2017
+live migration duration: 00:06:30
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 18
+starting lvm at: Mon Feb  6 05:34:24 CST 2017
+live migration duration for VM1: 55.64121103286743
+live migration duration for VM2: 61.58143901824951
+live migration duration for VM3: 63.95328497886658
+live migration duration for VM4: 68.07855916023254
+live migration duration for VM5: 64.13000416755676
+live migration duration for VM6: 68.48527097702026
+finishing lvm at: Mon Feb  6 05:40:52 CST 2017
+live migration duration: 00:06:28
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 05:41:09 CST 2017
+live migration duration for VM1: 59.593037128448486
+live migration duration for VM2: 66.51489996910095
+live migration duration for VM3: 68.22769403457642
+live migration duration for VM4: 68.20871019363403
+live migration duration for VM5: 64.2829179763794
+live migration duration for VM6: 70.7887499332428
+finishing lvm at: Mon Feb  6 05:47:51 CST 2017
+live migration duration: 00:06:42
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 19
+starting lvm at: Mon Feb  6 05:48:09 CST 2017
+live migration duration for VM1: 60.060003995895386
+live migration duration for VM2: 66.25734090805054
+live migration duration for VM3: 64.7913670539856
+live migration duration for VM4: 68.44749402999878
+live migration duration for VM5: 61.39479684829712
+live migration duration for VM6: 66.75723099708557
+finishing lvm at: Mon Feb  6 05:54:42 CST 2017
+live migration duration: 00:06:33
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 05:55:00 CST 2017
+live migration duration for VM1: 59.407480001449585
+live migration duration for VM2: 68.24037885665894
+live migration duration for VM3: 64.4878740310669
+live migration duration for VM4: 68.35682678222656
+live migration duration for VM5: 63.54921102523804
+live migration duration for VM6: 69.12883996963501
+finishing lvm at: Mon Feb  6 06:01:37 CST 2017
+live migration duration: 00:06:37
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 20
+starting lvm at: Mon Feb  6 06:01:55 CST 2017
+live migration duration for VM1: 57.50701689720154
+live migration duration for VM2: 66.17830491065979
+live migration duration for VM3: 65.84551501274109
+live migration duration for VM4: 65.98723316192627
+live migration duration for VM5: 66.15177702903748
+live migration duration for VM6: 70.90252494812012
+finishing lvm at: Mon Feb  6 06:08:32 CST 2017
+live migration duration: 00:06:37
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Mon Feb  6 06:08:50 CST 2017
+live migration duration for VM1: 59.67620396614075
+live migration duration for VM2: 68.43969178199768
+live migration duration for VM3: 68.06203198432922
+live migration duration for VM4: 70.39723300933838
+live migration duration for VM5: 66.07287192344666
+live migration duration for VM6: 70.69420790672302
+finishing lvm at: Mon Feb  6 06:15:37 CST 2017
+live migration duration: 00:06:47
+--- average duration of live migration: 6.48333333333 minutes ---
+downtime for instance with ip 172.22.148.60 : 8.0 seconds 
+downtime for instance with ip 172.22.148.64 : 4.0 seconds 
+downtime for instance with ip 172.22.148.66 : 4.5 seconds 
+downtime for instance with ip 172.22.148.67 : 10.5 seconds 
+downtime for instance with ip 172.22.148.57 : 7.5 seconds 
+downtime for instance with ip 172.22.148.56 : 10.0 seconds 
+No Loss of TCP stream and data while LM for VM: 172.22.148.60 +Mon Feb 6 06:15:57 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.64 +Mon Feb 6 06:15:58 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.66 +Mon Feb 6 06:15:58 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.67 +Mon Feb 6 06:15:59 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Mon Feb 6 06:16:00 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.56 +Mon Feb 6 06:16:01 CST 2017
+
+Tunneling: on
+testing against following environment: {u'172.22.148.63': u'spark-6-kjhxpyy', u'172.22.148.67': u'spark-5-kjhxpyy', u'172.22.148.68': u'spark-2-kjhxpyy', u'172.22.148.53': u'spark-4-kjhxpyy', u'172.22.148.54': u'spark-3-kjhxpyy', u'172.22.148.57': u'spark-1-kjhxpyy'} 
+flavor of workloads used is: medium 
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 1
+starting lvm at: Sun Feb  5 15:17:13 CST 2017
+live migration duration for VM1: 114.40228390693665
+live migration duration for VM2: 111.95970416069031
+live migration duration for VM3: 113.86055183410645
+live migration duration for VM4: 109.64278101921082
+live migration duration for VM5: 109.29289102554321
+live migration duration for VM6: 123.44702982902527
+finishing lvm at: Sun Feb  5 15:28:41 CST 2017
+live migration duration: 00:11:28
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 15:28:58 CST 2017
+live migration duration for VM1: 120.42980408668518
+live migration duration for VM2: 116.44726896286011
+live migration duration for VM3: 120.54282402992249
+live migration duration for VM4: 118.37886905670166
+live migration duration for VM5: 124.80548906326294
+live migration duration for VM6: 127.3244571685791
+finishing lvm at: Sun Feb  5 15:41:10 CST 2017
+live migration duration: 00:12:12
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 2
+starting lvm at: Sun Feb  5 15:41:28 CST 2017
+live migration duration for VM1: 118.17399501800537
+live migration duration for VM2: 121.29435706138611
+live migration duration for VM3: 126.73134398460388
+live migration duration for VM4: 124.68367314338684
+live migration duration for VM5: 122.09615683555603
+live migration duration for VM6: 129.5001621246338
+finishing lvm at: Sun Feb  5 15:53:56 CST 2017
+live migration duration: 00:12:28
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 15:54:13 CST 2017
+live migration duration for VM1: 120.27685499191284
+live migration duration for VM2: 128.00608491897583
+live migration duration for VM3: 126.795156955719
+live migration duration for VM4: 126.98726511001587
+live migration duration for VM5: 126.4868860244751
+live migration duration for VM6: 126.83506298065186
+finishing lvm at: Sun Feb  5 16:06:54 CST 2017
+live migration duration: 00:12:41
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 3
+starting lvm at: Sun Feb  5 16:07:11 CST 2017
+live migration duration for VM1: 118.15314888954163
+live migration duration for VM2: 115.75833797454834
+live migration duration for VM3: 120.0055320262909
+live migration duration for VM4: 122.53259301185608
+live migration duration for VM5: 124.60092306137085
+live migration duration for VM6: 127.78123807907104
+finishing lvm at: Sun Feb  5 16:19:25 CST 2017
+live migration duration: 00:12:14
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 16:19:43 CST 2017
+live migration duration for VM1: 127.02323794364929
+live migration duration for VM2: 122.71455097198486
+live migration duration for VM3: 131.8281979560852
+live migration duration for VM4: 131.29485702514648
+live migration duration for VM5: 133.3780767917633
+live migration duration for VM6: 129.6566789150238
+finishing lvm at: Sun Feb  5 16:32:43 CST 2017
+live migration duration: 00:13:00
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 4
+starting lvm at: Sun Feb  5 16:33:01 CST 2017
+live migration duration for VM1: 117.96281504631042
+live migration duration for VM2: 132.1997299194336
+live migration duration for VM3: 125.11535596847534
+live migration duration for VM4: 124.70946192741394
+live migration duration for VM5: 126.88121104240417
+live migration duration for VM6: 131.9518392086029
+finishing lvm at: Sun Feb  5 16:45:45 CST 2017
+live migration duration: 00:12:44
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 16:46:03 CST 2017
+live migration duration for VM1: 120.66263794898987
+live migration duration for VM2: 129.83600902557373
+live migration duration for VM3: 129.0544810295105
+live migration duration for VM4: 127.05593299865723
+live migration duration for VM5: 132.99056887626648
+live migration duration for VM6: 129.43525099754333
+finishing lvm at: Sun Feb  5 16:58:57 CST 2017
+live migration duration: 00:12:54
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 5
+starting lvm at: Sun Feb  5 16:59:15 CST 2017
+live migration duration for VM1: 118.214115858078
+live migration duration for VM2: 120.51083278656006
+live migration duration for VM3: 120.13491821289062
+live migration duration for VM4: 121.97738480567932
+live migration duration for VM5: 122.36349582672119
+live migration duration for VM6: 118.64036011695862
+finishing lvm at: Sun Feb  5 17:11:21 CST 2017
+live migration duration: 00:12:06
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 17:11:39 CST 2017
+live migration duration for VM1: 119.84932112693787
+live migration duration for VM2: 118.45490193367004
+live migration duration for VM3: 116.33673477172852
+live migration duration for VM4: 124.89436888694763
+live migration duration for VM5: 126.85638403892517
+live migration duration for VM6: 137.81101489067078
+finishing lvm at: Sun Feb  5 17:24:07 CST 2017
+live migration duration: 00:12:28
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 6
+starting lvm at: Sun Feb  5 17:24:25 CST 2017
+live migration duration for VM1: 120.25569915771484
+live migration duration for VM2: 114.71003198623657
+live migration duration for VM3: 119.73638606071472
+live migration duration for VM4: 116.5080029964447
+live migration duration for VM5: 129.18863606452942
+live migration duration for VM6: 127.59065318107605
+finishing lvm at: Sun Feb  5 17:36:37 CST 2017
+live migration duration: 00:12:12
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 17:36:54 CST 2017
+live migration duration for VM1: 124.16844010353088
+live migration duration for VM2: 118.28400301933289
+live migration duration for VM3: 127.13110899925232
+live migration duration for VM4: 127.45101308822632
+live migration duration for VM5: 122.7808051109314
+live migration duration for VM6: 127.24732899665833
+finishing lvm at: Sun Feb  5 17:49:27 CST 2017
+live migration duration: 00:12:33
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 7
+starting lvm at: Sun Feb  5 17:49:44 CST 2017
+live migration duration for VM1: 115.71388792991638
+live migration duration for VM2: 118.51199698448181
+live migration duration for VM3: 120.80732107162476
+live migration duration for VM4: 118.17553091049194
+live migration duration for VM5: 122.53971910476685
+live migration duration for VM6: 127.72367691993713
+finishing lvm at: Sun Feb  5 18:01:53 CST 2017
+live migration duration: 00:12:09
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 18:02:10 CST 2017
+live migration duration for VM1: 119.97497606277466
+live migration duration for VM2: 122.9039671421051
+live migration duration for VM3: 126.84690403938293
+live migration duration for VM4: 120.54217410087585
+live migration duration for VM5: 124.50219583511353
+live migration duration for VM6: 126.60219120979309
+finishing lvm at: Sun Feb  5 18:14:37 CST 2017
+live migration duration: 00:12:27
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 8
+starting lvm at: Sun Feb  5 18:14:54 CST 2017
+live migration duration for VM1: 115.45218801498413
+live migration duration for VM2: 117.9584288597107
+live migration duration for VM3: 116.83108115196228
+live migration duration for VM4: 125.38275289535522
+live migration duration for VM5: 123.19167304039001
+live migration duration for VM6: 124.64206910133362
+finishing lvm at: Sun Feb  5 18:27:03 CST 2017
+live migration duration: 00:12:09
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 18:27:20 CST 2017
+live migration duration for VM1: 122.20879602432251
+live migration duration for VM2: 126.98209404945374
+live migration duration for VM3: 123.56103610992432
+live migration duration for VM4: 122.40091490745544
+live migration duration for VM5: 128.8823800086975
+live migration duration for VM6: 127.17752885818481
+finishing lvm at: Sun Feb  5 18:39:57 CST 2017
+live migration duration: 00:12:37
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 9
+starting lvm at: Sun Feb  5 18:40:14 CST 2017
+live migration duration for VM1: 111.65479111671448
+live migration duration for VM2: 124.61403894424438
+live migration duration for VM3: 117.92663598060608
+live migration duration for VM4: 122.59257817268372
+live migration duration for VM5: 124.37871098518372
+live migration duration for VM6: 129.31143188476562
+finishing lvm at: Sun Feb  5 18:52:29 CST 2017
+live migration duration: 00:12:15
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 18:52:46 CST 2017
+live migration duration for VM1: 121.97170901298523
+live migration duration for VM2: 120.81437993049622
+live migration duration for VM3: 126.75541400909424
+live migration duration for VM4: 125.24865102767944
+live migration duration for VM5: 130.79940915107727
+live migration duration for VM6: 129.68289709091187
+finishing lvm at: Sun Feb  5 19:05:27 CST 2017
+live migration duration: 00:12:41
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 10
+starting lvm at: Sun Feb  5 19:05:47 CST 2017
+live migration duration for VM1: 117.99584603309631
+live migration duration for VM2: 129.22451496124268
+live migration duration for VM3: 122.71399092674255
+live migration duration for VM4: 121.29829216003418
+live migration duration for VM5: 122.75618696212769
+live migration duration for VM6: 125.08144688606262
+finishing lvm at: Sun Feb  5 19:18:25 CST 2017
+live migration duration: 00:12:38
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 19:18:43 CST 2017
+live migration duration for VM1: 128.31332302093506
+live migration duration for VM2: 126.80378603935242
+live migration duration for VM3: 127.00887107849121
+live migration duration for VM4: 125.78536701202393
+live migration duration for VM5: 126.70569705963135
+live migration duration for VM6: 131.6426329612732
+finishing lvm at: Sun Feb  5 19:31:34 CST 2017
+live migration duration: 00:12:51
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 11
+starting lvm at: Sun Feb  5 19:31:51 CST 2017
+live migration duration for VM1: 116.00358581542969
+live migration duration for VM2: 120.84033799171448
+live migration duration for VM3: 120.26106595993042
+live migration duration for VM4: 122.70415997505188
+live migration duration for VM5: 127.33555197715759
+live migration duration for VM6: 120.94967293739319
+finishing lvm at: Sun Feb  5 19:44:06 CST 2017
+live migration duration: 00:12:15
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 19:44:24 CST 2017
+live migration duration for VM1: 120.34206700325012
+live migration duration for VM2: 129.59493613243103
+live migration duration for VM3: 122.67249798774719
+live migration duration for VM4: 126.93618583679199
+live migration duration for VM5: 130.99520206451416
+live migration duration for VM6: 129.39985609054565
+finishing lvm at: Sun Feb  5 19:57:10 CST 2017
+live migration duration: 00:12:46
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 12
+starting lvm at: Sun Feb  5 19:57:28 CST 2017
+live migration duration for VM1: 122.38771510124207
+live migration duration for VM2: 125.06390714645386
+live migration duration for VM3: 126.87254095077515
+live migration duration for VM4: 122.78546500205994
+live migration duration for VM5: 128.82578110694885
+live migration duration for VM6: 125.80285215377808
+finishing lvm at: Sun Feb  5 20:10:05 CST 2017
+live migration duration: 00:12:37
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 20:10:22 CST 2017
+live migration duration for VM1: 120.01594090461731
+live migration duration for VM2: 123.33673405647278
+live migration duration for VM3: 122.379812002182
+live migration duration for VM4: 124.9611120223999
+live migration duration for VM5: 129.5025918483734
+live migration duration for VM6: 125.23257994651794
+finishing lvm at: Sun Feb  5 20:22:53 CST 2017
+live migration duration: 00:12:31
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 13
+starting lvm at: Sun Feb  5 20:23:11 CST 2017
+live migration duration for VM1: 113.90703511238098
+live migration duration for VM2: 117.73860287666321
+live migration duration for VM3: 120.3468987941742
+live migration duration for VM4: 129.44726610183716
+live migration duration for VM5: 120.07904505729675
+live migration duration for VM6: 125.17080497741699
+finishing lvm at: Sun Feb  5 20:35:23 CST 2017
+live migration duration: 00:12:12
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 20:35:40 CST 2017
+live migration duration for VM1: 120.65924882888794
+live migration duration for VM2: 124.84524607658386
+live migration duration for VM3: 124.50963497161865
+live migration duration for VM4: 122.30836606025696
+live migration duration for VM5: 133.51706194877625
+live migration duration for VM6: 122.68167614936829
+finishing lvm at: Sun Feb  5 20:48:15 CST 2017
+live migration duration: 00:12:35
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 14
+starting lvm at: Sun Feb  5 20:48:32 CST 2017
+live migration duration for VM1: 113.41165804862976
+live migration duration for VM2: 120.72277498245239
+live migration duration for VM3: 118.51946592330933
+live migration duration for VM4: 124.56647396087646
+live migration duration for VM5: 122.69376802444458
+live migration duration for VM6: 131.85938692092896
+finishing lvm at: Sun Feb  5 21:00:49 CST 2017
+live migration duration: 00:12:17
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 21:01:07 CST 2017
+live migration duration for VM1: 118.15936803817749
+live migration duration for VM2: 123.12091779708862
+live migration duration for VM3: 120.00478291511536
+live migration duration for VM4: 124.02369689941406
+live migration duration for VM5: 120.20224189758301
+live migration duration for VM6: 125.19355988502502
+finishing lvm at: Sun Feb  5 21:13:24 CST 2017
+live migration duration: 00:12:17
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 15
+starting lvm at: Sun Feb  5 21:13:41 CST 2017
+live migration duration for VM1: 120.83152103424072
+live migration duration for VM2: 120.57343411445618
+live migration duration for VM3: 128.72005009651184
+live migration duration for VM4: 128.94072604179382
+live migration duration for VM5: 120.39786005020142
+live migration duration for VM6: 127.41045594215393
+finishing lvm at: Sun Feb  5 21:26:14 CST 2017
+live migration duration: 00:12:33
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 21:26:31 CST 2017
+live migration duration for VM1: 118.05623292922974
+live migration duration for VM2: 120.39523506164551
+live migration duration for VM3: 126.97828006744385
+live migration duration for VM4: 127.28263521194458
+live migration duration for VM5: 139.23157620429993
+live migration duration for VM6: 126.91459107398987
+finishing lvm at: Sun Feb  5 21:39:16 CST 2017
+live migration duration: 00:12:45
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 16
+starting lvm at: Sun Feb  5 21:39:33 CST 2017
+live migration duration for VM1: 114.19545483589172
+live migration duration for VM2: 122.73278284072876
+live migration duration for VM3: 122.61956405639648
+live migration duration for VM4: 122.54097414016724
+live migration duration for VM5: 119.61388993263245
+live migration duration for VM6: 124.51677894592285
+finishing lvm at: Sun Feb  5 21:51:44 CST 2017
+live migration duration: 00:12:11
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 21:52:01 CST 2017
+live migration duration for VM1: 120.2569580078125
+live migration duration for VM2: 126.50282120704651
+live migration duration for VM3: 124.62813091278076
+live migration duration for VM4: 129.74505400657654
+live migration duration for VM5: 129.04303908348083
+live migration duration for VM6: 127.36211705207825
+finishing lvm at: Sun Feb  5 22:04:44 CST 2017
+live migration duration: 00:12:43
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 17
+starting lvm at: Sun Feb  5 22:05:01 CST 2017
+live migration duration for VM1: 120.52609014511108
+live migration duration for VM2: 126.93361806869507
+live migration duration for VM3: 122.83972096443176
+live migration duration for VM4: 128.74881100654602
+live migration duration for VM5: 126.4261360168457
+live migration duration for VM6: 137.73374915122986
+finishing lvm at: Sun Feb  5 22:17:50 CST 2017
+live migration duration: 00:12:49
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 22:18:07 CST 2017
+live migration duration for VM1: 124.4120078086853
+live migration duration for VM2: 120.44349098205566
+live migration duration for VM3: 122.11896705627441
+live migration duration for VM4: 133.720134973526
+live migration duration for VM5: 132.0984649658203
+live migration duration for VM6: 127.24765300750732
+finishing lvm at: Sun Feb  5 22:30:52 CST 2017
+live migration duration: 00:12:45
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 18
+starting lvm at: Sun Feb  5 22:31:09 CST 2017
+live migration duration for VM1: 118.68400001525879
+live migration duration for VM2: 122.44731497764587
+live migration duration for VM3: 117.86731696128845
+live migration duration for VM4: 120.38736414909363
+live migration duration for VM5: 126.86842393875122
+live migration duration for VM6: 127.35797786712646
+finishing lvm at: Sun Feb  5 22:43:28 CST 2017
+live migration duration: 00:12:19
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 22:43:46 CST 2017
+live migration duration for VM1: 120.3888750076294
+live migration duration for VM2: 120.4964690208435
+live migration duration for VM3: 122.755136013031
+live migration duration for VM4: 134.52348589897156
+live migration duration for VM5: 124.53932094573975
+live migration duration for VM6: 133.00828313827515
+finishing lvm at: Sun Feb  5 22:56:26 CST 2017
+live migration duration: 00:12:40
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 19
+starting lvm at: Sun Feb  5 22:56:44 CST 2017
+live migration duration for VM1: 118.75952196121216
+live migration duration for VM2: 116.00110006332397
+live migration duration for VM3: 117.55233097076416
+live migration duration for VM4: 122.9557511806488
+live migration duration for VM5: 122.83299589157104
+live migration duration for VM6: 125.30475997924805
+finishing lvm at: Sun Feb  5 23:08:53 CST 2017
+live migration duration: 00:12:09
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 23:09:10 CST 2017
+live migration duration for VM1: 124.27123212814331
+live migration duration for VM2: 129.08939909934998
+live migration duration for VM3: 130.98985314369202
+live migration duration for VM4: 130.92958402633667
+live migration duration for VM5: 128.8425738811493
+live migration duration for VM6: 129.56467604637146
+finishing lvm at: Sun Feb  5 23:22:09 CST 2017
+live migration duration: 00:12:59
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 20
+starting lvm at: Sun Feb  5 23:22:26 CST 2017
+live migration duration for VM1: 116.52135515213013
+live migration duration for VM2: 123.23324704170227
+live migration duration for VM3: 124.1379759311676
+live migration duration for VM4: 124.64555287361145
+live migration duration for VM5: 133.2465980052948
+live migration duration for VM6: 124.98847484588623
+finishing lvm at: Sun Feb  5 23:34:59 CST 2017
+live migration duration: 00:12:33
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sun Feb  5 23:35:16 CST 2017
+live migration duration for VM1: 128.84526085853577
+live migration duration for VM2: 124.62148809432983
+live migration duration for VM3: 142.2618191242218
+live migration duration for VM4: 129.42968201637268
+live migration duration for VM5: 128.7017388343811
+live migration duration for VM6: 133.5546910762787
+finishing lvm at: Sun Feb  5 23:48:29 CST 2017
+live migration duration: 00:13:13
+--- average duration of live migration: 12.4833333333 minutes ---
+downtime for instance with ip 172.22.148.63 : 4.5 seconds 
+downtime for instance with ip 172.22.148.67 : 34.5 seconds 
+downtime for instance with ip 172.22.148.68 : 5.5 seconds 
+downtime for instance with ip 172.22.148.53 : 3.5 seconds 
+downtime for instance with ip 172.22.148.54 : 30.5 seconds 
+downtime for instance with ip 172.22.148.57 : 8.5 seconds 
+No Loss of TCP stream and data while LM for VM: 172.22.148.63 +Sun Feb 5 23:48:48 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.67 +Sun Feb 5 23:48:49 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.68 +Sun Feb 5 23:48:50 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.53 +Sun Feb 5 23:48:51 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.54 +Sun Feb 5 23:48:52 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.57 +Sun Feb 5 23:48:52 CST 2017
+
+Tunneling: on
+testing against following environment: {u'172.22.148.59': u'spark-4-trcnvvq', u'172.22.148.60': u'spark-1-trcnvvq', u'172.22.148.64': u'spark-5-trcnvvq', u'172.22.148.58': u'spark-2-trcnvvq', u'172.22.148.55': u'spark-3-trcnvvq', u'172.22.148.54': u'spark-6-trcnvvq'} 
+flavor of workloads used is: large 
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 1
+starting lvm at: Fri Feb 10 13:51:38 CST 2017
+live migration duration for VM1: 215.83139896392822
+live migration duration for VM2: 197.0879180431366
+live migration duration for VM3: 216.15142512321472
+live migration duration for VM4: 227.54712796211243
+live migration duration for VM5: 212.58856201171875
+live migration duration for VM6: 227.6376600265503
+finishing lvm at: Fri Feb 10 14:13:20 CST 2017
+live migration duration: 00:21:42
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 14:13:37 CST 2017
+live migration duration for VM1: 236.19531083106995
+live migration duration for VM2: 231.67730402946472
+live migration duration for VM3: 235.8301351070404
+live migration duration for VM4: 246.28268599510193
+live migration duration for VM5: 244.35250115394592
+live migration duration for VM6: 246.45682501792908
+finishing lvm at: Fri Feb 10 14:37:44 CST 2017
+live migration duration: 00:24:07
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 2
+starting lvm at: Fri Feb 10 14:38:01 CST 2017
+live migration duration for VM1: 227.12495279312134
+live migration duration for VM2: 234.9412190914154
+live migration duration for VM3: 233.30276203155518
+live migration duration for VM4: 229.40093898773193
+live migration duration for VM5: 248.26771688461304
+live migration duration for VM6: 249.39931392669678
+finishing lvm at: Fri Feb 10 15:01:49 CST 2017
+live migration duration: 00:23:48
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 15:02:07 CST 2017
+live migration duration for VM1: 237.14918494224548
+live migration duration for VM2: 222.84658408164978
+live migration duration for VM3: 233.5273060798645
+live migration duration for VM4: 243.67781519889832
+live migration duration for VM5: 242.23899102210999
+live migration duration for VM6: 262.01454496383667
+finishing lvm at: Fri Feb 10 15:26:13 CST 2017
+live migration duration: 00:24:06
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 3
+starting lvm at: Fri Feb 10 15:26:31 CST 2017
+live migration duration for VM1: 233.49108982086182
+live migration duration for VM2: 236.30283117294312
+live migration duration for VM3: 235.52929592132568
+live migration duration for VM4: 235.33393907546997
+live migration duration for VM5: 244.27686309814453
+live migration duration for VM6: 240.67672491073608
+finishing lvm at: Fri Feb 10 15:50:21 CST 2017
+live migration duration: 00:23:50
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 15:50:38 CST 2017
+live migration duration for VM1: 232.9555208683014
+live migration duration for VM2: 254.23408818244934
+live migration duration for VM3: 235.52824306488037
+live migration duration for VM4: 249.62302494049072
+live migration duration for VM5: 254.53898906707764
+live migration duration for VM6: 259.67067790031433
+finishing lvm at: Fri Feb 10 16:15:28 CST 2017
+live migration duration: 00:24:50
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 4
+starting lvm at: Fri Feb 10 16:15:46 CST 2017
+live migration duration for VM1: 226.239844083786
+live migration duration for VM2: 236.0801420211792
+live migration duration for VM3: 237.5004620552063
+live migration duration for VM4: 235.85642910003662
+live migration duration for VM5: 242.68093991279602
+live migration duration for VM6: 248.56423997879028
+finishing lvm at: Fri Feb 10 16:39:38 CST 2017
+live migration duration: 00:23:52
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 16:39:56 CST 2017
+live migration duration for VM1: 238.3738510608673
+live migration duration for VM2: 246.32153296470642
+live migration duration for VM3: 250.53522777557373
+live migration duration for VM4: 252.48607110977173
+live migration duration for VM5: 250.89395999908447
+live migration duration for VM6: 265.9800159931183
+finishing lvm at: Fri Feb 10 17:05:04 CST 2017
+live migration duration: 00:25:08
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 5
+starting lvm at: Fri Feb 10 17:05:21 CST 2017
+live migration duration for VM1: 234.8888030052185
+live migration duration for VM2: 230.3684549331665
+live migration duration for VM3: 235.60536909103394
+live migration duration for VM4: 246.00057983398438
+live migration duration for VM5: 244.7794349193573
+live migration duration for VM6: 259.83499908447266
+finishing lvm at: Fri Feb 10 17:29:38 CST 2017
+live migration duration: 00:24:17
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 17:29:55 CST 2017
+live migration duration for VM1: 235.63634705543518
+live migration duration for VM2: 241.5946979522705
+live migration duration for VM3: 244.78428506851196
+live migration duration for VM4: 236.37723803520203
+live migration duration for VM5: 239.66419506072998
+live migration duration for VM6: 248.38279509544373
+finishing lvm at: Fri Feb 10 17:54:08 CST 2017
+live migration duration: 00:24:13
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 6
+starting lvm at: Fri Feb 10 17:54:25 CST 2017
+live migration duration for VM1: 226.83706307411194
+live migration duration for VM2: 226.9438600540161
+live migration duration for VM3: 228.53319907188416
+live migration duration for VM4: 224.69028902053833
+live migration duration for VM5: 230.0149610042572
+live migration duration for VM6: 248.2144570350647
+finishing lvm at: Fri Feb 10 18:17:35 CST 2017
+live migration duration: 00:23:10
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 18:17:53 CST 2017
+live migration duration for VM1: 226.02987122535706
+live migration duration for VM2: 245.5273928642273
+live migration duration for VM3: 232.67234110832214
+live migration duration for VM4: 233.37484121322632
+live migration duration for VM5: 249.07563304901123
+live migration duration for VM6: 244.2995250225067
+finishing lvm at: Fri Feb 10 18:41:49 CST 2017
+live migration duration: 00:23:56
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 7
+starting lvm at: Fri Feb 10 18:42:06 CST 2017
+live migration duration for VM1: 231.87153697013855
+live migration duration for VM2: 239.7600359916687
+live migration duration for VM3: 239.93836307525635
+live migration duration for VM4: 237.74349999427795
+live migration duration for VM5: 241.82878708839417
+live migration duration for VM6: 246.9792070388794
+finishing lvm at: Fri Feb 10 19:06:09 CST 2017
+live migration duration: 00:24:03
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 19:06:26 CST 2017
+live migration duration for VM1: 233.4346218109131
+live migration duration for VM2: 241.47282600402832
+live migration duration for VM3: 233.3556079864502
+live migration duration for VM4: 236.49142003059387
+live migration duration for VM5: 255.04934215545654
+live migration duration for VM6: 246.9713170528412
+finishing lvm at: Fri Feb 10 19:30:38 CST 2017
+live migration duration: 00:24:12
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 8
+starting lvm at: Fri Feb 10 19:30:56 CST 2017
+live migration duration for VM1: 224.1325249671936
+live migration duration for VM2: 239.99038290977478
+live migration duration for VM3: 241.43725490570068
+live migration duration for VM4: 239.44061398506165
+live migration duration for VM5: 237.93634009361267
+live migration duration for VM6: 248.0159649848938
+finishing lvm at: Fri Feb 10 19:54:52 CST 2017
+live migration duration: 00:23:56
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 19:55:09 CST 2017
+live migration duration for VM1: 238.01036620140076
+live migration duration for VM2: 246.937979221344
+live migration duration for VM3: 240.15011715888977
+live migration duration for VM4: 234.71967887878418
+live migration duration for VM5: 244.5261368751526
+live migration duration for VM6: 255.1448791027069
+finishing lvm at: Fri Feb 10 20:19:34 CST 2017
+live migration duration: 00:24:25
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 9
+starting lvm at: Fri Feb 10 20:19:51 CST 2017
+live migration duration for VM1: 229.11779403686523
+live migration duration for VM2: 229.84372997283936
+live migration duration for VM3: 238.0225532054901
+live migration duration for VM4: 235.35142612457275
+live migration duration for VM5: 240.65328407287598
+live migration duration for VM6: 253.0251739025116
+finishing lvm at: Fri Feb 10 20:43:41 CST 2017
+live migration duration: 00:23:50
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 20:43:59 CST 2017
+live migration duration for VM1: 232.01692008972168
+live migration duration for VM2: 247.37515497207642
+live migration duration for VM3: 254.5660960674286
+live migration duration for VM4: 244.20966291427612
+live migration duration for VM5: 249.86368894577026
+live migration duration for VM6: 255.05486798286438
+finishing lvm at: Fri Feb 10 21:08:47 CST 2017
+live migration duration: 00:24:48
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 10
+starting lvm at: Fri Feb 10 21:09:05 CST 2017
+live migration duration for VM1: 229.9439070224762
+live migration duration for VM2: 228.9867238998413
+live migration duration for VM3: 249.8010869026184
+live migration duration for VM4: 240.05614614486694
+live migration duration for VM5: 252.22183895111084
+live migration duration for VM6: 246.13566088676453
+finishing lvm at: Fri Feb 10 21:33:17 CST 2017
+live migration duration: 00:24:12
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 21:33:34 CST 2017
+live migration duration for VM1: 239.6008529663086
+live migration duration for VM2: 235.73822903633118
+live migration duration for VM3: 238.06332111358643
+live migration duration for VM4: 252.96783590316772
+live migration duration for VM5: 259.8199231624603
+live migration duration for VM6: 259.37800788879395
+finishing lvm at: Fri Feb 10 21:58:25 CST 2017
+live migration duration: 00:24:51
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 11
+starting lvm at: Fri Feb 10 21:58:42 CST 2017
+live migration duration for VM1: 233.05934810638428
+live migration duration for VM2: 239.84036993980408
+live migration duration for VM3: 241.77044415473938
+live migration duration for VM4: 247.95414805412292
+live migration duration for VM5: 241.74513697624207
+live migration duration for VM6: 250.81769680976868
+finishing lvm at: Fri Feb 10 22:23:02 CST 2017
+live migration duration: 00:24:20
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 22:23:20 CST 2017
+live migration duration for VM1: 235.2506217956543
+live migration duration for VM2: 247.734228849411
+live migration duration for VM3: 251.31785702705383
+live migration duration for VM4: 251.2118320465088
+live migration duration for VM5: 257.4400029182434
+live migration duration for VM6: 257.1326458454132
+finishing lvm at: Fri Feb 10 22:48:24 CST 2017
+live migration duration: 00:25:04
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 12
+starting lvm at: Fri Feb 10 22:48:42 CST 2017
+live migration duration for VM1: 231.26275300979614
+live migration duration for VM2: 242.24286890029907
+live migration duration for VM3: 254.78562188148499
+live migration duration for VM4: 250.34614515304565
+live migration duration for VM5: 246.1962730884552
+live migration duration for VM6: 247.67487597465515
+finishing lvm at: Fri Feb 10 23:13:20 CST 2017
+live migration duration: 00:24:38
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Fri Feb 10 23:13:37 CST 2017
+live migration duration for VM1: 237.07761907577515
+live migration duration for VM2: 235.2335169315338
+live migration duration for VM3: 242.1375720500946
+live migration duration for VM4: 241.79821681976318
+live migration duration for VM5: 244.04936504364014
+live migration duration for VM6: 244.23482608795166
+finishing lvm at: Fri Feb 10 23:37:46 CST 2017
+live migration duration: 00:24:09
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 13
+starting lvm at: Fri Feb 10 23:38:03 CST 2017
+live migration duration for VM1: 228.6734709739685
+live migration duration for VM2: 230.49717712402344
+live migration duration for VM3: 239.98356413841248
+live migration duration for VM4: 235.16357803344727
+live migration duration for VM5: 242.4278039932251
+live migration duration for VM6: 246.24115681648254
+finishing lvm at: Sat Feb 11 00:01:51 CST 2017
+live migration duration: 00:23:48
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sat Feb 11 00:02:09 CST 2017
+live migration duration for VM1: 228.25917506217957
+live migration duration for VM2: 237.7152910232544
+live migration duration for VM3: 248.44159698486328
+live migration duration for VM4: 239.84422898292542
+live migration duration for VM5: 252.290274143219
+live migration duration for VM6: 256.07411909103394
+finishing lvm at: Sat Feb 11 00:26:37 CST 2017
+live migration duration: 00:24:28
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 14
+starting lvm at: Sat Feb 11 00:26:54 CST 2017
+live migration duration for VM1: 224.68702292442322
+live migration duration for VM2: 235.62594985961914
+live migration duration for VM3: 246.05914616584778
+live migration duration for VM4: 224.4250078201294
+live migration duration for VM5: 246.5335078239441
+live migration duration for VM6: 248.56518292427063
+finishing lvm at: Sat Feb 11 00:50:45 CST 2017
+live migration duration: 00:23:51
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sat Feb 11 00:51:02 CST 2017
+live migration duration for VM1: 230.6134548187256
+live migration duration for VM2: 233.40665912628174
+live migration duration for VM3: 241.47891902923584
+live migration duration for VM4: 244.52854108810425
+live migration duration for VM5: 244.10096406936646
+live migration duration for VM6: 258.7672669887543
+finishing lvm at: Sat Feb 11 01:15:20 CST 2017
+live migration duration: 00:24:18
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 15
+starting lvm at: Sat Feb 11 01:15:38 CST 2017
+live migration duration for VM1: 244.7474980354309
+live migration duration for VM2: 230.44885301589966
+live migration duration for VM3: 233.13344502449036
+live migration duration for VM4: 232.90264892578125
+live migration duration for VM5: 242.0130159854889
+live migration duration for VM6: 248.7196328639984
+finishing lvm at: Sat Feb 11 01:39:34 CST 2017
+live migration duration: 00:23:56
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sat Feb 11 01:39:51 CST 2017
+live migration duration for VM1: 232.83927202224731
+live migration duration for VM2: 247.04846715927124
+live migration duration for VM3: 247.59662294387817
+live migration duration for VM4: 231.48672914505005
+live migration duration for VM5: 250.94098687171936
+live migration duration for VM6: 252.83968496322632
+finishing lvm at: Sat Feb 11 02:04:20 CST 2017
+live migration duration: 00:24:29
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 16
+starting lvm at: Sat Feb 11 02:04:37 CST 2017
+live migration duration for VM1: 231.1685929298401
+live migration duration for VM2: 245.86766505241394
+live migration duration for VM3: 251.49103093147278
+live migration duration for VM4: 235.3609938621521
+live migration duration for VM5: 252.18679094314575
+live migration duration for VM6: 253.2161259651184
+finishing lvm at: Sat Feb 11 02:29:11 CST 2017
+live migration duration: 00:24:34
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sat Feb 11 02:29:29 CST 2017
+live migration duration for VM1: 239.3774619102478
+live migration duration for VM2: 245.92813920974731
+live migration duration for VM3: 250.5002989768982
+live migration duration for VM4: 244.26034784317017
+live migration duration for VM5: 259.0586259365082
+live migration duration for VM6: 257.4614999294281
+finishing lvm at: Sat Feb 11 02:54:29 CST 2017
+live migration duration: 00:25:00
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 17
+starting lvm at: Sat Feb 11 02:54:47 CST 2017
+live migration duration for VM1: 242.2973301410675
+live migration duration for VM2: 237.7638258934021
+live migration duration for VM3: 251.58871293067932
+live migration duration for VM4: 245.89588713645935
+live migration duration for VM5: 252.87666511535645
+live migration duration for VM6: 254.9661741256714
+finishing lvm at: Sat Feb 11 03:19:37 CST 2017
+live migration duration: 00:24:50
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sat Feb 11 03:19:54 CST 2017
+live migration duration for VM1: 230.54653310775757
+live migration duration for VM2: 250.1931347846985
+live migration duration for VM3: 244.12718391418457
+live migration duration for VM4: 257.77883291244507
+live migration duration for VM5: 254.34864711761475
+live migration duration for VM6: 270.71505093574524
+finishing lvm at: Sat Feb 11 03:45:07 CST 2017
+live migration duration: 00:25:13
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 18
+starting lvm at: Sat Feb 11 03:45:25 CST 2017
+live migration duration for VM1: 226.6799590587616
+live migration duration for VM2: 230.48804998397827
+live migration duration for VM3: 236.24102187156677
+live migration duration for VM4: 239.4462809562683
+live migration duration for VM5: 240.0028359889984
+live migration duration for VM6: 254.712473154068
+finishing lvm at: Sat Feb 11 04:09:17 CST 2017
+live migration duration: 00:23:52
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sat Feb 11 04:09:34 CST 2017
+live migration duration for VM1: 242.0084331035614
+live migration duration for VM2: 231.3410129547119
+live migration duration for VM3: 235.54825711250305
+live migration duration for VM4: 240.04507899284363
+live migration duration for VM5: 248.60715413093567
+live migration duration for VM6: 256.8540680408478
+finishing lvm at: Sat Feb 11 04:33:53 CST 2017
+live migration duration: 00:24:19
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 19
+starting lvm at: Sat Feb 11 04:34:10 CST 2017
+live migration duration for VM1: 229.13629698753357
+live migration duration for VM2: 233.27570414543152
+live migration duration for VM3: 241.34511303901672
+live migration duration for VM4: 236.86346197128296
+live migration duration for VM5: 248.25098586082458
+live migration duration for VM6: 255.22100400924683
+finishing lvm at: Sat Feb 11 04:58:19 CST 2017
+live migration duration: 00:24:09
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sat Feb 11 04:58:36 CST 2017
+live migration duration for VM1: 237.2159640789032
+live migration duration for VM2: 240.0312361717224
+live migration duration for VM3: 254.3892469406128
+live migration duration for VM4: 246.87805104255676
+live migration duration for VM5: 257.1477298736572
+live migration duration for VM6: 246.89054799079895
+finishing lvm at: Sat Feb 11 05:23:23 CST 2017
+live migration duration: 00:24:47
+--> evacuating all VMs from compute08 to compute05 ITERATION n: 20
+starting lvm at: Sat Feb 11 05:23:40 CST 2017
+live migration duration for VM1: 234.96722197532654
+live migration duration for VM2: 237.2715871334076
+live migration duration for VM3: 249.03451490402222
+live migration duration for VM4: 245.62673497200012
+live migration duration for VM5: 248.01982998847961
+live migration duration for VM6: 259.7656719684601
+finishing lvm at: Sat Feb 11 05:48:21 CST 2017
+live migration duration: 00:24:41
+--> evacuating all VMs from compute05 to compute08:
+starting lvm at: Sat Feb 11 05:48:38 CST 2017
+live migration duration for VM1: 238.93053007125854
+live migration duration for VM2: 246.40552592277527
+live migration duration for VM3: 246.17515301704407
+live migration duration for VM4: 251.0734031200409
+live migration duration for VM5: 254.85048389434814
+live migration duration for VM6: 257.0523889064789
+finishing lvm at: Sat Feb 11 06:13:36 CST 2017
+live migration duration: 00:24:58
+--- average duration of live migration: 24.2666666667 minutes ---
+downtime for instance with ip 172.22.148.59 : 40.0 seconds 
+downtime for instance with ip 172.22.148.60 : 6.5 seconds 
+downtime for instance with ip 172.22.148.64 : 3.0 seconds 
+downtime for instance with ip 172.22.148.58 : 6.0 seconds 
+downtime for instance with ip 172.22.148.55 : 5.5 seconds 
+downtime for instance with ip 172.22.148.54 : 3.0 seconds 
+No Loss of TCP stream and data while LM for VM: 172.22.148.59 +Sat Feb 11 06:13:57 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.60 +Sat Feb 11 06:13:58 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.64 +Sat Feb 11 06:14:01 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.58 +Sat Feb 11 06:14:03 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.55 +Sat Feb 11 06:14:05 CST 2017
+No Loss of TCP stream and data while LM for VM: 172.22.148.54 +Sat Feb 11 06:14:07 CST 2017

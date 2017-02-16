@@ -311,15 +311,14 @@ Conclusion&Lessons learned
 
 1. with large flavors some failures were recorded to live migrate. Debugging those, lead to two findings
 
-  - some VMs were failing because live migration timeout was reached. Setting this value (live_migration_progress_timeout) to zero(infinity) lead to 100% success rate for the shared storage case.
+- some VMs were failing because live migration timeout was reached. Setting this value (live_migration_progress_timeout) to zero(infinity) lead to 100% success rate for the shared storage case.
+- Some VMs fail to live migrate because nova failed to update the VM status after migrating. debugging is still ongoing
 
-  - Some VMs fail to live migrate because nova failed to update the VM status after migrating. debugging is still ongoing
+1. when using live migration with tunneling off, live migration will be done in the hypervisor level, that's why hypervisor should be able to resolve the different hypervisor names in the cloud. To fix that, in the physical compute nodes, there should be a mapping between compute hosts names or ips with their respective local hypervisor name. Hypervisor name can be detected with the nova hypervisor-list command.
 
-2. when using live migration with tunneling off, live migration will be done in the hypervisor level, that's why hypervisor should be able to resolve the different hypervisor names in the cloud. To fix that, in the physical compute nodes, there should be a mapping between compute hosts names or ips with their respective local hypervisor name. Hypervisor name can be detected with the nova hypervisor-list command.
+2. Cinder Volume and nova should be located in the same availability zone if you plan to live migrate volume backed VMs
 
-3. Cinder Volume and nova should be located in the same availability zone if you plan to live migrate volume backed VMs
+3. Tunneling disabling reduce Live migration duration 
 
-4. Tunneling disabling reduce Live migration duration 
-
-5. No TCP stream loss was recorded for all tests
+4. No TCP stream loss was recorded for all tests
 
