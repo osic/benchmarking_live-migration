@@ -6,9 +6,9 @@ Environment
 
 For the purpose of testing and comparaison, two production OpenStack Clouds are built using OpenStack-ansible tool for deployment:
 
-1. 22 nodes-Cloud with a shared storage backend based on CEPH for nova and cinder volumes.
+1. 22 nodes Cloud with a shared storage backend based on CEPH for nova and cinder volumes.
 
-2. 22 nodes-CLoud Second with local storage. Cinder is using lvm as the Volume provider.
+2. 22 nodes CLoud with local storage. Cinder is using lvm as the Volume provider.
 
 Each node has the following specifications:
 
@@ -18,7 +18,7 @@ Each node has the following specifications:
     Disk: 12x 600GB 15K SAS - RAID10
     NICS: 2x Intel X710 Dual Port 10 GbE
 
-More than that, a monitoring stack based on the TICK stack with  influx is deployed on both clouds so that we can follow in real time, metrics effected by the live migration.
+More than that, a monitoring stack based on the TIGK stack with influx is deployed on both clouds so that we can follow in real time, metrics effected by the live migration.
 
 Testing methodology
 ---------------------
@@ -28,7 +28,7 @@ Testing methodology
 To benchmark live migration, a tool has been put in place. This tool will
 
 1. Bootstrap the Openstack Cloud for live migration testing: create images, keys, flavors.. install rally and workload generator.
-2. create the workloads on one of the compute nodes. The workloads are basically a slice of 6 VMs: ` each VM  contains a spark cluster running a real time Spark streaming job receiving stream data at a rate of 100kB/s. each VM has its disk half full which simulate logs and data stored from apps in real world`
+2. create the workloads on one of the compute nodes. The workloads are basically a slice of 6 VMs: ` each VM  contains a spark cluster running a real time Spark streaming job receiving stream data at a rate of 100kB/s. each VM has its disk half full to simulate logs and data stored from apps in real world`
 3. launch all the testings and measurements prior to start benchmarking live migration
 4. evacuating the compute node with the workloads to another empty compute node back and forth 20 times in a row
 
