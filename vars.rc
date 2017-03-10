@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#change it to the network ID, VMs will be attached to
+# change it to the network ID, VMs will be attached to
 network="bc1b0934-3343-4fca-806e-3bad82205261"
 key_name="lm_key"
 image_name="Ubuntulm14"
@@ -8,19 +8,21 @@ influx_ip=`cat /etc/openstack_deploy/openstack_user_config.yml | grep internal_l
 export INFLUXDB_HOST=$influx_ip
 stack_name="lm_test$RANDOM"
 # specify the copute host to evacuate and the destination host
-host_to_evacuate='compute08'
-destination_host='compute05'
+host_to_evacuate='compute01'
+destination_host='compute03'
 # define workload_vms as: ( number of cpu vms, number of ram vms number of diskIO vms, number of network vms )
-workloads_vms=(1-spark 0-generic_cpu_final 0-generic_ram 0-generic_disk 0-generic_network)
+workloads_vms=(2-spark 0-generic_cpu_final 0-generic_ram 0-generic_disk 0-generic_network)
 # change it to true if VMs needs to be deployed before starting LM tests
-DEPLOY_WORKLOADS=FALSE
+DEPLOY_WORKLOADS=TRUE
 # Number of times it will perform back and forth LM between compute hosts.
 ITERATIONS=20
-#change environment to heat_param_medium or heat_param_large to use medium and large flavor environment
-#environment_type[0]="heat_param_small"
-#environment_type[0]="heat_param_medium"
-environment_type[0]="heat_param_large"
+# change environment to heat_param_medium or heat_param_large to use medium and large flavor environment
+# environment_type[0]="heat_param_small"
+environment_type[0]="heat_param_medium"
+# environment_type[0]="heat_param_large"
 lv_results_file="/opt/lvm_results.txt"
 downtime_info="/tmp/downtime_info.dat"
-#This variable is used just to document the environment
+# put the number of parallel VM migrations that you want to test against. ex '1 2 3' will test with first one vm at a time then 2, then 3..
+number_of_parallel_migrations='1 2 3 4'
+# This variable is used just to document the environment
 tunneling="off"

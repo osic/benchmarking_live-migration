@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from credentials import get_keystone_creds
 from novaclient import client
 from keystoneclient import session

@@ -10,7 +10,8 @@
                 },
                 "host_to_evacuate": "{{ host_to_evacuate }}",
                 "destination_host": "{{ destination_host }}",
-                "block_migration": "{{ block_migration }}"
+                "block_migration": "{{ block_migration }}",
+                "number_of_parallel_migrations": "{{ number_of_parallel_migrations }}"
             },
             "runner": {
                 "type": "serial",

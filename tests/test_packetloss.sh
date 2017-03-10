@@ -28,4 +28,12 @@ else
   echo `python -c "print (int($loss) * $3)"` " seconds worth of information lost of TCP stream during LM for VM:  $IP" | tee -a $fileName
 fi
 
-ssh -i /root/lm_key.pem -o StrictHostKeyChecking=no ubuntu@$IP '> /home/ubuntu/out.txt'
+ssh -i /root/lm_key.pem -o StrictHostKeyChecking=no ubuntu@$IP << 'EOF'
+  sudo su
+  pc=$(ps aux | grep nc | grep 2392 | awk '{print $2}')
+  kill -9 $pc
+  rm -f /home/ubuntu/out.txt
+  touch /home/ubuntu/out.txt
+  chmod 777 /home/ubuntu/out.txt
+  nohup nc -d -l -k 0.0.0.0 2392 > /home/ubuntu/out.txt 2>&1 &
+EOF

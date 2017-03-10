@@ -77,9 +77,15 @@ class NovaLiveMigrations(utils.NovaScenario):
         """
         servers_to_migrate = self._get_servers_from_compute(host_to_evacuate)
         print "migrating servers: " + str(servers_to_migrate)
-        executor = ThreadPoolExecutor(max_workers=int(number_of_parallel_migrations))
-        futures = []
-        for server in servers_to_migrate:
-              a = executor.submit(self._migrate_server, server, destination_host, block_migration, disk_over_commit)
-              futures.append(a)
-        print(wait(futures))
+        i = 0
+        threads = range(int(number_of_parallel_migrations))
+        while i < len(servers_to_migrate)/int(number_of_parallel_migrations):
+              for j in range(0,int(number_of_parallel_migrations)):
+                   print 'server' + str(i * int(number_of_parallel_migrations) + j)
+                   target_server = servers_to_migrate[i * int(number_of_parallel_migrations) + j]
+                   threads[j] = Thread(target=self._migrate_server, args=(target_server, destination_host, block_migration, disk_over_commit))
+                   threads[j].start()
+              for j in range(0,int(number_of_parallel_migrations)):
+                   threads[j].join()
+              i+=1
+
